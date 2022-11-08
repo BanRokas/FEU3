@@ -264,7 +264,7 @@
   </div>
   <div> <!-- Formos užduotis -->
     <h1>Formos užduotis</h1>
-    <form>
+    <form id="formosUzduotis">
       <div>
         <label for="name">Vardas:</label>
         <input type="text" name="name" id="name" required>
@@ -299,5 +299,18 @@
       <input type="submit" value="Pateikti">
     </form>
   </div>
+
+
+
+
+  <script>
+    document // kreipiuosi į dokumentą
+    .querySelector('#formosUzduotis') // pasirenku elementą su ID "formosUzduotis"
+    .addEventListener('submit', (event) => { // laukia "submit" įvykio ir vykdo bevardę funkciją
+      event.preventDefault(); // neleidžia formai būti siunčiamai į serverį 
+      console.log(event); // į konsolę išveda formos informaciją
+      event.target.reset(); // išvalo formą
+    });
+  </script>
 </body>
 </html>

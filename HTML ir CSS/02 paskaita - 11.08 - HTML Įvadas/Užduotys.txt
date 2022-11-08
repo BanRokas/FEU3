@@ -1,1 +1,2 @@
 1) Sukurkite lentelę, kurioje būtų informacija apie 5 jūsų mėgstamiausias vietas (kur norėtumėte nuvykti, kur jau buvote ir t.t.). Informacija apie vietas: Eilės numeris; Pavadinimas; Šalis; Buvau/Nebuvau; Paveiksliukas; Nuoroda;
+2) Sukurti formą, kurioje būtų: vardo/slapyvardžio, email, slaptažodžio įvestys, lyties pasirinkimas, komentaro įvesties laukas ir formos pateikimo mygtukas.

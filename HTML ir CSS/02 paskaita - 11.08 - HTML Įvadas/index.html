@@ -184,5 +184,83 @@
       </table>
     </center>
   </div>
+  <div> <!-- Formos -->
+    <h1>Formos</h1>
+    <h3>Tag'ai</h3>
+    <ul>
+      <li>form - Forma</li>
+      <li>input - Įvestis</li>
+      <li>select - Pasirinkimas iš variantų</li>
+      <li>option - Pasirinkimo variantai</li>
+      <li>textarea - Didelio teksto kiekio įvestis</li>
+      <li>label - Etiketė prie įvesties/pasirinkimo</li>
+      <li>optgroup - Pasirinkimo variantų grupė</li>
+      <li>button - Mygtukas</li>
+      <li>fieldset - Formos laukas</li>
+      <li>legend - Formos lauko pavadinimas</li>
+    </ul>
+    <h3>Atributai</h3>
+    <ul>
+      <li>type - Input tag'o tipas</li>
+      <li>for - Nurodo kuriam įvesties/parinkties laukui yra priskirta etiketė</li>
+      <li>id - Unikalus pavadinimas, į kurį nurodo for atributas</li>
+      <li>name - Įvesties lauko vardas, kuris bus perduotas back'ui kartu su tos įvesties reikšme</li>
+      <li>cols - Stulpelių kiekis textarea elemente</li>
+      <li>rows - Eilučių kiekis textarea elemente</li>
+      <li>placeholder - Tekstas esantis įvesties lauke, kuris pradingsta pradedant pildyti įvesties lauką</li>
+      <li>value - Įvesties reikšmė, kuri perduodama į back'ą</li>
+      <li>label - Priskiria colgroup'ui pavadinimą</li>
+      <li>selected - Numatytasis select tag'o viduje esantis option'as</li>
+      <li>minlength - Trumpiausia galima įvestis</li>
+      <li>maxlength - Ilgiausia galima įvestis</li>
+      <li>min - Mažiausia leistina įvesti</li>
+      <li>max - Didžiausia leistina įvesti</li>
+      <li>step - Žingsnis, kuriuo didėja/mažėja skaičius</li>
+      <li>pattern - Reikalauja, kad įvesties laukelyje būtų parašytas nurodytas formatas (formatas nurodomas regex (regular expression))</li>
+      <li>checked - Numatytasis radio arba checkbox pasirinkimas/ai</li>
+    </ul>
+    <form>
+      <div>
+        <span>Pasirinkite pomėgį sportas</span>
+        <div>
+          <label for="sportas">Sportas</label>
+          <input type="radio" name="interest" id="sportas" value="sportas" checked>
+        </div>
+        <div>
+          <label for="filmai">Filmai</label>
+          <input type="radio" name="interest" id="filmai" value="filmai" checked>
+        </div>
+        <div>
+          <label for="kulinarija">Kulinarija</label>
+          <input type="radio" name="interest" id="kulinarija" value="kulinarija">
+        </div>
+      </div>
+      <div>
+        <label for="kazkam">Kažkas kažką kažkur</label>
+        <input type="url" id="kazkam" name="vardas" placeholder="111-111-aAzZ" required>
+      </div>
+      <div>
+        <label for="pavarde">Pavardė:</label>
+        <input type="text" id="pavarde" name="pavarde" required>
+      </div>
+      <div>
+        <textarea name="komentaras" id="komentaras" cols="30" rows="5" placeholder="Palikite savo atsiliepimą..."></textarea>
+      </div>
+      <div>
+        <label for="augintinis">Tavo augintinis</label>
+        <select name="augintinis" id="augintinis">
+          <optgroup label="dideli">
+            <option value="suo">Šuo</option>
+            <option value="kate">Katė</option>
+          </optgroup>
+          <optgroup label="mazi">
+            <option value="ziurkenas">Žiurkėnas</option>
+            <option value="zuvele">Žuvelė</option>
+          </optgroup>
+        </select>
+      </div>
+      <button role="submit">Pateikti</button>
+    </form>
+  </div>
 </body>
 </html>

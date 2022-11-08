@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 paskaita - HTML Įvadas</title>
+  <link rel="icon" href="images/appoReal.png">
+</head>
+<body>
+  <div> <!-- Stilizavimo tag'ai -->
+    <h1>Stilizavimo tag'ai</h1>
+    <ul>
+      <li>b - bold - Pastorina tekstą</li>
+      <li>strong - Pastorina tekstą (svarbus semantiškai)</li>
+      <li>i - italic - Suteikia tekstui pasvyrimo stilių</li>
+      <li>em - emphasis - Suteikia tekstui pasvyrimo stilių (svarbus semantiškai)</li>
+      <li>big - Padidina tekstą (pasenęs - nenaudojamas)</li>
+      <li>small - Sumažina tekstą</li>
+      <li>sup - superscript - Pakelia tekstą į viršų ir jį sumažina</li>
+      <li>sub - subscript - Nuleidžia tekstą į apačią ir jį sumažina</li>
+      <li>span - Išskiria kažkokį elementą ar jo dalį</li>
+    </ul>
+    <center>
+      <p>
+        Lorem <b>ipsum</b> dolor <strong>sit amet</strong> consectetur <i>adipisicing</i> elit. <em>Totam</em>, deserunt <big>non</big> sit <small>molestiae</small> rerum <sub>neque</sub> labore <sup>eos</sup> assumenda <span >itaque dolor</span> officiis <mark>exercitationem</mark> nostrum <del>tempore</del>, possimus vel earum est optio ut id. Cum accusantium eaque commodi nam debitis, laudantium enim? Nostrum perferendis sint mollitia ipsam sunt et, repellat ad quos assumenda?
+      </p>
+    </center>
+  </div>
+  <div> <!-- Lentelės -->
+    <h1>Lentelės</h1>
+    <ul>
+      <li>table - Lentelė</li>
+      <li>thead - Table Head - Lentelės viršus / pirmoji eilutė</li>
+      <li>tbody - Table Body - Lentelės kūnas/duomenys</li>
+      <li>tfoot - Table Foot - Lentelės apačią / paskutinė eilutė</li>
+      <li>tr - Table Row - Lentelės eilutė</li>
+      <li>th - Table Heading - Lentelės antraštė (stulpelio/eilutės pavadinimas)</li>
+      <li>td - Table Data - Lentelės duomuo</li>
+      <li>caption - Lentelės pavadinimas</li>
+      <li>colgroup - Column Group - Stulpelių grupės</li>
+      <li>col - Column - Stulpelis</li>
+    </ul>
+    <table border>
+      <caption align="top">Asmenys</caption>
+      <colgroup>
+        <col span="3" style="background-color: rgb(214, 255, 148);">
+        <col span="2" style="background-color: rgb(140, 255, 255);">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Vardas</th>
+          <th>Amžius</th>
+          <th>Ūgis</th>
+          <th>Plaukų spalva</th>
+          <th>Akių spalva</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rokas</td>
+          <td>26</td>
+          <td>186</td>
+          <td>Ruda</td>
+          <td>Mėlyna</td>
+        </tr>
+        <tr>
+          <td>Petras</td>
+          <td>99</td>
+          <td rowspan="2">150</td>
+          <td>Oranžinė</td>
+          <td>Ruda</td>
+        </tr>
+        <tr>
+          <td>Jonas</td>
+          <td>55</td>
+          <td colspan="2">Mėlyna</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Bendras dėstytojų kiekis:</td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>

@@ -262,5 +262,42 @@
       <button role="submit">Pateikti</button>
     </form>
   </div>
+  <div> <!-- Formos užduotis -->
+    <h1>Formos užduotis</h1>
+    <form>
+      <div>
+        <label for="name">Vardas:</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div>
+        <label for="email">El. paštas:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="pass">Slaptažodis</label>
+        <input type="password" name="pass" id="pass" required>
+      </div>
+      <div>
+        <span>Pasirinkite savo lytį:</span>
+        <div>
+          <label for="male">Vyras</label>
+          <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+          <label for="female">Moteris</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+          <label for="non">nonBinary</label>
+          <input type="radio" name="gender" id="non" value="non" checked required>
+        </div>
+      </div>
+      <div>
+        <label for="comment">Palikite savo atsiliepimą:</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Rašykite savo atsiliepimą čia..." required></textarea>
+      </div>
+      <input type="submit" value="Pateikti">
+    </form>
+  </div>
 </body>
 </html>

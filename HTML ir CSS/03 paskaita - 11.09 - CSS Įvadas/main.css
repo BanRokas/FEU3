@@ -37,3 +37,40 @@ h2{
 .linijinisBlokinis{
   display: inline-block;
 }
+
+.wrap{
+  border: 1px solid rgb(0, 0, 0);
+}
+.display_ib{
+  display: inline-block;
+}
+.noTextSize{
+  font-size: 0;
+}
+.w400{
+  width: 400px;
+}
+.w133{
+  width: 133px;
+}
+.h300{
+  height: 300px;
+}
+.h100{
+  height: 100px;
+}
+.bg{
+  background-color: rgb(192, 201, 255);
+}
+.yellowBg{
+  background-color: yellow;
+}
+.greenBg{
+  background-color: green;
+}
+.redBg{
+  background-color: red;
+}
+.whiteBg{
+  background-color: white;
+}

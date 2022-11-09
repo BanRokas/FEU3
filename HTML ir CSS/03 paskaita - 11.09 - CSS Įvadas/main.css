@@ -83,6 +83,14 @@ h2{
 .whiteBg{
   background-color: #fff;
 }
+.LT_flag_linear_gradient{
+  background-image: linear-gradient(
+    to bottom,
+    yellow 33%,
+    green 33% 66%,
+    red 66%
+  );
+}
 
 .t10{
   top: 10px;

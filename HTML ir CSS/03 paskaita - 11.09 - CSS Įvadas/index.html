@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 paskaita - CSS Įvadas</title>
+  <style>
+    p{
+      color: orange;
+      background-color: black;
+    }
+  </style>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- 
+    rašymo būdai
+    selector
+    display (3)
+    color
+    position
+    menu
+    page su semantic tags
+  -->
+  <div> <!-- CSS rašymo būdai -->
+    <h1>CSS rašymo būdai</h1>
+    <h2>Inline - Linijinis</h2>
+    <p style="color: darkgreen; font-size: 20px;">
+      <span style="background-color: rgb(136, 196, 255);">
+        Linijinis stilius yra, kai elementui, kurį stilizuojame suteikiame style atributą ir jo viduje aprašome stilius. Neturi perpanaudojimo galimybės ir yra skirtas tiktais testavimui.
+      </span>
+    </p>
+    <h2>Internal - Vidinis</h2>
+    <p>
+      Vidinis stilius yra, kai HTML failo viduje, head tag'o dalyje pasirašome style tag'ą ir tame style tag'e rašome CSS kodą. Turi šiek tiek perpanaudojimo galimybių (nes turi selektorius) ir dažniausiai naudojamas testavimui.
+    </p>
+    <h2>External - Išorinis</h2>
+    <p>
+      Išorinis stilius yra rašomas atskirame CSS faile ir yra prijungiamas prie HTML failo naudojant link tag'ą. Turi visas reikalingas/norimas perpanaudojimo galimybes, yra plačiausiai naudojamas ir galutinio projekto variante, turėtų likti tik šis stiliaus rašymo būdas.
+    </p>
+  </div>
+  <div> <!-- Basic selectors -->
+    <h1>Basic Selectors</h1>
+    <h2>Element / Tag</h2>
+    <p>
+      Selektinami visi tag'ai pagal nurodytą elementą.<br>
+      <span class="svarbusTekstas">Pvz.: h2 -> parinks visus h2 elementus esančius HTML'e.</span>
+    </p>
+    <h2>Class</h2>
+    <p class="svarbusTekstas raudonasTekstas">
+      Klasė sukuriame kokiu tik norime logišku ir trumpu pavadinimu. CSS'e tam, kad nurodytume, jog kuriame klasę - sugalvoto pavadinimo pradžioje parašome tašką. HTML'e norint priskirti klasę elementui, tam elementui suteikiame atributą "class" ir jam priskiriame sugalvotą klasės pavadinimą be taško.<br>
+      Pvz.: CSS'e: .klasesVardas; HTML'e: &lt;p class="klasesVardas"&gt;<br>
+      Klasės turi daug su daug santykį. Vienas elementas gali turėti daugelį klasių ir viena klasė gali būti priskirta daugeliui elementų.
+    </p>
+    <h2>ID</h2>
+    <p id="remeliai">
+      ID sukuriame kokiu tik norime logišku ir trumpi pavadinimu. CSS'e tam, kad nurodytume, jog kuriame ID - sugalvoto pavadinimo pradžioje parašome groteles. HTML'e norint sriskirti ID elementui, tam elementui suteikiame atributą "id" ir jam prisikiriame sugalvotą ID pavadinimą be grotelių.<br>
+      Pvz.: CSS'e: #idPavadinimas; HTML'e: &lt;p id="idPavadinimas"&gt;<br>
+      ID turi vienas su vienu santykį. Vienas elementas gali turėti TIK vieną ID. Ir vienas ID turėtų būti priskirtas TIK vienam elementui.
+    </p>
+  </div>
+  <div id="displays"> <!-- Displays -->
+    <h1>Displays</h1>
+    <h2>Inline - Linijinis</h2>
+    <p>
+      Linijiniai elementai užima tik tiek vietos kiek reikalauja jų viduje esantis turinys (content). Sustoja vienas šalia kito. Bet jie nepriima pločio ir aukščio nustatymų.
+    </p>
+    <div>
+      <!-- div.kvadratas.linijinis*3 -->
+      <div class="kvadratas linijinis">1</div>
+      <div class="kvadratas linijinis">2</div>
+      <div class="kvadratas linijinis">3</div>
+    </div>
+    <h2>Block - Blokinis</h2>
+    <p>
+      Blokiniai elementai užima visą eilutę arba nurodytą dydį. Bet jie neįsileidžia kitų elementų į tą pačią eilutę, net jei jų dydžio nustatymai visos eilutės neužima.
+    </p>
+    <div>
+      <div class="kvadratas blokinis">1</div>
+      <div class="kvadratas blokinis">2</div>
+      <div class="kvadratas blokinis">3</div>
+    </div>
+    <h2>Inline-Block - Linijinis-Blokinis</h2>
+    <p>
+      Linijiniai-Blokiniai elementai užima tik tiek vietos kiek reikalauja jų viduje esantis turinys (content), jeigu neturi dydžio nustatymų. Turint dydžio nustatymus, būna tokio dydžio, kokio nustatyta. Gali išsidėstyti vienoje eilutėje.
+    </p>
+    <div>
+      <div class="kvadratas linijinisBlokinis">1</div>
+      <div class="kvadratas linijinisBlokinis">2</div>
+      <div class="kvadratas linijinisBlokinis">3</div>
+    </div>
+  </div>
+</body>
+</html>

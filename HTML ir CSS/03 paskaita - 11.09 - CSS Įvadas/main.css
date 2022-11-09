@@ -1,0 +1,39 @@
+h2{
+  color: red;
+  letter-spacing: 5px;
+}
+
+.svarbusTekstas{
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.raudonasTekstas{
+  color: red;
+}
+
+#remeliai{
+  border: 3px dashed lightcyan;
+}
+
+#melynasTekstas{
+  color: blue;
+}
+
+.kvadratas{
+  width: 200px;
+  height: 200px;
+  background-color: beige;
+  border: 2px solid black;
+  font-size: 30px;
+}
+.linijinis{
+  display: inline;
+}
+.blokinis{
+  display: block;
+}
+.linijinisBlokinis{
+  display: inline-block;
+}

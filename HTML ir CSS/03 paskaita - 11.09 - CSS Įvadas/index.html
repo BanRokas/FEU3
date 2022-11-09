@@ -135,5 +135,63 @@
       Trumpiniai: #0f00 - nematoma (žalia); #0f0f - pilnai matoma (žalia); ...
     </p>
   </div>
+  <div id="positions" class="relative">
+    <h1>Positions</h1>
+    <h2>Static</h2>
+    <p>
+      Statinė pozicija nieko nedaro. Nei pakeičia elemento poziciją, nei suteikia jam galimybę naudotis top, left, right, bottom, z-index stiliais.<br>
+      Statinė pozicija gali būti suteikiama kaip placeholder'is, arba panaudota tam, kad nuimti kokią kitą poziciją.
+    </p>
+    <div>
+      <div class="kvadratas display_ib static">static 1</div>
+      <div class="kvadratas display_ib static">static 2</div>
+      <div class="kvadratas display_ib static t10">static 3</div>
+      <div class="kvadratas display_ib static">static 4</div>
+    </div>
+    <h2>Relative</h2>
+    <p>
+      Relative pozicija pati jokių stilių nesuteikia. Suteikia galimybę naudotis top, left, right, bottom, z-index stiliais. Nurodo ribas kažkur jo viduje esančian elementui su absolute pozicija.<br>
+      Top, left, right arba bottom nustatymas pastumia elementą nuo jo pradinės pozicijos, per nurodytą atstumą, nuo nurodytos kraštinės.
+    </p>
+    <div>
+      <div class="kvadratas display_ib static">static 1</div>
+      <div class="kvadratas display_ib relative t10 z10">relative 2</div>
+      <div class="kvadratas display_ib relative r30 z5">relative 3</div>
+      <div class="kvadratas display_ib static">static 4</div>
+    </div>
+    <h2>Absolute</h2>
+    <p>
+      Elementas su absolute pozicija išeina iš puslapio tėkmės. Suteikia galimybę naudotis top, left, right, bottom, z-index stiliais.<br>
+      Top, left, right arba bottom nustatymas pastumia elementą per nurodytą atstumą, nuo nurodytas kraštinės, nuo pradinio viewport (ekrano vaizdo) ARBA nuo artimiausio protėvinio elemento, kuris turi relatyviąją poziciją.
+    </p>
+    <div class="relative">
+      <div class="kvadratas display_ib static">static 1</div>
+      <div class="kvadratas display_ib static">static 2</div>
+      <div class="kvadratas display_ib absolute b50 r30">absolute 3</div>
+      <div class="kvadratas display_ib static">static 4</div>
+    </div>
+    <h2>Fixed</h2>
+    <p>
+      Elementas su fixed pozicija išeina iš puslapio tėkmės. Suteikia galimybę naudotis top, left, right, bottom, z-index stiliais. Fiksuoja elementą vienoje viewport vietoje ir jis juda kartu su ekranu kai vartotojas scroll'ina per puslapį.<br>
+      Top, left, right arba bottom nustatymas nurodo, nuo kurios viewport (ekrano vaizdo) vietos jis atsitrukia per nurodytą atstumą, nuo nurodytos kraštinės.
+    </p>
+    <div>
+      <div class="kvadratas display_ib static">static 1</div>
+      <div class="kvadratas display_ib static">static 2</div>
+      <div class="kvadratas display_ib fixed l80 b50">fixed 3</div>
+      <div class="kvadratas display_ib static">static 4</div>
+    </div>
+    <h2>Sticky</h2>
+    <p>
+      Sticky pozicija iš savęs nieko nedaro. Bet suteikia galimybę naudotis top, left, right, bottom, z-index stiliais.<br>
+      Top, left, right arba bottom nustatymas nusako, per kokį atstumą nuo viewport (ekrano vaizdo) kraštų jis prilips ir judės savo tėvinio elemento ribose.
+    </p>
+    <div class="h500 bg">
+      <div class="kvadratas display_ib static">static 1</div>
+      <div class="kvadratas display_ib sticky t10">sticky 2</div>
+      <div class="kvadratas display_ib static">static 3</div>
+      <div class="kvadratas display_ib static">static 4</div>
+    </div>
+  </div>
 </body>
 </html>

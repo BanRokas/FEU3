@@ -1,0 +1,2 @@
+1) Sukurti 3-5 vėliavų su jų šalių pavaidnimais, naudojant skirtingus display. Vėliavų spalvų išdėstymas turi būti vienas po kitu IR vienas šalia kito.
+  extra) Kam per lengva - padaryti kokią sudėtingesnę vėliavą (Japonijos, Amerikos, herbą, Suomijos).

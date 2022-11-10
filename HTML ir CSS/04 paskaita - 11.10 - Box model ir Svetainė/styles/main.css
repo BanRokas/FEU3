@@ -1,3 +1,15 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+}
+
+[id]{
+  scroll-margin-top: 80px;
+}
+
 .boxModelPvz{
   /* Turinys */
   display: block;
@@ -128,4 +140,39 @@
 }
 .kortele:hover .infoBox{
   opacity: 1;
+}
+
+header{
+  background-color: rgb(75, 97, 66);
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo, .mainMenu{
+  display: inline-block;
+}
+
+.logo img{
+  height: 80px;
+  width: auto;
+}
+
+.mainMenu{
+  float: right;
+}
+.mainMenu ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.mainMenu > ul > li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.link{
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 80px;
 }

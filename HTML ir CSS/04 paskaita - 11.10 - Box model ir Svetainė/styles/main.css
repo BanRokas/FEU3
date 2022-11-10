@@ -99,3 +99,33 @@
     yellow 170deg
   );
 }
+
+.kortele{
+  width: 600px;
+  height: 300px;
+  border: 2px solid red;
+  padding: 25px;
+}
+
+.bgImage1{
+  background-image: url('../images/nature3.jpg');
+  background-size: cover;
+}
+.infoBox{
+  opacity: 0;
+  background-color: #fffa;
+  box-sizing: border-box;
+  padding: 30px 10px;
+  height: 100%;
+  width: 50%;
+  transition: all 1s ease 0s;
+}
+.infoBox *{
+  padding: 0 0 30px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px #fa0;
+}
+.kortele:hover .infoBox{
+  opacity: 1;
+}

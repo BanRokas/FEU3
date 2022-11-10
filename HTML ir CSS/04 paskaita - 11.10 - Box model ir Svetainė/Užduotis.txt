@@ -1,1 +1,2 @@
 1) Sukurti 5 korteles pagal pateiktą pavyzdį apie norimas aplankyti / lankytas vietas.
+  extra) Sukurti transformaciją, kad tik tada kai su pele užeini ant kortelės atsirastų info box.

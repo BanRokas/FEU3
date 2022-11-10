@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 paskaita - Box model</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <!--
+    box model
+    background
+    semantic tags
+    menu
+    page
+  -->
+  <div id="boxModel">
+    <h1>Box Model</h1>
+    <ol>
+      <li>Content - Turinys</li>
+      <li>Padding - Pamušalas</li>
+      <li>Border - Rėmelis</li>
+      <li>Margin - Paraštė</li>
+      <li>Position - Pozicija</li>
+    </ol>
+    <div class="boxModelPvz">Box Modelis Pavyzdys</div>
+    <div> <!-- Content -->
+      <h2>Content</h2>
+      <p>
+        Turinys - dėžutės modelio vidurinė dalis, kurioje yra atvaizduojama informacija vartotojui.
+      </p>
+    </div>
+    <div> <!-- Padding -->
+      <h2>Padding</h2>
+      <p>
+        Pamušalas - pirmasis turinio sluoksnis, kuris nurodo per kokį atstumą turinys bus atitraukas nuo rėmelio.<br>
+        Pamušalas yra vizualiai matomas vartotojui ir reaguoja į vartotojo interakcijas.
+      </p>
+      <ul>
+        <li>padding: top/right/bottom/left;</li>
+        <li>padding: top/bottom right/left;</li>
+        <li>padding: top right/left bottom;</li>
+        <li>padding: top right bottom left;</li>
+        <li>padding-top: top;</li>
+        <li>padding-right: right;</li>
+        <li>padding-bottom: bottom;</li>
+        <li>padding-left: left;</li>
+      </ul>
+    </div>
+    <div> <!-- Border -->
+      <h2>Border</h2>
+      <p>
+        Rėmelis yra antrasis turinio sluoksnis, kuris turi plotį, tipą ir spalvą. Ir jo pločio nustatymas nurodo, kokiu atstumu bus atskirtas Margin ir Padding.<br>
+        Rėmelis yra vizualiai matomas vartotojui ir reaguoja į vartotojo interakcijas.
+      </p>
+      <ul>
+        <li>border: width style color;</li>
+        <li>border-width: width;
+          <ul>
+            <li>border-width: top/right/bottom/left;</li>
+            <li>border-width: top/bottom right/left;</li>
+            <li>border-width: top right/left bottom;</li>
+            <li>border-width: top right bottom left;</li>
+            <li>border-top-width: width;</li>
+            <li>border-right-width: width;</li>
+            <li>border-bottom-width: width;</li>
+            <li>border-left-width: width;</li>
+          </ul>
+        </li>
+        <li>border-style: style;</li>
+        <li>border-color: color;</li>
+        <li>border-width/style/color: top/right/bottom/left;</li>
+        <li>border-top/right/bottom/left-width/style/color: width/style/color;</li>
+        <li>border-radius: radius;</li>
+        <li>border-corner-radius: radius;</li>
+      </ul>
+    </div>
+    <div> <!-- Margin -->
+      <h2>Margin</h2>
+      <p>
+        Paraštė yra trečiasis turinio sluoksnis, kuris nurodo per kokį atstumą nuo rėmelio bus atitraukti kiti aplinkiniai elementai.<br>
+        Paraštė nėra vizualiai matomas vartotojui ir nereaguoja į vartotojo interakcijas.
+      </p>
+      <ul>
+        <li>margin: top/right/bottom/left;</li>
+        <li>margin: top/bottom right/left;</li>
+        <li>margin: top right/left bottom;</li>
+        <li>margin: top right bottom left;</li>
+        <li>margin-top: top;</li>
+        <li>margin-right: right;</li>
+        <li>margin-bottom: bottom;</li>
+        <li>margin-left: left;</li>
+      </ul>
+    </div>
+    <div> <!-- Position -->
+      <h2>Position</h2>
+      <p>
+        Pozicija - nurodo kaip elementas bus pozicionuotas puslapyje. Fore more info: <a href="../03 paskaita - 11.09 - CSS Įvadas/index.html#positions" target="_blank">click me</a>.
+      </p>
+    </div>
+  </div>
+  <div id="selectors">
+    <h1>Selectors</h1>
+    <ul>
+      <li>* - visko</li>
+      <li>selector, selector - keletas selektorių</li>
+      <li>element1/class1/id1 element2/class2/id2 - element1/class1/id1 betkur viduje esantis element2/class2/id2</li>
+      <li>element1/class1/id1 > element2/class2/id2 - element1/class1/id1 iš karto viduje esantis element2/class2/id2</li>
+      <li>selector:hover - ant element (į kurį nurodo selektorius) užėjęs kursorius</li>
+    </ul>
+  </div>
+  <div id="backgrounds">
+    <h1>Fonai</h1>
+    <div class="fonas1"> fonas 1 </div>
+    <div class="fonas2">
+      <div class="bg_op"></div>
+      fonas2
+    </div>
+    <div class="fonas3"> 
+      <img src="./images/nature2.jpg" alt="backgroundImage">
+      fonas 3 
+    </div>
+    <div class="fonas4"> fonas 4 </div>
+    <div class="fonas5"> fonas 5 </div>
+    <div class="fonas6"> fonas 6 </div>
+    <div class="fonas7"> fonas 7 </div>
+  </div>
+</body>
+</html>

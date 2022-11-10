@@ -1,2 +1,18 @@
 1) Sukurti 5 korteles pagal pateiktą pavyzdį apie norimas aplankyti / lankytas vietas.
   extra) Sukurti transformaciją, kad tik tada kai su pele užeini ant kortelės atsirastų info box.
+2) Sukurti svetainę laisva tema su:
+	2.1) Menu su:
+		2.1.1) Logotipu kairėje pusėje (img arba img+text)
+		2.1.2) Nuorodomis dešinėje pusėje
+		2.1.3 extra) dropDown į kitus puslapius or smth
+	2.2) Main sekciją, kurioje būtų:
+		2.2.1) Hero dalis (apie ką svetainė labai trumpai drūtai)
+		2.2.2) About us (kiek plačiau apie ką svetainė)
+		2.2.3) Our stats (lentelė, kurioje kokie nors duomenys)
+		2.2.4) Sections (keletas straipsnių apie veiklas/dalykus/renginius...)
+		2.2.5) Comment dalis (forma, kurioje būtų vieta palikti atsiliepimą)
+		2.2.6) Contact us dalis (kontaktai svetainės kūrėjo/įmonės/organizacijos or smth)
+	2.3) Footer su:
+		2.3.1) Copyrights
+		2.3.2) Nuoroda į pradinio puslapio pradžią
+		2.3.3 extra) ikonas su nuorodomis į kitus puslapius or smth 

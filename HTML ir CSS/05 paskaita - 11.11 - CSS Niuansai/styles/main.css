@@ -1,0 +1,46 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body{
+  font-family: 'Noto Sans Mono';
+  font-weight: 400;
+  font-style: italic;
+}
+
+#paveldejimas > ul{
+  color: red;
+  font-size: 10px;
+
+  margin-left: 50px;
+  border: 3px solid black;
+
+  list-style-type: square;
+}
+
+/* p{
+  color: orange !important;
+} */
+#priorities p{
+  color: blue;
+}
+/* p{
+  color: yellow !important;
+} */
+main section p{
+  color: red;
+}
+.redText{
+  color: red;
+}
+#priorities a{
+  text-decoration: none;
+}
+.veryImportant{
+  color: red;
+  font-size: larger;
+  font-weight: bolder;
+  text-transform: uppercase;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS nuansai</title>
+  <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css"> -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!--
+    Vaikinis/Tėvinis elementas
+    CSS paveldėjimas
+    Default stiliai
+    Reset/Normalize CSS
+    CSS prioritetai
+    Google Fonts
+    Icons
+  -->
+  <main>
+    <section id="vaikinisTevinis">
+      <h1>Vaikinis / Tėvinis elementas</h1>
+      <p>
+        Tėvinis elementas gali turėti daugelį vaikinių elementų.<br>
+        Vaikinis elementas, gali turėti TIK vieną tėvinį elementą.
+      </p>
+    </section>
+    <section id="paveldejimas">
+      <h1>Paveldėjimas</h1>
+      <p>
+        Paveldėti stilius, gali tik vaikinis elementas iš tėvinio elemento.<br>
+        Paveldimi stiliai yra tie, kurie keičia elemento išvaizdą. Pvz.: color, font-size, font-family... <br>
+        Nepaveldimi stiliai yra tie, kurie keičia elemento būseną. Pvz.: width, height, display, border, position...<br>
+        Net paveldėti stiliai, gali nebūti atvaizduoti dėl stilių prioritetų.
+      </p>
+      <ul>
+        <li>labas</li>
+        <li>labas</li>
+        <li>labas
+          <ul>
+            <li>ate</li>
+            <li>ate</li>
+            <li>ate</li>
+          </ul>
+        </li>
+        <li>labas</li>
+      </ul>
+    </section>
+    <section id="defaultStyles">
+      <h1>Numatytieji stiliai</h1>
+      <h2>Numatytieji stiliai</h2>
+      <h3>Numatytieji stiliai</h3>
+      <p>
+        Numatytieji stiliai yra tag'ams automatiškai naršyklės suteikti stiliai. Tarp skirtingų naršyklių, numatytieji stiliai gali minimalistiškai keistis ir šitaip sugadinti svetainės vaizdą skirtingų naršyklių vartotojams.<br>
+        Tam, kad nebūtų problemų kuriant dizainą skirtingoms naršyklėms, yra naudojami Reset arba Normalize CSS'ai.<br>
+        Reset - resetina visus stilius (ištrina stilius).<br>
+        Normalize - suvienodina visus stilius tarp naršyklių ir panaikina dalį kenkėjiškų stilių.
+      </p>
+    </section>
+    <section id="priorities">
+      <h1>CSS Prioritetai</h1>
+      <ol>
+        <li>Inline Style - 1000</li>
+        <li>ID - 100</li>
+        <li>Class - 10</li>
+        <li>Element - 1</li>
+        <li>CSS points</li>
+        <li>CSS Order (in CSS code)</li>
+        <li>Default styles</li>
+        <li>Inheritence</li>
+      </ol>
+      <a href="https://www.google.lt">Google</a>
+      <p class="redText">
+        Esant dviem selektoriam, kurie nusako to paties elemento vienodus stilius, yra atsižvelgiama į tų selektorių prioritetus. Aukštesnį balą turintys prioritetai, turi aukštesnį prioritetą.<br>
+        Esant dviem vienodo prioritetų balo selektoriams, keičiant tą patį elemento stilių, yra atsižvelgiama į CSS eiliškumą. Kuris CSS stilius aprašytas vėliau, tas ir bus pritaikomas.
+      </p>
+      <p>
+        <span class="veryImportant">Jeigu įmanoma - nenaudoti!!!</span> !important prierašas prie stiliaus ignoruoja visus prioritetus ir suteikia tą stilių ir niekas jo negali pakeisti, apart kito !important prierašo, kuris turi aukštesnį prioritetą.
+      </p>
+    </section>
+    <section id="googleFonts">
+      <h1>
+        <a href="https://fonts.google.com" target="_blank">Google Fonts</a>
+      </h1>
+      <p>
+        Norėdamas panaudoti kažkokį importuotą šriftą. Turi jį susirasti Google Fonts puslapyje, pasirinkti norimą šriftą ir jo stilius, prisijungti pateiktą kodą prie savo kodo (import/link) ir tuomet naudoti prisidėtąjį šriftą.
+      </p>
+    </section>
+    <section id="icons">
+      <h1>Icons</h1>
+      <p>
+        Ikona yra mažas paveiksliukas.<br>
+        Tam, kad į puslapį įkelti ikonas, reikia naudoti i arba span tag'ą, nes ikonos neturi jom priskirto tag'o.
+      </p>
+      <p>
+        Ikonos stilizuojamos kaip tekstas. Nepriskiriame width/height, priskiriame font-size. Nepriskiriame background-color, priskiriame color...
+      </p>
+      <h2>Font-Awesome</h2>
+      <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">Biblioteka</a>
+      <i class="fa fa-battery-quarter"></i>
+      <span class="fa fa-500px"></span>
+      <span class="fa">&#xf270;</span>
+      <h2>Bootstrap (GlyphIcon)</h2>
+      <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">Biblioteka</a>
+      <i class="glyphicon glyphicon-apple"></i>
+      <span class="glyphicon glyphicon-cloud"></span>
+      <span class="glyphicon">&#xe129;</span>
+      <h2>Google (Material Icons)</h2>
+      <a href="https://fonts.googleapis.com/icon?family=Material+Icons">Biblioteka</a>
+      <i class="material-icons">adb</i>
+      <span class="material-icons">adjust</span>
+      <span class="material-icons">&#xe862;</span>
+    </section>
+  </main>
+</body>
+</html>

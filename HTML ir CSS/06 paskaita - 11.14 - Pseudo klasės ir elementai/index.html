@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 paskaita - Pseudo klasės ir elementai</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!--
+    Pseudo klasės ir elementai (selektoriai)
+    Multimedijos elementai (video, audio, maps, <iframe>)
+    Lentelės su pseudo klasėm/elemetais
+    Formos su pseudo klasėm/elemetais
+    Animacijos ir perėjimai
+  -->
+  <main>
+    <section id="pseudoSelektoriai">
+      <h1>
+        <a href="https://www.w3schools.com/cssref/css_selectors.php" target="_blank">Pseudo selektoriai</a>
+      </h1>
+      <ul>
+        <li>*</li>
+        <li>element</li>
+        <li>.class</li>
+        <li>#id</li>
+        <li>selector1, selector2</li>
+        <li>selector1 selector2</li>
+        <li>selector1 > selector2</li>
+        <li>element.class#id - elementas turintis nurodytą klasę/es ir/arba nurodytą id</li>
+        <li>selector1 + selector2 - iš karto už selector1 einantis selektor2 (tame pačiame lygyje)</li>
+        <li>selector1 ~ selector2 - už selector1 visi einantys selector2 (tame pačiame lygyje)</li>
+        <li>[attribute] - atributas</li>
+        <li>[attribute=value] - atributas turintis nurodytą reikšmę</li>
+        <li>[attribute~=value] - atributas, kurio reikšmėje yra nurodytas žodis</li>
+        <li>[attribute*=value] - atributas, kurio reikšmėje yra nurodyta žodio dalis</li>
+        <li>[attribute|=value] - atributas, kurio reikšmė yra value arba value-kazkas</li>
+        <li>[attribute^=value] - atributas, kurio reikšmė prasideda value...</li>
+        <li>[attribute$=value] - atributas, kurio reikšmė pasibaigia ...value</li>
+        <li>:link - paprasta/nelankyta nuoroda</li>
+        <li>:visited - lankyta nuoroda</li>
+        <li>:hover - užėjęs kursorius</li>
+        <li>:active - aktyvi (paspaudimo momento) nuoroda</li>
+        <li>element:empty - tuščias elementas (be content)</li>
+        <li>::marker - sąrašo elementų žymės</li>
+        <li>:not(selector) - neparenka nurodyto selektoriaus</li>
+      </ul>
+      <div class="selektoriuPvz">
+        <p class="rytoTekstas" id="hallo">labas rytas</p>
+        <p>tekstas</p>
+        <h1>tekstas more</h1>
+        <p>tekstas more and more</p>
+        <h1 class="heading irDar">tekstas more2</h1>
+        <div>
+          <p>labas</p>
+        </div>
+        <p>tekstas more and more2</p>
+        <p>labas rytas</p>
+      </div>
+    </section>
+    <section id="multimedija">
+      <h1>Multimedija</h1>
+      <p>
+        Iframe - skirtas įkelti kitos svetainės dalį/turinį, arba visą svetainę, į savo svetainę.
+      </p>
+      <div id="video">
+        <!-- <video controls>
+          <source src="" type="video/mp4">
+          <source src="" type="">
+          <source src="" type="">
+        </video>
+        <video src="" controls></video> -->
+        <iframe width="800" height="500" src="https://youtube.com/embed/EzAk_QKOijQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="audio">
+        <audio controls>
+          <source src="" type="audio/mp3">
+          <source src="" type="">
+          <source src="" type="">
+        </audio>
+        <audio src="" controls></audio>
+      </div>
+      <div id="maps">
+        <div id="maps">JS prijungi</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2650.714794568272!2d23.88145956342049!3d54.89782236983526!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1668415551600!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div id="page">
+        <iframe src="https://lrs.lt/" height="400" width="500" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

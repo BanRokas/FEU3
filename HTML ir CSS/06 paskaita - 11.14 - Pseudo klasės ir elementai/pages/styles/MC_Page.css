@@ -45,13 +45,13 @@ section img {
   width: 100%;
 }
 
-h2 {
+h1 {
   background: #0b680b;
   color: white;
   padding: 10px;
   margin-top: 0;
 }
 
-.grey-block h2 {
+.grey-block h1 {
   margin-top: 20px;
 }

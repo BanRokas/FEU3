@@ -1,1 +1,2 @@
 1) Atkurti kuo panašesnę svetainę į pateiktą (images/MC_Page.png)
+2) Atkurti kuo panašesnę svetainę į pateiktą (images/Movies_Page.png) be jokių funkcionalumų apart video - iframe.

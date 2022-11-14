@@ -11,7 +11,7 @@
   <!--
     Pseudo klasės ir elementai (selektoriai)
     Multimedijos elementai (video, audio, maps, <iframe>)
-    Lentelės su pseudo klasėm/elemetais
+    Lentelės su pseudo klasėm/elementais
     Formos su pseudo klasėm/elemetais
     Animacijos ir perėjimai
   -->
@@ -45,6 +45,16 @@
         <li>element:empty - tuščias elementas (be content)</li>
         <li>::marker - sąrašo elementų žymės</li>
         <li>:not(selector) - neparenka nurodyto selektoriaus</li>
+        <li>:first-child - parenka pirmąjį vaikinį elementą</li>
+        <li>:last-child - parenka paskutinįjį vaikinį elementą</li>
+        <li>:only-child - parenka vienintelį vaikinį elementą (jeigu jis yra vienas)</li>
+        <li>:first-of-type - parenka pirmąjį nurodyto tipo elementą</li>
+        <li>:last-of-type - parenka paskutinįjį nurodyto tipo elementą</li>
+        <li>:only-of-type - parenka vienintelį nurodyto tipo elementą</li>
+        <li>:nth-child(n) - parenka nurodytą/us vaikinį/ius elementą/us</li>
+        <li>:nth-last-child(n) - nuo galo parenka nurodytą/us vaikinį/ius elementą/us</li>
+        <li>:nth-of-type(n) - parenka nurodytą/us elementą/us pagal tipą</li>
+        <li>:nth-last-of-type(n) - nuo galo parenka nurodytą/us elementą/us pagal tipą</li>
       </ul>
       <div class="selektoriuPvz">
         <p class="rytoTekstas" id="hallo">labas rytas</p>
@@ -52,10 +62,14 @@
         <h1>tekstas more</h1>
         <p>tekstas more and more</p>
         <h1 class="heading irDar">tekstas more2</h1>
-        <div>
+        <!-- <div>
           <p>labas</p>
-        </div>
+        </div> -->
         <p>tekstas more and more2</p>
+        <p>tekstas more and more3</p>
+        <p>tekstas more and more4</p>
+        <h1>tekstas more1</h1>
+        <h1>tekstas more2</h1>
         <p>labas rytas</p>
       </div>
     </section>

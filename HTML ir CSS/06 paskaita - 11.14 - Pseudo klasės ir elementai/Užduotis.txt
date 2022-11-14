@@ -1,2 +1,8 @@
 1) Atkurti kuo panašesnę svetainę į pateiktą (images/MC_Page.png)
 2) Atkurti kuo panašesnę svetainę į pateiktą (images/Movies_Page.png) be jokių funkcionalumų apart video - iframe.
+
+3) Susikurti lentelę (laisva tema, apie ką norite), kuri būtų bent 5 eilučių ir 5 stulpelių.
+  3.1) Pirmo ir paskutinio stulpelio elementai turėtų kitokią teksto spalvą.
+  3.2) Viršutinė/pirmoji eilutė būtų kitokios fono spalvos.
+  3.3) Kas antra lentelės kūno eilutė būtų skirtingos fono spalvos.
+

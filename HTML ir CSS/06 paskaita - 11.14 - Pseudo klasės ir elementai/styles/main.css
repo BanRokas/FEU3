@@ -44,3 +44,7 @@ li::marker{
 .selektoriuPvz > :not(div){
   background-color: blanchedalmond;
 }
+
+.selektoriuPvz :nth-child(5n+3){
+  color: green;
+}

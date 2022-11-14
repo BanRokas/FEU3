@@ -6,3 +6,10 @@
   3.2) Viršutinė/pirmoji eilutė būtų kitokios fono spalvos.
   3.3) Kas antra lentelės kūno eilutė būtų skirtingos fono spalvos.
 
+4 extra) Pasidaryti lentelę (laisva tema (kitokia nei pirma), apie ką norite), kuri būtų bent 5 eilučių ir 5 stulpelių.
+  4.1) Padaryti, kad užėjus ant lentelės elemento, jo fono ir teksto spalva pasikeistų.
+  4.2) Padaryti, kad užėjus ant lentelės elemento, visos to elemento eilutės fono ir teksto spalva pasikeistų.
+  4.3) Padaryti, kad užėjus ant lentelės elemento, visos to elemento stulpelio fono spalva pasikeistų. (naudoti ::before arba ::after ir pozicijas) (galų gale just google)
+  P.S. Spalvos 4.1 4.2 ir 4.3 užduotyje turi būti skirtingos. Galima keisti ne tik spalvas jei yra noro ir laiko.
+
+5) Atkurti kuo panašesnę svetainę į pateiktą (images/Table_Page.png)

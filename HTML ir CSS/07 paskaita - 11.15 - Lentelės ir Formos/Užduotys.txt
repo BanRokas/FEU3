@@ -7,3 +7,6 @@
   2.5) Užvedus ant “Register” mygtuko patamsėja jo fonas
   2.6) Paspaudus checkbox pasikeičia “I agree with the Terms & Conditions” spalva į mėlyną
   2.7) Ant neteisingai įvestų laukelių uždedamas raudonas rėmelis, ant teisingai įvestų - žalias
+3) Atkurti pavaizduotą formą (images/form2.png)
+  3.1) Upload a photo laukelis yra customInput su file tipu.
+  3.2) Gender, Spayed or Neutered, Weight yra customInput su radio tipu.

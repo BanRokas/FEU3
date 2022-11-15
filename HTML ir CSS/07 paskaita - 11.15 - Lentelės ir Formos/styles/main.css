@@ -1,0 +1,52 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+section{
+  background-color: antiquewhite;
+}
+
+.formContainer{
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff;
+  padding: 30px 25px;
+  border: 1px solid black;
+}
+
+.formContainer h1{
+  margin-top: 0;
+}
+
+.twoInputs > div{
+  display: inline-block;
+  width: 48%;
+}
+.twoInputs > div:first-child{
+  margin-right: 20px;
+}
+
+#task1 label{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 10px 2px;
+  font-size: 14px;
+}
+#task1 input, #task1 textarea{
+  display: block;
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px #c2c2c2 solid;
+}
+#task1 textarea{
+  height: 100px;
+}
+
+#task1 input[type=submit]{
+  display: inline-block;
+  width: unset;
+  padding: 10px;
+  background-color: #43fb43;
+  border: 1px solid #040;
+  border-radius: 5px;
+  color: white;
+}

@@ -113,4 +113,12 @@ section{
   margin-left: 30px;
 }
 
+.customRadios input{
+  display: none;
+}
+
+.customRadios input:checked + label{
+  color: green;
+}
+
 /* TASK 3 */

@@ -1,0 +1,160 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,300,100|Open+Sans+Condensed:300');
+
+body {
+  font-family: Open Sans, sans-serif;
+}
+
+menu {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.window {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.window .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background: #24282c;
+  color: #ddd;
+}
+
+.separator {
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #353535;
+  margin: 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.menu a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.menu-name {
+  text-transform: uppercase;
+  padding: 0 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.no-bullets {
+  list-style-type: disc;
+}
+
+.menu > ul > li {
+  list-style: none;
+}
+
+.menu > ul > li > a {
+  position: relative;
+  font-size: 14px;
+  padding: 10px 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.menu > ul > li.active {
+  list-style-type: disc;
+  color: #ff3a3a;
+  padding-bottom: 10px;
+}
+
+li.active > a {
+  padding-bottom: 0;
+}
+
+li.active ul {
+  display: block;
+  margin-top: 5px;
+}
+
+li.active ul li.active a {
+  color: #fff;
+  font-weight: bold;
+}
+
+li.active ul li a {
+  padding: 5px;
+  display: block;
+  font-size: 13px;
+  color: #888;
+}
+
+.window .main {
+  margin-left: 250px;
+  position: relative;
+}
+
+.title-bar {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.grey {
+  color: #999;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.left p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.right {
+  float: right;
+}
+
+.right a {
+  color: #999;
+  margin-left: 10px;
+}
+
+.blue {
+  color: #279ceb;
+}
+
+.movie-list .list {
+  list-style-type: none;
+}
+
+.movie-list .list li {
+  padding-bottom: 30px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.movie-list .list li .title {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.movie-list .list li .genre {
+  color: #999;
+  font-size: 12px;
+}

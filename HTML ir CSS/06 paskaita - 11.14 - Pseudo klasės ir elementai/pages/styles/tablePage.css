@@ -1,0 +1,94 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+body {
+  color: #a7a1ae;
+  background-color: #1f2739;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: center;
+  color: #4dc3fa;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1em;
+  padding-bottom: 2em;
+  color: #fb667a;
+}
+
+.logo {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.yellow {
+  color: #fff842;
+}
+
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+  box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+.container {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 4em 0;
+}
+
+.container td,
+.container th {
+  padding: 8px 0 8px 12px;
+}
+
+.container tr:nth-child(2n+1) {
+  background-color: #323c50;
+}
+
+.container tr:nth-child(2n) {
+  background-color: #2c3446;
+}
+
+.container th {
+  background-color: #1f2739;
+}
+
+.container td:first-child {
+  color: #fb667a;
+}
+
+.form {
+  display: inline-block;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.win {
+  background-color: #14dc4b;
+}
+
+.draw {
+  background-color: #ffcd00;
+}
+
+.loss {
+  background-color: #dc0000;
+}

@@ -1,1 +1,9 @@
 1) Atkurti pavaizduotą formą (images/form1.png).
+2) Sukurti pavaizduotą formą (images/form3.PNG)
+  2.1) Readonly laukelis - pilkas fonas
+  2.2) Required laukeliai pažymėti specialiu stiliumi
+  2.3) Age reikšmė turi būti nuo 18 iki 65 (imtinai)
+  2.4) Age laukelio rėmelio spalva keičiasi priklausomai ar jis yra in range ar out of range
+  2.5) Užvedus ant “Register” mygtuko patamsėja jo fonas
+  2.6) Paspaudus checkbox pasikeičia “I agree with the Terms & Conditions” spalva į mėlyną
+  2.7) Ant neteisingai įvestų laukelių uždedamas raudonas rėmelis, ant teisingai įvestų - žalias

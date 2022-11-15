@@ -34,7 +34,54 @@
         </form>
       </div>
     </section>
-    
+    <section id="task2">
+      <div class="container">
+        <h1>Register to Fancy Form</h1>
+        <p>All fields are <span class="required">required</span> unless marked as "optional"</p>
+        <form>
+          <div>
+              <label for="read-only">Your unique ID that you can't change</label><br>
+              <input id="read-only" type="text" name="read-only" value="YBX0123" readonly>
+          </div>
+          <div>
+              <label for="email">Email:</label><br>
+              <input id="email" type="email" name="email" required>
+          </div>
+          <div>
+              <label for="password">Password:</label><br>
+              <input id="password" type="password" name="password" minlength="6" maxlength="24" required>
+          </div>
+          <div>
+              <label for="age">Age:</label><br>
+              <input id="age" type="number" name="age" min="18" max="65" required>
+          </div>
+          <div>
+              <label for="about">Tell us a little about yourself <small>(optional)</small>:</label><br>
+              <textarea id="about" name="about"></textarea>
+          </div>
+          <div>
+              <input id="terms" type="checkbox" name="terms" value="1" required>
+              <label for="terms">I agree with the Terms & Conditions</label>
+          </div>
+          <button class="submit-button">Register</button>
+        </form>
+      </div>
+    </section>
+    <section id="customForms">
+      <form>
+        <div class="customRadios">
+          <div>
+            <input type="radio" name="radijas" id="gold" value="gold" checked>
+            <label for="gold">Gold</label>
+          </div>
+          <div>
+            <input type="radio" name="radijas" id="lietus" value="lietus">
+            <label for="lietus">Lietus</label>
+          </div>
+          <input type="file" name="" id="" accept="">
+        </div>
+      </form>
+    </section>
   </main>
 </body>
 </html>

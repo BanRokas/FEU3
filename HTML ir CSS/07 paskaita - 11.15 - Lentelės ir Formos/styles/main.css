@@ -2,8 +2,10 @@
 
 section{
   background-color: antiquewhite;
+  margin: 30px 0;
 }
 
+/* TASK 1 */
 .formContainer{
   margin: 0 auto;
   width: 60%;
@@ -49,3 +51,66 @@ section{
   border-radius: 5px;
   color: white;
 }
+
+/* TASK 2 */
+#task2 .container {
+  background-color: darkslategrey;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+#task2 .container h1, .container p{
+  margin: 0;
+}
+
+#task2 div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#task2 input:read-only {
+  background-color: darkgrey;
+}
+
+#task2 input:valid,
+#task2 textarea:valid,
+#task2 input:in-range {
+  border: 2px solid green;
+}
+
+#task2 input:invalid,
+#task2 textarea:invalid,
+#task2 input:out-of-range {
+  border: 2px solid red;
+}
+
+#task2 input:required,
+#task2 textarea:required {
+  border-left: 5px solid violet;
+}
+
+#task2 .required {
+  background-color: violet;
+}
+
+#task2 .submit-button {
+  background-color: green;
+  color: white;
+}
+
+#task2 .submit-button:hover {
+  background-color: darkgreen;
+}
+
+#task2 input[type="checkbox"]:checked + label {
+  color: blue;
+}
+
+/* Custom radio */
+.customRadios{
+  margin-left: 30px;
+}
+
+/* TASK 3 */

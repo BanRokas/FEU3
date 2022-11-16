@@ -6,7 +6,7 @@ section{
 }
 
 /* TASK 1 */
-.formContainer{
+#task1 .formContainer{
   margin: 0 auto;
   width: 60%;
   background-color: #fff;
@@ -14,15 +14,15 @@ section{
   border: 1px solid black;
 }
 
-.formContainer h1{
+#task1 .formContainer h1{
   margin-top: 0;
 }
 
-.twoInputs > div{
+#task1 .twoInputs > div{
   display: inline-block;
   width: 48%;
 }
-.twoInputs > div:first-child{
+#task1 .twoInputs > div:first-child{
   margin-right: 4%;
 }
 

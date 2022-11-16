@@ -82,7 +82,84 @@
       </form>
     </section>
     <section id="task3">
-
+      <div class="container">
+        <div class="left">
+          <div class="logo">
+            <img src="" alt="logo name">
+            <h1>
+              pupassure
+            </h1>
+          </div>
+          <div class="dogImage">
+            <img src="" alt="dog near form">
+          </div>
+        </div>
+        <div class="right">
+          <div class="formContainer">
+            <h1>Yay, puppies! Ensure your pup gets the best care!</h1>
+            <form>
+              <div> <!-- name and photo-->
+                <div>
+                  <label for="name">Name</label><br>
+                  <input type="text" name="name" id="name" placeholder="Pet's name">
+                </div>
+                <div>
+                  <input type="file" name="photo" id="photo">
+                  <label for="photo">
+                    <span class="photoSquare">
+                      <i class=""></i>
+                      <span>
+                        Upload a photo
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div> <!-- breed and bday-->
+                <div>
+                  <label for="breed">Breed</label><br>
+                  <input type="text" name="breed" id="breed" placeholder="Pet's breed">
+                </div>
+                <div>
+                  <label for="birthday">Birthday</label><br>
+                  <input type="text" name="birthday" id="birthday" placeholder="MM/DD/YYYY">
+                </div>
+              </div>
+              <div> <!-- gender and SoN-->
+                <div>
+                  <label>Gender</label><br>
+                  <input type="radio" name="gender" id="female" value="female" checked>
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="male" value="male">
+                  <label for="male">Male</label>
+                </div>
+                <div>
+                  <label>Spayed or Neutered</label><br>
+                  <input type="radio" name="SoN" id="spayed" value="spayed" checked>
+                  <label for="spayed">Spayed</label>
+                  <input type="radio" name="SoN" id="neutered" value="neutered">
+                  <label for="neutered">Neutered</label>
+                </div>
+              </div>
+              <div> <!-- weight -->
+                <label>Weight</label><br>
+                <input type="radio" name="weight" id="upTo25" value="upTo25" checked>
+                <label for="upTo25">0-25 lbs</label>
+                <input type="radio" name="weight" id="upTo50" value="upTo50">
+                <label for="upTo50">25-50 lbs</label>
+                <input type="radio" name="weight" id="upTo100" value="upTo100">
+                <label for="upTo100">50-100 lbs</label>
+                <input type="radio" name="weight" id="moreThan100" value="moreThan100">
+                <label for="moreThan100">100+ lbs</label>
+              </div>
+            </form>
+          </div>
+          <div class="btnContainer">
+            <button class="prev">Back</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>

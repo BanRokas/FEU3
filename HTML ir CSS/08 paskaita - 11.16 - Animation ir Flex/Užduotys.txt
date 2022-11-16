@@ -1,3 +1,8 @@
 1) Užėjus su kursoriumi ant mygtuko - pasikeičia jo fono ir teksto spalva per kažkokį laiko tarpą (labai mažą).
 2) Padaryti elemento levitavimo efektą (kiltų aukštyn -> leistūsi žėmyn ir pastoviai kartotųsi) su animacija.
 3) Atkartoti CSS Diner esantį elementų vingiavimą su animacija.
+4) Įveikti https://flexboxfroggy.com/ žaidimą.
+5 extra) Įveikti http://www.flexboxdefense.com/ (pabaigus flexfroggy)
+6 extra) Įveikti https://codingfantasy.com/games/flexboxadventure/play (turint laiko ir noro)
+7) Atkurti images/Flex1.PNG pateiktą vaizdą naudojant flex.
+8) Atkurti images/FlexPage1.PNG pavaizduotą svetainę.

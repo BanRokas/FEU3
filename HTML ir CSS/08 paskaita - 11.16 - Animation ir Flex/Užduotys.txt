@@ -1,0 +1,3 @@
+1) Užėjus su kursoriumi ant mygtuko - pasikeičia jo fono ir teksto spalva per kažkokį laiko tarpą (labai mažą).
+2) Padaryti elemento levitavimo efektą (kiltų aukštyn -> leistūsi žėmyn ir pastoviai kartotųsi) su animacija.
+3) Atkartoti CSS Diner esantį elementų vingiavimą su animacija.

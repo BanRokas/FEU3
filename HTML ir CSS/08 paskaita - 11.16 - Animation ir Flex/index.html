@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8 paskaita - Animation ir Flex</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!--
+    transform
+    transition
+    animation
+    
+    flex
+  -->
+  <main>
+    <section id="transform">
+      <h1>Transform</h1>
+      <ul>
+        <li>scale - keičia elemento dydį (default 1)</li>
+        <li>scaleX(x), scaleY(y), scaleZ(z), scale(x,y), scale3d(x,y,z)</li>
+        <li>rotate - pasuka elementą (deg)</li>
+        <li>rotateX(x), rotateY(y), rotateZ(z), rotate(z), rotate3d(x,y,z,a)</li>
+        <li>translate - pastumti elementą</li>
+        <li>translateX(x), translateY(y), translateZ(z), translate(x,y), translate3d(x,y,z)</li>
+        <li>skew - tempia elementą už kampų (deg)</li>
+        <li>skewX(x), skewY(y), skew(x,y)</li>
+        <li>matrix, matrix3d</li>
+        <li>perspective</li>
+      </ul>
+      <div class="kvadratasDidelis tranzicija transformation">labas</div>
+    </section>
+    <section id="transition">
+      <h1>Tranzicija</h1>
+      <ul>
+        <li>transition-property - kokie stiliai keičiasi</li>
+        <li>transition-duration - per kiek laiko įvyksta pakitimai</li>
+        <li>transition-timing-function - kaip transicijai paskirtys turimą laiką
+          <ul>
+            <li>ease</li>
+            <li>ease-in</li>
+            <li>ease-out</li>
+            <li>ease-in-out</li>
+            <li>linear</li>
+            <li>cubiz-bezier</li>
+          </ul>
+        </li>
+        <li>transition-delay - po kiek laiko pradeda vykti pakitimai</li>
+        <li>transition - junginys visų 4 nustatymų</li>
+      </ul>
+    </section>
+    <section id="animation">
+      <h1>Animacija</h1>
+      <ul>
+        <li>animation-duration - animacijai skirtas laiko tarpas</li>
+        <li>animation-timing-function - kaip animacijai paskirtys turimą laiką</li>
+        <li>animation-delay - po kiek laiko prasidės animacija</li>
+        <li>animation-iteration-count - kiek sykių vyks animacija</li>
+        <li>animation-direction - animacijos kryptis</li>
+        <li>animation-fill-mode - animacijos pradžios/pabaigos nustatymai</li>
+        <li>animation-play-state - animacijos būsena</li>
+        <li>animation-name - animacijos pavadinimas</li>
+        <li>animation - junginys visų 8 nustatymų</li>
+      </ul>
+      <p></p>
+      <div class="kvadratasDidelis animacija"></div>
+    </section>
+  </main>
+</body>
+</html>

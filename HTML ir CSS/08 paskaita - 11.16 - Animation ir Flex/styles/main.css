@@ -1,0 +1,57 @@
+.kvadratasDidelis{
+  height: 300px;
+  width: 300px;
+  border: 2px dashed black;
+  background-color: aquamarine;
+  margin-left: 200px;
+}
+
+.tranzicija{
+  /* transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+  transition-delay: 0s; */
+  transition: width 5s linear 0s,  background-color 5s linear 5s;
+}
+
+.scale{
+  transform: scale(2, 0.5);
+}
+.rotate{
+  transform: rotateZ(90deg);
+}
+.translate{
+  transform: translate3d(100px, 200px, 50px);
+}
+.skew{
+  transform: skew(50deg, 20deg);
+}
+.tranzicija:hover{
+  /* transform: scale(0.5) translate(100px, 50px) rotate(150deg);
+  transform-origin: center; */
+  width: 800px;
+  background-color: aqua;
+}
+
+.animacija{
+  /* animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: pirmaAnimacija; */
+  animation: 10s linear infinite pirmaAnimacija;
+}
+@keyframes pirmaAnimacija{
+  0% {
+    background-color: aqua;
+  } 30% {
+    width: 300px;
+    background-color: darkred;
+  } 100% {
+    width: 800px;
+    background-color: #80f;
+  }
+}

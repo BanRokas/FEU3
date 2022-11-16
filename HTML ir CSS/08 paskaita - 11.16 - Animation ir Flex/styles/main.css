@@ -1,3 +1,7 @@
+body{
+  height: 500vh;
+}
+
 .kvadratasDidelis{
   height: 300px;
   width: 300px;
@@ -53,5 +57,71 @@
   } 100% {
     width: 800px;
     background-color: #80f;
+  }
+}
+
+/* tasks */
+#tasks > div[id]{
+  height: 250px;
+  width: 500px;
+  margin: 50px auto 0;
+}
+
+/* task 1 */
+#tasks > #task1{
+  height: 100px;
+}
+#task1 button{
+  font-size: 36px;
+  padding: 14px;
+  color: green;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px #000;
+  border-radius: 10px;
+  transition: all .3s ease-out;
+}
+#task1 button:hover{
+  background-color: orange;
+  color: black;
+  box-shadow: unset;
+}
+
+/* task 2 */
+#task2 img{
+  width: auto;
+  height: 200px;
+  animation: 5s ease infinite levitate;
+}
+
+@keyframes levitate{
+  0%{
+    transform: translateY(50px);
+  } 50% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(50px);
+  }
+}
+
+/* task 3 */
+#task3 div.appo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f00;
+  border: 1px solid black;
+  transform-origin: bottom;
+  animation: linear .5s infinite alternate appoSkew;
+}
+
+@keyframes appoSkew{
+  0% {
+    transform: skewX(4deg) scaleX(1);
+  }
+  50% {
+    transform: skewX(0deg) scaleY(.9);
+  }
+  100% {
+    transform: skewX(-4deg) scaleX(1);
   }
 }

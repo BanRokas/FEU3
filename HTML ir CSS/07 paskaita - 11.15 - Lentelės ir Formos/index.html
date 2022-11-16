@@ -85,16 +85,15 @@
       <div class="container">
         <div class="left">
           <div class="logo">
-            <img src="" alt="logo name">
-            <h1>
+            <img src="./images/puppasure.png" alt="logo name">
+            <span>
               pupassure
-            </h1>
+            </span>
           </div>
           <div class="dogImage">
-            <img src="" alt="dog near form">
+            <img src="./images/puppasure pup.png" alt="dog near form">
           </div>
-        </div>
-        <div class="right">
+        </div><div class="right">
           <div class="formContainer">
             <h1>Yay, puppies! Ensure your pup gets the best care!</h1>
             <form>
@@ -107,7 +106,7 @@
                   <input type="file" name="photo" id="photo">
                   <label for="photo">
                     <span class="photoSquare">
-                      <i class=""></i>
+                      <i class="bi bi-camera-fill"></i>
                       <span>
                         Upload a photo
                       </span>
@@ -127,30 +126,36 @@
               </div>
               <div> <!-- gender and SoN-->
                 <div>
-                  <label>Gender</label><br>
-                  <input type="radio" name="gender" id="female" value="female" checked>
-                  <label for="female">Female</label>
-                  <input type="radio" name="gender" id="male" value="male">
-                  <label for="male">Male</label>
+                  <label>Gender</label>
+                  <div class="customRadio">
+                    <input type="radio" name="gender" id="female" value="female" checked>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                  </div>
                 </div>
                 <div>
                   <label>Spayed or Neutered</label><br>
-                  <input type="radio" name="SoN" id="spayed" value="spayed" checked>
-                  <label for="spayed">Spayed</label>
-                  <input type="radio" name="SoN" id="neutered" value="neutered">
-                  <label for="neutered">Neutered</label>
+                  <div class="customRadio">
+                    <input type="radio" name="SoN" id="spayed" value="spayed" checked>
+                    <label for="spayed">Spayed</label>
+                    <input type="radio" name="SoN" id="neutered" value="neutered">
+                    <label for="neutered">Neutered</label>
+                  </div>
                 </div>
               </div>
               <div> <!-- weight -->
                 <label>Weight</label><br>
-                <input type="radio" name="weight" id="upTo25" value="upTo25" checked>
-                <label for="upTo25">0-25 lbs</label>
-                <input type="radio" name="weight" id="upTo50" value="upTo50">
-                <label for="upTo50">25-50 lbs</label>
-                <input type="radio" name="weight" id="upTo100" value="upTo100">
-                <label for="upTo100">50-100 lbs</label>
-                <input type="radio" name="weight" id="moreThan100" value="moreThan100">
-                <label for="moreThan100">100+ lbs</label>
+                <div class="w100 customRadio">
+                  <input type="radio" name="weight" id="upTo25" value="upTo25" checked>
+                  <label for="upTo25">0-25 lbs</label>
+                  <input type="radio" name="weight" id="upTo50" value="upTo50">
+                  <label for="upTo50">25-50 lbs</label>
+                  <input type="radio" name="weight" id="upTo100" value="upTo100">
+                  <label for="upTo100">50-100 lbs</label>
+                  <input type="radio" name="weight" id="moreThan100" value="moreThan100">
+                  <label for="moreThan100">100+ lbs</label>
+                </div>
               </div>
             </form>
           </div>

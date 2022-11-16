@@ -1,4 +1,5 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
 section{
   background-color: antiquewhite;
@@ -122,3 +123,180 @@ section{
 }
 
 /* TASK 3 */
+#task3 .container{
+  min-width: 815px;
+  max-width: 1000px;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+#task3 .left{
+  display: inline-block;
+  position: relative;
+  width: 35%;
+  height: 100%;
+  background-color: #807182;
+}
+#task3 .logo{
+  text-align: center;
+  margin-top: 20px;
+}
+#task3 .logo img{
+  margin-right: 10px;
+  position: relative;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+#task3 .logo span{
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#task3 .dogImage{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+}
+#task3 .dogImage > img{
+  height: 200px;
+  width: auto;
+}
+
+#task3 .right{
+  float: right;
+  clear: both;
+  width: 65%;
+  height: 100%;
+}
+
+#task3 .formContainer{
+  height: 85%;
+  background-color: #f9c7c2;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#task3 .formContainer h1{
+  margin-top: 0;
+}
+
+#task3 form{
+  height: calc(407px - 70px);
+}
+
+#task3 form > div{
+  height: 25%;
+}
+
+#task3 input[type="text"] {
+  border: 0;
+  height: 38px;
+  border-radius: 3px;
+  width: 98%;
+}
+
+#task3 input[type="file"]{
+  display: none;
+}
+
+#task3 .photoSquare{
+  position: relative;
+  top: 10px;
+}
+
+#task3 .photoSquare i{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+#task3 .photoSquare span{
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#task3 ::placeholder{
+  text-indent: 5px;
+}
+
+#task3 form > div > div{
+  display: inline-block;
+  width: 40%;
+  box-sizing: border-box;
+}
+#task3 form > div > div:last-child{
+  float: right;
+}
+
+#task3 form label:first-child{
+  font-weight: 200;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#task3 .w100{
+  width: 100%;
+}
+
+#task3 .customRadio{
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#task3 .customRadio input{
+  display: none;
+}
+
+#task3 .customRadio input:checked + label{
+  background-color: #f7b1ab;
+}
+
+#task3 .customRadio label{
+  display: inline-block;
+  padding: 5px 10px;
+  width: 35%;
+  text-align: center;
+  border-radius: 3px;
+}
+#task3 .customRadio.w100 label{
+  width: 20%;
+}
+
+#task3 .btnContainer{
+  background-color: #fff;
+  height: 15%;
+  position: relative;
+}
+
+#task3 .btnContainer button{
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+  border: 1px solid grey;
+  position: absolute;
+  top: 20px;
+}
+
+#task3 .btnContainer .prev{
+  background-color: #fff;
+  left: 50px;
+}
+
+#task3 .btnContainer .next{
+  background-color: #807182;
+  color: white;
+  right: 50px;
+}

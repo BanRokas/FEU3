@@ -169,3 +169,45 @@ body{
 .alignSelfEnd{
   align-self: flex-start;
 }
+
+/* task 5 */
+#task5 {
+  min-width: 768px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #00253f;
+  display: flex;
+  column-gap: 10px;
+  color: white;
+}
+
+#task5 .textContainer{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+#task5 p{
+  margin: 0;
+  font-weight: 100;
+  color: #bbb;
+}
+
+#task5 .textContainer h1{
+  color: #82d4ba;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#task5 .textContainer h1::first-line{
+  line-height: 100px;
+}
+
+#task5 .speakerCardContainer{
+  width: 20%;
+}
+#task5 .speakerCardContainer img{
+  width: 100%;
+}
+#task5 .speakerCardContainer h3{
+  margin: 10px 0 0;
+}

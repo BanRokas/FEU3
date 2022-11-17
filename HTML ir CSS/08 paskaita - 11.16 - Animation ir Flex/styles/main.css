@@ -205,8 +205,17 @@ body{
 #task5 .speakerCardContainer{
   flex: 2;
 }
+#task5 .speakerCardContainer .photo1{
+  background-image: url('../images/speaker1.PNG');
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+}
 #task5 .speakerCardContainer img{
   width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 #task5 .speakerCardContainer h3{
   margin: 10px 0 0;

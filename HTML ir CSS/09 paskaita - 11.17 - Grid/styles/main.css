@@ -9,7 +9,7 @@
   /* text-align: center; */
 }
 
-.gridContainer{
+.gridContainer1{
   display: grid;
   gap: 10px;
   /* grid-template-columns: 50px 100px 20px 10px;
@@ -17,12 +17,12 @@
   grid-template: repeat(3, 20px 100px) / 50px 100px 20px 10px;
 }
 
-.gridContainer > div{
+.gridContainer1 > div{
   background-color: #000;
   color: #fff;
 }
 
-.gridContainer :nth-child(1){
+.gridContainer1 :nth-child(1){
   /* grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 4;
@@ -30,4 +30,44 @@
   /* grid-row: 4 / 6;
   grid-column: 2 / 5; */
   grid-area: 4 / 2 / 6 / -1;
+}
+
+.gridContainer2{
+  display: grid;
+  grid-template: repeat(500, 1px) / repeat(1000, 1px); 
+}
+.gridContainer2 .header{
+  grid-area: 1 / 1 / 80 / -1;
+  background-color: aquamarine;
+}
+.gridContainer2 .main{
+  grid-area: 80 / 150 / 420 / -1;
+  background-color: rgb(153, 255, 127);
+}
+.gridContainer2 .aside{
+  grid-area: 80 / 1 / 420 / 150;
+  background-color: rgb(127, 138, 255);
+}
+.gridContainer2 .footer{
+  grid-area: 420 / 1 / -1 / -1;
+  background-color: rgb(255, 142, 127);
+}
+
+.gridContainer3{
+  display: grid;
+  grid-template: repeat(10, 30px) / repeat(10, 30px);
+}
+
+.filler1{
+  grid-column: span 6;
+}
+
+.gridContainer3 :nth-child(6){
+  grid-area: 4 / 5 / 7 / 9;
+  background-color: aqua;
+  order: 1;
+}
+.gridContainer3 :nth-child(7){
+  grid-area: 5 / 7 / 8 / 10;
+  background-color: aquamarine;
 }

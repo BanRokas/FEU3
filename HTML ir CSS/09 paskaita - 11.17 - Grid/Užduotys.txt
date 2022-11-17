@@ -1,2 +1,4 @@
 1) Įveikti https://cssgridgarden.com/ žaidimą
 2 extra) Įveikti https://codingfantasy.com/games/css-grid-attack/play žaidimą
+3) Atkartoti images/gridOverlap.png pateiktą vaizdą
+4) Su grid'u sukurti periodinę elementų lentelę (galima daryti pagal images/periodicTable.PNG)

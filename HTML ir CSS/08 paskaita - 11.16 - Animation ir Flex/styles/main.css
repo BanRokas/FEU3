@@ -182,7 +182,7 @@ body{
 }
 
 #task5 .textContainer{
-  flex: 1;
+  flex: 3;
   box-sizing: border-box;
   padding: 50px;
 }
@@ -203,7 +203,7 @@ body{
 }
 
 #task5 .speakerCardContainer{
-  width: 20%;
+  flex: 2;
 }
 #task5 .speakerCardContainer img{
   width: 100%;

@@ -1,0 +1,87 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+header{
+  display: flex;
+  flex-direction: column;
+}
+
+header h1{
+  margin: 0;
+  padding: 20px;
+  background-color: #da0;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+header nav > ul{
+  display: flex;
+  gap: 10px;
+  background-color: #ccc;
+  padding: 5px;
+  margin: 0;
+  list-style-type: none;
+}
+
+header nav > ul > li{
+  flex: 1;
+  border: 1px solid black;
+  text-align: center;
+}
+
+header nav > ul a{
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #e2af14;
+  width: 100%;
+  padding: 5px;
+}
+
+#cards{
+  display: flex;
+  background-color: #808080;
+  padding: 15px;
+  gap: 10px;
+}
+
+.card{
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;  
+}
+
+.card > *{
+  flex: 1;
+}
+
+.card img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.card > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card button{
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 12px;
+}
+
+footer{
+  background-color: #da0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  padding: 15px;
+  font-weight: 600;
+}

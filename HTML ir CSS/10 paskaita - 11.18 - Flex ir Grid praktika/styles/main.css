@@ -42,3 +42,16 @@
 #task1 :nth-child(2){
   grid-area: 1 / 2 / 2 / 4;
 }
+
+/* task3 */
+#task3{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+#task3 > div{
+  height: 300px;
+  width: 300px;
+}

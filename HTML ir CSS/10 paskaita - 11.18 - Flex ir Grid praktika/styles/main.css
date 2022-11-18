@@ -155,3 +155,56 @@
   background-color: #ffd169;
   color: #000;
 }
+
+/* task5 */
+#task5{
+  width: 750px;
+  height: 450px;
+  margin: 50px auto 0;
+  background-color: #000;
+  padding: 2px;
+  display: grid;
+  grid-template: 1fr repeat(4, 3fr) / repeat(4, 1fr);
+  gap: 5px;
+}
+#task5 > .top{
+  grid-column: span 4;
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+}
+
+#task5 > .top > div{
+  background-color: #000;
+  color: #7cdcff;
+  border: 1px solid blue;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#task5 > div:not(:first-child){
+  color: #7cdcff;
+  border: 1px solid #c231cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#task5 > :nth-child(2){
+  grid-column: span 3;
+}
+#task5 > :nth-child(3){
+  grid-row: span 3;
+}
+#task5 > :nth-child(4){
+  grid-area: 5 / 2 / -1 / -1;
+}
+#task5 > :nth-child(5){
+  grid-area: 4 / 1 / span 2 / 1;
+}
+#task5 > :nth-child(6){
+  grid-column: span 2;
+}
+#task5 > :nth-child(7){
+  grid-row: span 2;
+}

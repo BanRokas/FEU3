@@ -1,0 +1,44 @@
+/* general */
+.flex{
+  display: flex;
+  gap: 1px;
+}
+.fCol{
+  flex-direction: column;
+}
+
+/* task1 common */
+#task1 > div{
+  width: 600px;
+  height: 200px;
+}
+#task1 :not([class]){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* task1 flex */
+#task1 .flex :not([class]){
+  background-color: #ffa500;
+}
+#task1 > .flex div{
+  flex: 1;
+}
+
+/* task1 grid */
+#task1 .grid :not([class]){
+  background-color: #5efffc;
+}
+#task1 > .grid{
+  display: grid;
+  gap: 1px;
+  grid-template: 1fr 1fr / 2fr 1fr 1fr;
+}
+#task1 :nth-child(1){
+  grid-area: 1 / 1 / 3 / 2;
+}
+#task1 :nth-child(2){
+  grid-area: 1 / 2 / 2 / 4;
+}

@@ -208,3 +208,84 @@
 #task5 > :nth-child(7){
   grid-row: span 2;
 }
+
+/* task6 */
+#task6{
+  width: 590px;
+  height: 920px;
+  margin: 50px auto 0;
+  background-color: #70ad47;
+  display: grid;
+  grid-template: repeat(65, 1fr) / repeat(33, 1fr);
+}
+#task6 > div:nth-child(n+6){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  border: 3px solid #000;
+  font-size: 18px;
+}
+#task6 .menu{
+  background-color: #4472c4;
+  grid-area: 1 / 4 / 5 / -4;
+}
+#task6 .hero{
+  background-color: #fc0;
+  grid-area: 5 / 4 / 24 / -4;
+}
+#task6 .about{
+  background-color: #aaa;
+  grid-area: 24 / 4 / 43 / -4;
+}
+#task6 .contact{
+  background-color: #446;
+  grid-area: 43 / 4 / 62 / -4;
+}
+#task6 .footer{
+  background-color: #e7e6e6;
+  grid-area: 62 / 4 / -1 / -4;
+}
+#task6 .menuLogo{
+  grid-area: 1 / 4 / span 4 / span 6;
+}
+#task6 .menuNuorodos{
+  grid-area: 1 / 19 / span 4 / -4;
+}
+#task6 .heroPavadinimas{
+  grid-area: 7 / 7 / span 3 / span 10;
+}
+#task6 .heroAprasymas{
+  grid-area: 11 / 10 / span 7 / span 8;
+}
+#task6 .heroFoto{
+  grid-area: 7 / 19 / 21 / -6;
+}
+#task6 .aboutPavadinimas{
+  grid-area: 25 / 9 / 28 / -9;
+}
+#task6 .aboutStraipsnis1{
+  grid-area: 30 / 5 / span 5 / 20;
+}
+#task6 .aboutStraipsnis2{
+  grid-area: 37 / 5 / span 5 / 20;
+}
+#task6 .aboutStraipsnis3{
+  grid-area: 30 / 22 / 42 / -5;
+}
+#task6 .contactKontaktai{
+  grid-area: 44 / 9 / span 3 / -9;
+}
+#task6 .contactKontaktas1{
+  grid-area: 49 / 24 / 60 / span 6;
+}
+#task6 .contactKontaktas2{
+  grid-area: 49 / 5 / 60 / span 6;
+}
+#task6 .contactKontaktas3{
+  grid-area: 49 / 15 / 60 / span 6;
+}
+#task6 .footerCopyrights{
+  grid-area: 63 / 10 / span 2 / -10;
+}

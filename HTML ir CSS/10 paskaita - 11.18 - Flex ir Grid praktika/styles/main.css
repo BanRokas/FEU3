@@ -1,10 +1,13 @@
 /* general */
 .flex{
   display: flex;
-  gap: 1px;
+  gap: 2px;
 }
-.fCol{
+.flexColumn{
   flex-direction: column;
+}
+.flexWrap{
+  flex-wrap: wrap;
 }
 
 /* task1 common */
@@ -49,9 +52,58 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 5px;
+  gap: 10px;
 }
 #task3 > div{
   height: 300px;
   width: 300px;
+}
+#task3 > [id^="task3_"] > div{
+  background-image: url('../images/nature9.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#task3_1 > .big, #task3_2 > .big{
+  flex-grow: 1;
+}
+
+#task3_1 > div, #task3_2 > div{
+  flex-basis: 33%;
+}
+
+#task3_11 > .big{
+  width: 100%;
+  height: 80%;
+}
+#task3_11 > div:not([class]){
+  flex: 1;
+  height: 20%;
+}
+
+#task3_12 > div, #task3_13 > div{
+  flex: 1;
+}
+
+#task3_15 > div{
+  flex-basis: 24%;
+  flex-grow: 1;
+}
+#task3_15 > .big{
+  flex-basis: 32%;
+  flex-grow: 1;
+}
+
+#task3_18 > div{
+  flex-basis: 32%;
+  flex-grow: 1;
+}
+#task3_18 > .big{
+  flex-basis: 49%;
+  flex-grow: 1;
+}
+
+#task3_20 > div{
+  flex-basis: 24%;
+  flex-grow: 1;
 }

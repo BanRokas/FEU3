@@ -5,3 +5,4 @@
 5) Atkurti images/grid2.png esantį puslapio išsidėstymą.
 6) Atkurti images/grid3.PNG esantį puslapio išsidėstymą.
 7) Atkurti images/grid_flex_4.png esantį elementų išsidėstymą pasirinktinai (su flex arba grid).
+8) Atkartoti 1 iš 3 images/flexGridPageNr.jpg svetainių.

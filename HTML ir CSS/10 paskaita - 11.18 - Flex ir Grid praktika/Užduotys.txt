@@ -1,3 +1,7 @@
 1) Atkurti images/gridAndFlexTask0.PNG esantį elementų išdėstymą su flex ir grid.
 2 optional) Peržiūrėti https://youtu.be/3elGSZSWTbM video
 3) Atkurti images/gridFlexTASK.jpg esančius elementų išsidėstymus pasirinktinai (su flex arba grid).
+4) Atkurti images/grid1.PNG esantį puslapio išsidėstymą.
+5) Atkurti images/grid2.png esantį puslapio išsidėstymą.
+6) Atkurti images/grid3.PNG esantį puslapio išsidėstymą.
+7) Atkurti images/grid_flex_4.png esantį elementų išsidėstymą pasirinktinai (su flex arba grid).

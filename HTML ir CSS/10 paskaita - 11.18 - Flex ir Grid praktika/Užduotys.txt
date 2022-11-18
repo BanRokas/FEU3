@@ -1,0 +1,1 @@
+1) Atkuri images/gridAndFlexTask0.PNG esantį elementų išdėstymą su flex ir grid.

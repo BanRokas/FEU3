@@ -176,15 +176,17 @@
 }
 #task4 > div > span{
   display: inline-block;
-  font-size: 8px;
+  font-size: 11px;
   position: relative;
-  top: 3px;
+  font-weight: 600;
+  top: 4px;
   left: 3px;
   line-height: 5px;
 }
 #task4 > div > h1{
   margin: 0;
   position: relative;
+  font-weight: 500;
   top: 3px;
   font-size: 2.2rem;
   text-align: center;
@@ -194,6 +196,7 @@
   padding: 0 2px;
   font-size: 12px;
   width: 100%;
+  font-weight: 600;
   box-sizing: border-box;
   text-align: center;
   white-space: nowrap;
@@ -206,6 +209,12 @@
 }
 #task4 .span11{
   grid-column: span 11;
+}
+#task4 .span19{
+  grid-column: span 19;
+}
+#task4 .span4{
+  grid-column: span 4;
 }
 
 #task4 .blue{
@@ -227,4 +236,24 @@
 #task4 .yellow{
   color: #945700;
   background-color: #fef7e0;
+}
+#task4 .green{
+  color: #002c05;
+  background-color: #d6f9e8;
+}
+#task4 .violet{
+  color: #6232ee;
+  background-color: #f3e8fd;
+}
+#task4 .electro{
+  color: #003355;
+  background-color: #dff3ff;
+}
+#task4 .grey{
+  color: #3f374f;
+  background-color: #e7e7ea;
+}
+#task4 .orange{
+  color: #c73200;
+  background-color: #ffe6d4;
 }

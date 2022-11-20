@@ -289,3 +289,38 @@
 #task6 .footerCopyrights{
   grid-area: 63 / 10 / span 2 / -10;
 }
+
+#task7{
+  width: 1000px;
+  height: 420px;
+  margin: 50px auto 0;
+  padding: 30px 20px 50px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px 30px;
+}
+#task7 > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e39687;
+  color: white;
+  font-weight: 900;
+  font-size: 32px;
+}
+.colSpan2{
+  grid-column: span 2;
+}
+.colSpan3{
+  grid-column: span 3;
+}
+.colSpan4{
+  grid-column: span 4;
+}
+.colSpan6{
+  grid-column: span 6;
+}
+.colSpan8{
+  grid-column: span 8;
+}

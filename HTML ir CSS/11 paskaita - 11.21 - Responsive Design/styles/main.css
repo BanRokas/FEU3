@@ -1,3 +1,5 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
 body{
   background-color: rgb(255, 173, 173);
 }
@@ -7,13 +9,52 @@ body{
   justify-content: space-evenly;
 }
 
+/* task 1 */
+#task1 h1{
+  text-align: center;
+}
+#task1 > div{
+  display: flex;
+  justify-content: space-evenly;
+}
+#task1 > div > div{
+  height: 400px;
+  width: 200px;
+  border: 3px solid black;
+}
+.name2, .name3{
+  display: none;
+}
+
 
 @media (max-width: 1020px){
   body{
     background-color: rgb(166, 255, 225);
   }
+  /* task 1 */
+  .name1{
+    display: none;
+  }
+  .name2{
+    display: block;
+  }
+  #task1 > div{
+    display: grid;
+    justify-items: end;
+    gap: 5px;
+    grid-template-columns: 2fr 1fr;
+  }
+  #task1 > div :nth-child(1), #task1 > div :nth-child(2){
+    height: 200px;
+    width: 400px;
+  }
+  #task1 > div :nth-child(3){
+    height: unset;
+    grid-area: 1 / 2 / 3 / 3;
+    justify-self: start;
+  }
 }
-@media (max-width: 500px){
+@media (max-width: 678px){
   body{
     background-color: rgb(157, 255, 255);
   }
@@ -23,5 +64,21 @@ body{
   #breakpoints > div{
     width: 80%;
     margin: 0 auto;
+  }
+  /* task 1 */
+  .name2{
+    display: none;
+  }
+  .name3{
+    display: block;
+  }
+  #task1 > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #task1 > div :nth-child(3){
+    height: 200px;
+    width: 400px;
   }
 }

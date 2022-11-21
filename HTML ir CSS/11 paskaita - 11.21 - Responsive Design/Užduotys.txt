@@ -1,0 +1,2 @@
+1) Atkartoti images/responsiveTask1.PNG esančius kortelių išdėstymus naudojant @media su max-width nustatymais judant nuo Desktop iki Mobile.
+2) Atkartoti images/responsiveTask2.jpg esančius ekrano išdėstymus naudojant @media su max-width nustatymais judant nuo Desktop iki Mobile.

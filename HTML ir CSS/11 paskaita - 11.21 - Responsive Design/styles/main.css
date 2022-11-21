@@ -26,18 +26,68 @@ body{
   display: none;
 }
 
+/* task2 */
+#task2 h1{
+  text-align: center;
+}
+#task2 > div{
+  width: 700px;
+  height: 600px;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template: 1fr 5fr repeat(3, 2fr) / repeat(4, 1fr);
+}
+#task2 > div > div{
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#task2 > div > .header{
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #0f1629;
+}
+#task2 > div > .menu{
+  grid-column: span 3;
+  background-color: #ef3d4d;
+}
+#task2 > div > .hero{
+  grid-column: span 4;
+  background-color: #4c86c6;
+}
+#task2 > div > .main{
+  grid-area: 3 / 1 / span 2 / span 2;
+  background-color: #24344b;
+}
+#task2 > div > .image{
+  grid-area: 3 / 4 / span 1 / span 1;
+  background-color: #b6d6d8;
+  color: #000;
+}
+#task2 > div > .extra{
+  grid-area: 4 / 4 / span 1 / span 1;
+  background-color: #49b18e;
+  color: #000;
+}
+#task2 > div > .banner{
+  grid-area: 5 / 1 / -1 / -1;
+  background-color: #ffd169;
+  color: #000;
+}
 
 @media (max-width: 1020px){
   body{
     background-color: rgb(166, 255, 225);
   }
-  /* task 1 */
   .name1{
     display: none;
   }
   .name2{
     display: block;
   }
+  /* task 1 */
   #task1 > div{
     display: grid;
     justify-items: end;
@@ -53,6 +103,28 @@ body{
     grid-area: 1 / 2 / 3 / 3;
     justify-self: start;
   }
+  /* task2 */
+  #task2 > div{
+    grid-template: 1fr 5fr 5fr repeat(2, 2fr) / repeat(4, 1fr);
+  }
+  #task2 > div > .header{
+    grid-column: span 4;
+  }
+  #task2 > div > .menu{
+    grid-area: 3 / 1 / 6 / 2;
+  }
+  #task2 > div > .main{
+    grid-area: 3 / 2 / 4 / 5;
+  }
+  #task2 > div > .banner{
+    grid-area: 4 / 2 / 5 / 5;
+  }
+  #task2 > div > .extra{
+    grid-area: 5 / 2 / 6 / 4;
+  }
+  #task2 > div > .image{
+    grid-area: 5 / 4 / 6 / 5;
+  }
 }
 @media (max-width: 678px){
   body{
@@ -65,13 +137,13 @@ body{
     width: 80%;
     margin: 0 auto;
   }
-  /* task 1 */
   .name2{
     display: none;
   }
   .name3{
     display: block;
   }
+  /* task 1 */
   #task1 > div{
     display: flex;
     flex-direction: column;
@@ -80,5 +152,21 @@ body{
   #task1 > div :nth-child(3){
     height: 200px;
     width: 400px;
+  }
+  /* task 2 */
+  #task2 > div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  #task2 > div > .header, #task2 > div > .menu{
+    flex: 2;
+  }
+  #task2 > div > .main, #task2 > div > .hero{
+    flex: 5;
+  }
+  #task2 > div > .banner, #task2 > div > .extra, #task2 > div > .image{
+    flex: 3;
   }
 }

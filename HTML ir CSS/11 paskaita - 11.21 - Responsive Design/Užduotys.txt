@@ -2,3 +2,5 @@
 2) Atkartoti images/responsiveTask2.jpg esančius ekrano išdėstymus naudojant @media su max-width nustatymais judant nuo Desktop iki Mobile.
 3) Perskaityti https://www.invisionapp.com/inside-design/mobile-first-design/
 4) Atkartoti images/GreyCloud_____.PNG mobile ir desktop variantus naudojant mobileFirst dizaino principą.
+5) Atkartoti 1 iš 3 images/responsiveDesign_.jpg puslapių naudojant MobileFirst dizaino principą.
+6 extra) Patobulinti 10 paskaitos, 8 užduoties svetainę padarant ją responsive. (kadangi buvo pradėta nuo Desktop, tai nereikia daryti mobileFirst principu)

@@ -1,0 +1,27 @@
+body{
+  background-color: rgb(255, 173, 173);
+}
+
+#breakpoints{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+@media (max-width: 1020px){
+  body{
+    background-color: rgb(166, 255, 225);
+  }
+}
+@media (max-width: 500px){
+  body{
+    background-color: rgb(157, 255, 255);
+  }
+  #breakpoints{
+    display: block;
+  }
+  #breakpoints > div{
+    width: 80%;
+    margin: 0 auto;
+  }
+}

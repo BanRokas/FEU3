@@ -39,3 +39,52 @@ header .logo{
   color: #6fc3de;
   font-weight: 600;
 }
+
+main{
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+main > section{
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px #a5a5a5;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#help{
+  display: none;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 678px){
+  .mainMenu > ul{
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .mainMenu > ul > li{
+    width: unset;
+    padding: 20px;
+  }
+  .mainMenu .link{
+    color: grey;
+    text-decoration: none;
+  }
+  #help{
+    display: unset;
+  }
+
+  main{
+    grid-template: 1fr 2fr / 1fr 6fr;
+  }
+  #content{
+    grid-row: span 2;
+  }
+}

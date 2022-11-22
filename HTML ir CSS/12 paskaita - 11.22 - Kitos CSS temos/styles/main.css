@@ -4,6 +4,11 @@
   line-height: 1;
 }
 
+[class^='col']{
+  background-color: pink;
+  border: 1px solid black;
+}
+
 #preprocessors{
   font-size: 10px;
 }

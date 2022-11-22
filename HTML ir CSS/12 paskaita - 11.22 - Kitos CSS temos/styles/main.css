@@ -1,0 +1,32 @@
+:root{
+  --color-warning: blue;
+  font-size: 16px;
+  line-height: 1;
+}
+
+#preprocessors{
+  font-size: 10px;
+}
+
+#preprocessors h1 {
+  font-size: 2rem;
+}
+#preprocessors div {
+  width: 30rem;
+  background-color: aqua;
+  display: flex;
+  align-items: baseline;
+}
+#preprocessors div h3 {
+  font-size: 2em;
+  color: var(--color-warning);
+}
+#preprocessors div p {
+  color: var(--color-warning);
+}/*# sourceMappingURL=main.css.map */
+
+@media (max-width: 500px){
+  :root{
+    font-size: 20px;
+  }
+}

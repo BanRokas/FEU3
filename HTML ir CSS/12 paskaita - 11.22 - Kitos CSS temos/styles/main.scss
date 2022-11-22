@@ -1,0 +1,19 @@
+$big-text: 2rem;
+$color-warning: red;
+
+#preprocessors{
+  h1{
+    font-size: $big-text;
+  }
+  div{
+    display: flex;
+    align-items: baseline;
+    h3{
+      font-size: $big-text;
+      color: $color-warning;
+    }
+    p{
+      color: $color-warning;
+    }
+  }
+}

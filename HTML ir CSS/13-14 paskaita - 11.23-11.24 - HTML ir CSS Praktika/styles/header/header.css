@@ -1,0 +1,11 @@
+header {
+  height: 80px;
+  color: var(--color-main);
+  background-color: grey;
+}
+header nav {
+  height: inherit;
+}
+header nav ul {
+  display: flex;
+}/*# sourceMappingURL=header.css.map */

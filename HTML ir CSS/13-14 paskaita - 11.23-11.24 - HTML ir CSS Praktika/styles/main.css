@@ -1,0 +1,19 @@
+/* frameworks */
+/* @import url('norm');
+@import url('boots');
+@import url('boots');
+@import url('boots'); */
+
+/* common */
+@import url('common/common.css');
+
+/* header */
+@import url('header/header.css');
+
+/* main */
+@import url('hero/hero.css');
+@import url('about/about.css');
+@import url('gallery/gallery.css');
+
+/* footer */
+@import url('footer/footer.css');

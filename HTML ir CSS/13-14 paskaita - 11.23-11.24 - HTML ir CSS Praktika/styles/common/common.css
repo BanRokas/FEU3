@@ -1,0 +1,10 @@
+:root{
+  --color-main: blue;
+  --color-main-dark: rgb(0, 0, 170);
+  --color-main-light: rgb(66, 66, 255);
+
+  --padding_1: 0.5rem;
+  --padding_2: 1rem;
+  --padding_3: 1.5rem;
+  --padding_4: 2rem;
+}

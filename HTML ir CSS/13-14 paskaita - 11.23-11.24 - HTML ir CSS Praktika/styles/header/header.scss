@@ -1,0 +1,19 @@
+$kintamasis: grey;
+
+header{
+  height: 80px;
+  color: var(--color-main);
+  background-color: $kintamasis;
+  nav{
+    height: inherit;
+    ul{
+      display: flex;
+    }
+  }
+}
+
+@media (min-width:768px){
+  header{
+
+  }
+}

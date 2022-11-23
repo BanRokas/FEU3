@@ -1,0 +1,16 @@
+Atkartoti images/uzduotis/______Travel.png puslapį.
+Naudoti MobileFirst dizaino principą.
+Media queries breakpoint'us pasirinkti patiems.
+Temą išlaikyti tokią pačią. (info gali keistis)
+Paveiksliukus kokius norite (galima siūstis iš https://unsplash.com/).
+
+Siūloma naudoti:
+  SCSS
+  Kintamuosius
+  Multiple CSS files
+
+P.S.
+Puslapyje yra hover efektų: mygtukams, ikonoms, nuotraukoms, kortelėms (parodysiu kokios, kur rytoj)
+Mobile dalyje subscription sekcijoje galima pakeisti išdėstymą.
+Desktop dalyje menu galima prikabinti su pozicija puslapio viršuje.
+Desktop dalyje footer'yje galima neatvaizduoti menu pasirinkimų.

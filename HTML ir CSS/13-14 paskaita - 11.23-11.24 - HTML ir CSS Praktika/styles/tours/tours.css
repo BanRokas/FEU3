@@ -1,0 +1,27 @@
+.toursCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.toursCards .toursCard {
+  height: 500px;
+  width: 450px;
+}
+.toursCards .toursCard .tourImg {
+  height: 63%;
+  width: 100%;
+  position: relative;
+}
+.toursCards .toursCard .tourImg img {
+  height: 100%;
+  width: 100%;
+}
+.toursCards .toursCard .tourImg p {
+  position: absolute;
+  top: 30px;
+  padding: 5px;
+  left: 0;
+  margin: 0;
+  background-color: #722372;
+}/*# sourceMappingURL=tours.css.map */

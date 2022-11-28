@@ -1,9 +1,7 @@
 .toursCards{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 10px;
-  
+  overflow: scroll;  
 
   .toursCard{
     height: 500px;

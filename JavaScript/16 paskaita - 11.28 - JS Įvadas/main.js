@@ -72,6 +72,22 @@ let bool2 = false;
   /=  - dalinimas (kazkas = kazkas / kazkiek)
   %=  - liekanos radimas (kazkas = kazkas % kazkiek)
   **= - laipsnio kėlimas / šaknies traukimas (kazkas = kazkas ** kazkiek)
+
+            Comparison
+  ==  - ar lygu duomenys
+  === - ar lygu duomenys ir tipas
+  >   - daugiau negu
+  <   - mažiau negu
+  >=  - daugiau arba lygu negu
+  <=  - mažiau arba lygu negu
+
+            Logical
+  !   - ne (apverčia reikšmę) (NOT)
+  &&  - ir                    (AND)
+  ||  - arba                  (OR)
+
+                  Type
+  typeof      - tikrina tipą
 */
 
 // ---------------------------TASK2------------------------------------

@@ -51,7 +51,7 @@ let bool2 = false;
 // ----------------------------------------------------------------------------
 
 //          Operatoriai
-/* 
+/*
             Arithmetic
   +   - sudėtis
   -   - atimtis
@@ -163,4 +163,84 @@ let bool2 = false;
   console.log('number1>=number2',number1>=number2);
   console.log('!(number1>=number2)',!(number1>=number2));
   console.log('number1<=number2',number1<=number2);
+}
+
+//                    Sąlygos
+/*
+                      If Else
+  if        - pradinė sąlyga
+  else if   - papildoma sąlyga, kuri tikrinama tik jeigu aukščiau esanti/čios sąlyga/os grąžino false
+  else if ...
+  else      - vykdomas jeigu visos aukščiau esančios sąlygos grąžino false
+
+                      Nesting
+  Sąlygos viduje, rašoma kita sąlyga.
+
+
+*/
+
+let amzius = 15;
+if(amzius >= 18){
+  console.log('Esi pilnametis.');
+  if(amzius > 90 && amzius < 130){
+    console.log('Esi pensininkas.');
+  } else if(amzius < 90) {
+    console.log('Esi darbingo amžiaus pilietis.');
+  } else {
+    console.log('Kaip tu dar gyvs?');
+  }
+} else if(amzius < 7) {
+  console.log('Esi iki mokyklinio amžiaus.');
+} else {
+  console.log('Esi mokyklinukas.');
+}
+
+
+// ---------------------------TASK5-6-7-----------------------------------
+{
+  let arTuriVairuotojoTeises = true;
+  let arTuriAutomobili = false;
+  let arEsiBlaivas = false;
+  if(arTuriVairuotojoTeises === true){
+    console.log("Vairuotojo teises turi.");
+    if(arTuriAutomobili === true && arEsiBlaivas === true){
+      console.log("Gali sėst ir važiuoti.");
+    } else if(arTuriAutomobili === false){
+      console.log("Neturi auto - neturi ko vairuot.");
+    } else {
+      console.log("Nesi blaivas - nėra ko vairuoti.");
+    }
+  } else {
+    console.log("Vairuotojo teisių neturi.");
+  }
+}
+
+//                  AND ir OR
+/*
+  Naudojant && tikrinama ar abejose pusėse yra tiesa. Jeigu bent vienoje pusėje yra melas - grąžina melą. Jeigu kairėje pusėje yra melas - dešinės pusės net netikrina/nevykdo.
+  Naudojant || tikrinama ar bent vienoje pusėje yra tiesa. Jeigu bent vienoje pusėje yra tiesa - grąžina tiesą. Jeigu kairėje pusėje yra tiesa - dešinės pusės net netikrina/nevykdo.
+*/
+if(5 == '5' && typeof('5') == typeof(5)){
+  console.log('lygu');
+} else {
+  console.log('nelygu');
+}
+if(false || false){
+  console.log('tiesa');
+} else {
+  console.log('melas');
+}
+
+//                Truthy ir Falsy
+/*
+  truthy  - true  | not 0 number  | 'string'          | [] | {} | () => {}
+  falsy   - false | 0             | '' (empty string) | 
+*/
+
+let kintamasisKazkoks = 'a';
+
+if(kintamasisKazkoks){
+  console.log('irase');
+} else {
+  console.log('neirase');
 }

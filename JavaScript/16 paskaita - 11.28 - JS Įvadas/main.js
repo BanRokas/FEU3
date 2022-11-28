@@ -258,7 +258,8 @@ switch(megstamiausiaSpalva){
     break;
 }
 
-let miestas = prompt("Iš kurio miesto esate?");
+// let miestas = prompt("Iš kurio miesto esate?");
+let miestas = "Kaunas";
 switch(miestas){
   case "Kaunas":
     console.log("Kaunas yra Lietuvos širdis, jei Vilniečiai neužpyks");
@@ -270,5 +271,6 @@ switch(miestas){
     console.log("Klaipėda vienintelis Lietuvos miestas su normaliu uostu.");
     break;
   default:
-    window.alert("Nėr tokio miesto!");
+    // window.alert("Nėr tokio miesto!");
+    console.log("Nėr tokio miesto!");
 }

@@ -1,0 +1,2 @@
+1) Sukurti po 5 string ir number bei 2 boolean kintamuosius;
+2) Atlikti visus galimus veiksmus su išvardintais operatoriais ir sukurtais kintamaisiais (ne su kiekvienu kintamuoju, bet su kintamojo tipu)

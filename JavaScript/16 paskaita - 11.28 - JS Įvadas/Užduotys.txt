@@ -5,3 +5,25 @@
 5) Parašyti sąlygą, kuri tikrintų ar turi vairuotojo teises.
 6) Papildyti 5'tos užduoties sąlygą, kad tikrintų ar vairuotojas turintis vairuotojo teises - turi automobilį. (nesting)
 7) Papildyti 5-6'tos užduoties sąlygą, kad tikrintų ar vairuotojas turintis vairuotojo teises - turi automobilį ir yra blaivas. (AND)
+
+8) Padaryti taip, kad puslapis su tavimi pasisveikintu, patikrintu kokiame mieste gyveni ir išvestų su tai susijusią info (pasakytų ką nors gražaus apie tavo miestą(galima tobulinti išskiriant keletą miestų, o ne išvedant tą pačią žinutę apie visus)).
+  Naudoti:
+    1) let/const - kurti kintamuosius
+    2) prompt - gauti tavo info.
+    3) alert/console.log - grąžintų atsakymus.
+    4) if/elseIf/else - kas be ko...
+
+9) Parašyti switch'ą, kuris tikrintų koks dabar mėnuo ir grąžintų koks yra metų laikas
+  Naudoti:
+    1) let/const - kurti kintamuosius.
+    2) prompt - gauti mėnesį.
+    3) alert/console.log - grąžinti atsakymą.
+    4) switch - kas be ko...
+
+10 extra) Padaryti taip, kad puslapis su tavimi pasisveikintų naudodamas teisingą tavo vardo galunę (ir tiktų ne tik tavo vardui, o visiem).
+  Naudoti: 
+    1) let/const - kurti kintamuosius
+    2) prompt - gauti tavo vardą
+    3) endsWith + slice + concat - tikrinti ir koreguoti vardą
+    4) alert/console.log - grąžinti teisingą pasisveikinimą.
+    5) if/elseIf/else - kas be ko...

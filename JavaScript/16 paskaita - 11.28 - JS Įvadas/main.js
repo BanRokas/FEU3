@@ -71,7 +71,7 @@ let bool2 = false;
   *=  - dauginimas (kazkas = kazkas * kazkiek)
   /=  - dalinimas (kazkas = kazkas / kazkiek)
   %=  - liekanos radimas (kazkas = kazkas % kazkiek)
-  **=  - laipsnio kėlimas / šaknies traukimas (kazkas = kazkas ** kazkiek)
+  **= - laipsnio kėlimas / šaknies traukimas (kazkas = kazkas ** kazkiek)
 */
 
 // ---------------------------TASK2------------------------------------
@@ -123,4 +123,15 @@ let bool2 = false;
 
   console.log('number3+bool1', number3+bool1);
   console.log('string4+bool1', string4+bool1);
+}
+// ---------------------------TASK3------------------------------------
+{
+  console.log('number4++',++number4);
+  console.log('number3--',--number3);
+  console.log('number3+=number1',number3+=number1);
+  console.log('number4-=number3',number4-=number3);
+  console.log('number4*=number1',number4*=number1);
+  console.log('number2/=number3',number2/=number3);
+  console.log('number1%=number3',number1%=number3);
+  console.log('number4**=number5',number4**=number5);
 }

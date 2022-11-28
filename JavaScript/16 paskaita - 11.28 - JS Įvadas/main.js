@@ -176,7 +176,6 @@ let bool2 = false;
                       Nesting
   Sąlygos viduje, rašoma kita sąlyga.
 
-
 */
 
 let amzius = 15;
@@ -233,8 +232,8 @@ if(false || false){
 
 //                Truthy ir Falsy
 /*
-  truthy  - true  | not 0 number  | 'string'          | [] | {} | () => {}
-  falsy   - false | 0             | '' (empty string) | 
+  truthy  - true  | not 0 number  | 'string'          | array/masyvas | objektas  | funkcija
+  falsy   - false | 0             | '' (empty string) | undefined     | null      | NaN
 */
 
 let kintamasisKazkoks = 'a';
@@ -243,4 +242,33 @@ if(kintamasisKazkoks){
   console.log('irase');
 } else {
   console.log('neirase');
+}
+
+//                      Switch
+// let megstamiausiaSpalva = prompt("Įveskite mėgstamiausią spalvą.");
+let megstamiausiaSpalva = "raudona";
+switch(megstamiausiaSpalva){
+  case 'geltona':
+  case 'raudona':
+    console.log("Tu mėgsti ryškias spalvas.");
+    break;
+  case 'mėlyna':
+  case 'ruda':
+    console.log("Tu mėgsti tamsias spalvas.");
+    break;
+}
+
+let miestas = prompt("Iš kurio miesto esate?");
+switch(miestas){
+  case "Kaunas":
+    console.log("Kaunas yra Lietuvos širdis, jei Vilniečiai neužpyks");
+    break;
+  case "Vilnius":
+    console.log("Vilnius yra Lietuvos sostinė, shshh Kauniečiai su savo laikinąja.");
+    break;
+  case "Klaipėda":
+    console.log("Klaipėda vienintelis Lietuvos miestas su normaliu uostu.");
+    break;
+  default:
+    window.alert("Nėr tokio miesto!");
 }

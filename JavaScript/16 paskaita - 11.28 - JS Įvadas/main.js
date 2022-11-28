@@ -52,15 +52,75 @@ let bool2 = false;
 
 //          Operatoriai
 /* 
-            Basic ones
+            Arithmetic
   +   - sudėtis
   -   - atimtis
   *   - daugyba
   /   - dalyba
   **  - kėlimas laipsniu (šaknies traukimas)
   %   - liekanos radimas
-  ++  - didėjimas
-  --  - mažėjimas
+
+            Assignment
+  =   - lygybė
+  
+            Shortcuts
+  ++  - didėjimas vienetu (kazkas = kazkas + 1)
+  --  - mažėjimas vienetu (kazkas = kazkas - 1)
+  +=  - pridėjimas (kazkas = kazkas + kazkiek)
+  -=  - atėmimas (kazkas = kazkas - kazkiek)
+  *=  - dauginimas (kazkas = kazkas * kazkiek)
+  /=  - dalinimas (kazkas = kazkas / kazkiek)
+  %=  - liekanos radimas (kazkas = kazkas % kazkiek)
+  **=  - laipsnio kėlimas / šaknies traukimas (kazkas = kazkas ** kazkiek)
 */
 
-console.log();
+// ---------------------------TASK2------------------------------------
+{
+  console.log('number1+number2', number1+number2);
+  console.log('number1-number2', number1-number2);
+  console.log('number1*number2', number1*number2);
+  console.log('number1/number2', number1/number2);
+  console.log('number1**number2', number1**number2);
+  console.log('number1%number2', number1%number2);
+  console.log('number1++', ++number1);
+  console.log('number2--', --number2);
+
+  console.log('string1+string2', string1+string2); // tik šitas viable
+  console.log('string1-string2', string1-string2);
+  console.log('string1*string2', string1*string2);
+  console.log('string1/string2', string1/string2);
+  console.log('string1**string2', string1**string2);
+  console.log('string1%string2', string1%string2);
+  // console.log('string1++', ++string1);
+  // console.log('string2--', --string2);
+
+  // Naudojant matematinius operatorius su boolean tipo kintamaisiais, boolean tipo kintamieji yra verčiami į 0 ir 1. false -> 0; true -> 1
+  console.log('bool1+bool2', bool1+bool2);
+  console.log('bool1+bool1', bool1+bool1);
+  console.log('bool2+bool2', bool2+bool2);
+  console.log('bool1-bool2', bool1-bool2);
+  console.log('bool1*bool2', bool1*bool2);
+  console.log('bool1/bool2', bool1/bool2);
+  console.log('bool1**bool2', bool1**bool2);
+  console.log('bool1%bool2', bool1%bool2); // tik šitas negalimas ( 1 % 0 )
+  console.log('bool2%bool1', bool2%bool1);
+  // console.log('bool1++', ++bool1);
+  // console.log('bool2--', --bool2);
+
+  console.log('number1+string3', number1+string3); // tik šitas galimas
+  console.log('number1-string3', number1-string3);
+  console.log('number1*string3', number1*string3);
+  console.log('number1/string3', number1/string3);
+  console.log('number1**string3', number1**string3);
+  console.log('number1%string3', number1%string3);
+
+  console.log('string2+number2', string2+number2); // tik šitas galimas
+  console.log('string2-number2', string2-number2);
+  console.log('string2*number2', string2*number2);
+  console.log('string2/number2', string2/number2);
+  console.log('string2**number2', string2**number2);
+  console.log('string2%number2', string2%number2);
+
+  console.log('number3+bool1', number3+bool1);
+  console.log('string4+bool1', string4+bool1);
+}

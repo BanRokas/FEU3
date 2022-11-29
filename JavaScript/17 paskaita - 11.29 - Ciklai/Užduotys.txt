@@ -21,3 +21,10 @@
   4.2) 2.2 konteinerio reikšmes.
   4.3) 2.3-2.6 konteinerių reikšmes su jų viduje esančių konteinerių reikšmėmis.
   4.4) 2.3-2.6 konteinerių reikšmes su kitų konteinerių reikšmėmis (3kartus skirtingas reikšmes).
+
+5) Parašyti if'ą, kuris tikrintų kokia tavo lytis (tikrinimas turi vykti iš object kintamojo (object kintamasis turi turėti bent 4 kintamuosiuos savo viduje)).
+  Naudoti:
+    1) let/const - kurti kintamuosius (objektą/us)
+    optional) prompt - vartotojas priskirtų objektui reikšmes
+    2) alert/console.log - grąžintų atsakymus.
+    3) if/elseIf/else - kas be ko... (arrrrrrrrrba ternary)

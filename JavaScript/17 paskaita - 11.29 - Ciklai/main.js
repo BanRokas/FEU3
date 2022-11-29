@@ -118,3 +118,33 @@
   ];
   console.log(mixed2);
 }
+
+//              Sąlygos
+/*
+  If Else
+  Switch
+  Ternary (max trumpintas if else)
+    salyga ? jeiguTiesa : jeiguMelas    -   if else
+  OR / AND - galimas if salygų trumpinimas
+*/
+//              Ternary
+{
+  if(10 < 5){
+    console.log("tiesa");
+  } else {
+    console.log("melas");
+  }
+  10 < 5 ? console.log("tiesa") : console.log("melas");
+
+  // let number = prompt("Įveskitę skaičių");
+  let number = 10;
+  if(number > 20){
+    console.log("20 -> infinity");
+  } else if(number <= 0){
+    console.log("-infinity -> 0");
+  } else {
+    console.log("0 -> 20");
+  }
+  number > 20 ? console.log("20 -> infinity") : number <= 0
+              ? console.log("-infinity -> 0") : console.log("0 -> 20");
+}

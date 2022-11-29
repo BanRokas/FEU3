@@ -8,6 +8,7 @@
 
 //              Objektai
 {
+  console.groupCollapsed('Objektai');
   /*let vardas = "Rokas";
   let pavarde = "Banaitis";
   let amzius = 26;
@@ -55,9 +56,11 @@
   zmogus1.ugis = 180;
   // zmogus1['ugis'] = 190;
   console.log(zmogus1);
+  console.groupEnd();
 }
 //              Masyvai
 {
+  console.groupCollapsed("Masyvai");
   // let menesis1 = "Sausis";
   // let menesis2 = "Vasaris";
   // let menesis3 = "Kovas";
@@ -84,9 +87,11 @@
   console.log(masyvas[0]);
   console.log(masyvas[masyvas.length - 1]);
   console.log(masyvas);
+  console.groupEnd();
 }
 //              Masyvai ir Objektai
 {
+  console.groupCollapsed("Masyvai ir Objektai");
   let mixed1 = {
     vardas: "Rokas",
     amzius: 26,
@@ -117,6 +122,7 @@
     }
   ];
   console.log(mixed2);
+  console.groupEnd();
 }
 
 //              Sąlygos
@@ -129,6 +135,7 @@
 */
 //              Ternary
 {
+  console.groupCollapsed("Ternary");
   if(10 < 5){
     console.log("tiesa");
   } else {
@@ -147,6 +154,7 @@
   }
   number > 20 ? console.log("20 -> infinity") : number <= 0
               ? console.log("-infinity -> 0") : console.log("0 -> 20");
+  console.groupEnd();
 }
 
 //              Ciklai
@@ -166,18 +174,54 @@
   for(iteratorius, salyga(suIteratoriumi), iteratoriausKitimas){
     // veiksmai
   }
+  for naudojamas tuomet, kada gali apskaičiuoti/žinai kiek sykių kartosis ciklas.
 */
-// console.log(1);
-// console.log(2);
-// console.log(3);
-// console.log(4);
-// console.log(5);
-// console.log(6);
-// console.log(7);
-// console.log(8);
-// console.log(9);
-// console.log(10);
+{
+  console.groupCollapsed("For");
+  // console.log(1);
+  // console.log(2);
+  // console.log(3);
+  // console.log(4);
+  // console.log(5);
+  // console.log(6);
+  // console.log(7);
+  // console.log(8);
+  // console.log(9);
+  // console.log(10);
+  for(let i = 1; i <= 10; i++){
+    console.log(i);
+  }
+  
+  let masyvas = [9,5,4,6,1,2,1,2,3,4,5,6,7,8,9];
+  console.log(masyvas);
+  for(let i = 0; i < masyvas.length; i++){
+    console.log(masyvas[i]);
+  }
+  console.log(masyvas);
+  console.groupEnd();
+}
 
-for(let i = 1; i <= 10; i++){
-  console.log(i);
+//              while
+/*
+  while(salyga){
+    // veiksmai
+  }
+  while ciklas naudojamas tuomet, kai negali apskaičiuoti/žinoti kiek kartų reikės vykdyti ciklą.
+*/
+{ 
+  console.group("While");
+  let masyvas = [9,5,4,6,1,2,1,2,3,4,5,6,7,8,9];
+  console.log(masyvas);
+  while(masyvas.length){
+    console.log(masyvas.shift());
+  }
+  console.log(masyvas);
+
+  let i = 1;
+  while(i <= 10){
+    console.log(i);
+    i++;
+  }
+
+  console.groupEnd();
 }

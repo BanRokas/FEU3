@@ -209,7 +209,7 @@
   while ciklas naudojamas tuomet, kai negali apskaičiuoti/žinoti kiek kartų reikės vykdyti ciklą.
 */
 { 
-  console.group("While");
+  console.groupCollapsed("While");
   let masyvas = [9,5,4,6,1,2,1,2,3,4,5,6,7,8,9];
   console.log(masyvas);
   while(masyvas.length){

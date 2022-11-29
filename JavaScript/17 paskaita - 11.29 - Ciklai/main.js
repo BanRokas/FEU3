@@ -148,3 +148,36 @@
   number > 20 ? console.log("20 -> infinity") : number <= 0
               ? console.log("-infinity -> 0") : console.log("0 -> 20");
 }
+
+//              Ciklai
+/*
+  for
+  while
+
+  do while
+  for in
+  for of
+
+  Ciklai - yra kartojami nurodyti veiksmai, tol kol yra tenkinama pateikta sąlyga.
+*/
+
+//              for
+/*
+  for(iteratorius, salyga(suIteratoriumi), iteratoriausKitimas){
+    // veiksmai
+  }
+*/
+// console.log(1);
+// console.log(2);
+// console.log(3);
+// console.log(4);
+// console.log(5);
+// console.log(6);
+// console.log(7);
+// console.log(8);
+// console.log(9);
+// console.log(10);
+
+for(let i = 1; i <= 10; i++){
+  console.log(i);
+}

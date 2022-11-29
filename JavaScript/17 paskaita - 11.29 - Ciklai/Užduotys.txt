@@ -1,0 +1,23 @@
+1) Susikurti kintamuosius su reikšmingais pavadinimais ir informacija.
+  1.1) 5 string.
+  1.2) 5 int.
+  1.3) 3 bool.
+
+2) Susikurti konteinerius ir juos užpildyti reikšmėmis (bent po 1 kiekvieno tipo).
+  2.1) Masyvas bent 6 ilgio. []
+  2.2) Objektas bent 6 ilgio. {}
+
+  2.3) Masyvas bent 4 ilgio, kurio viduje būtų kitas masyvas bent 4 ilgio.
+  2.4) Masyvas bent 4 ilgio, kurio viduje būtų objektas bent 4 ilgio.
+  2.5) Objektas bent 4 ilgio, kurio viduje būtų masyvas bent 4 ilgio.
+  2.6) Objektas bent 4 ilgio, kurio viduje būtų objektas bent 4 ilgio.
+
+3) Į konsolę išvesti:
+  3.1) Bent po 2 reikšmes iš 2.1 ir 2.2 konteinerių.
+  3.2) Bent po 3 reikšmes iš 2.3-2.6 konteinerių su bent 1 reikšme esančia konteinerio konteineryje.
+
+4) Palyginti ir į konsolę išvesti kokias nors:
+  4.1) 2.1 konteinerio reikšmes.
+  4.2) 2.2 konteinerio reikšmes.
+  4.3) 2.3-2.6 konteinerių reikšmes su jų viduje esančių konteinerių reikšmėmis.
+  4.4) 2.3-2.6 konteinerių reikšmes su kitų konteinerių reikšmėmis (3kartus skirtingas reikšmes).

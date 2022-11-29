@@ -28,3 +28,19 @@
     optional) prompt - vartotojas priskirtų objektui reikšmes
     2) alert/console.log - grąžintų atsakymus.
     3) if/elseIf/else - kas be ko... (arrrrrrrrrba ternary)
+
+6) Parašyti ciklą, kuris sukurtų 50 random skaičių (nuo 0 iki 100) masyvą.
+7) Parašyti ciklą, kuris išspausdintų kas trečią masyvo elementą.
+8) Parašyti ciklą, kuris išspausdintų kas antrą masyvo elementą nuo galo.
+9) Parašyti ciklą, kuris iš masyvo išspausdintų tik elementus, kurių reikšmė didesnė negu 54.
+10) Parašyti ciklą, kuris iš masyvo išspausdintų tik lyginius/nelyginius skaičius. (2ciklai)
+
+extra 1) Parašyti ciklą, kuris atlieka Fizz Buzz testą nuo 0 iki 100.
+  Fizz - jeigu skaičius yra 3 kartotinis/daliklis/dalijasi iš 3 be liekanos.
+  Buzz - jeigu skaičius yra 5 kartotinis/daliklis/dalijasi iš 5 be liekanos.
+  FizzBuzz - jeigu skaičius yra 3 ir 5 kartotinis/daliklis/dalijasi iš 3 ir 5 be liekanos.
+  skaičius - kitais atvejais.
+
+EXTRA 2) Parašyti ciklą, kuris atrinktų ir į konsolę išspausdintų tik pirminius skaičius intervale nuo 0 iki 100.
+  Pirminis skaičius - dalinasi TIK iš savęs paties ir iš 1 be liekanos.
+  pvz(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101)

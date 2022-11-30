@@ -60,3 +60,24 @@
   masyvas.forEach(element => typeof(element) === "number" ? console.log(element) : null);
   console.groupEnd();
 }
+
+//          Funkcijos
+/*
+  Funkcija - veiksmų seka, kuri yra vykdoma tik tuomet, kai į tą funkcija yra kreipiamasi.
+  Parametrai/Argumentai - duomenys, perduodami funkcijai jos iškvietimo metu, su kuriais funkcijos viduje bus atliekami kažkokie veiksmai.
+  Return - funkcija gali kažką grąžinti. Funkcijos veiksmai vyksta iki tol kol pasiekiamas return'as.
+*/
+function hello(vardas){
+  console.log("Hello " + vardas);
+}
+
+function sudetis(nr1, nr2){
+  console.log("why not");
+  if(typeof(nr1)==="number" && typeof(nr2)==="number"){
+    let atsakymas = nr1 + nr2;
+    return atsakymas;
+  } else {
+    return "Error 404";
+  }
+  console.log("not happening");
+}

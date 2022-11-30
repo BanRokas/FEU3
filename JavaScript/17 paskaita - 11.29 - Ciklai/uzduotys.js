@@ -14,3 +14,17 @@ for(let i = 0; i < 50; i++){
   skaiciuMasyvas.push(Math.floor(Math.random()*101));
 }
 console.log(skaiciuMasyvas);
+
+// 7
+console.groupCollapsed('7');
+for(let i = 0; i < skaiciuMasyvas.length; i+=3){
+  console.log(skaiciuMasyvas[i]);
+}
+console.groupEnd();
+
+// 8
+console.groupCollapsed('8');
+for(let i = skaiciuMasyvas.length - 1; i >= 0; i-=2){
+  console.log(skaiciuMasyvas[i]);
+}
+console.groupEnd();

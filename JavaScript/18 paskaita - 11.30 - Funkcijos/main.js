@@ -81,3 +81,13 @@ function sudetis(nr1, nr2){
   }
   console.log("not happening");
 }
+
+function kiekStringuMasyve(array){
+  let kiek = 0;
+  for(let i = 0; i < array.length; i++){
+    if(typeof(array[i]) === "string"){
+      kiek++;
+    }
+  }
+  return kiek;
+}

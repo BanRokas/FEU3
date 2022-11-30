@@ -48,3 +48,14 @@ function lastToFirst(array){
   //   console.log(element);
   // }
 }
+
+// 4
+let zodziuMasyvas = ['labas', 'ate', 'zodis', 'kaliause'];
+// function zodziuRikiavimas (a, b) { return a.localeCompare(b); }
+// function rikiuojameZodiuMasyva(masyvas){
+//   return masyvas.sort(zodziuRikiavimas);
+// }
+
+function rikiuojameZodiuMasyva(masyvas){
+  return masyvas.sort((a,b) => a.localeCompare(b));
+}

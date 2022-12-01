@@ -55,7 +55,30 @@ let zodziuMasyvas = ['labas', 'ate', 'zodis', 'kaliause'];
 // function rikiuojameZodiuMasyva(masyvas){
 //   return masyvas.sort(zodziuRikiavimas);
 // }
-
 function rikiuojameZodiuMasyva(masyvas){
   return masyvas.sort((a,b) => a.localeCompare(b));
+}
+
+// 5
+let task2 = [1,5,6,7,8,1,4,6,1,6,-4,654,-1,46541,-441,1];
+function rikiuojameSkaiciusMasyva(arr1){
+  return arr1.sort(function(a,b){return a-b});
+}
+
+// 6
+function nuoIki(nr1, nr2){
+  let arrayToReturn = [];
+  for(let i = nr1; i <= nr2; i++){
+    arrayToReturn.push(i);
+  }
+  return arrayToReturn;
+}
+
+// 7
+function nuoIkiZingsniu(step, nr1, nr2){
+  let arrayToReturn = [];
+  for(let i = nr1; i <= nr2; i+=step){ // i = i + step
+    arrayToReturn.push(i);
+  }
+  return arrayToReturn;
 }

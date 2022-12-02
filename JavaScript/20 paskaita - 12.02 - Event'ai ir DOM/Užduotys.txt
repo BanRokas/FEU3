@@ -2,3 +2,16 @@
 2) Iš JS'o selektinti elementus 10 naudojant skirtingų selektorių.
 3) Išbandyti 5 skirtingus event'ų listener'ius.
 4) Uždėti vienodą event'ą, 5'iems vienu metu selektintiems elementams.
+
+5) Sukurti skaičiuotuvą.
+        Skaičiuotuvą daryti vienu iš dviejų būdų:
+        1) HTML'e sukurti.
+        2 optional) JS'e sukurti ir įkelti į HTML'ą.
+  5.1) HTML'e vartotojas:
+    įveda skaičių;
+    pasirenka veiksmą;
+    įveda skaičių;
+    paspaudžia mygtuką "skaičiuoti"
+  5.2) Vartotojo įvesti duomenys, keliauja į JS
+  5.3) JS patikrina duomenis ir atlieka atitinkamus veiksmus
+  5.4) HTML'e per JS'ą grąžinamas atsakymas

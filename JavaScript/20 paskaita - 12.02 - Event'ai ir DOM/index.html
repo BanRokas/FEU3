@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20 paskaita - Event'ai ir DOM</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="event">
+      <h1>Events</h1>
+      <p>
+        Įvykiai - puslapyje vykstantys kažkokie veiksmai/įvykiai (pelės paspaudimas, klaviatūros paspaudimas, informacijos pažymėjimas, scroll'inimas, formos pateikimas, failo įkėlimas/atsisiuntimas...).<br>
+        Norėdami klausyti ar nutinka koks įvykis, turime pradžioje nurodyti (selektinti) kurioje DOM dalyje tas įvykis gali nutikti.<br>
+        Nusirodžius (selektinus), kurioje dalyje klausomės įvykio - reikia aprašyti įvykio klausymąsį. Tai padarome rašydami "addEventListener" metodą, kuris priima 2 parametrus: koksĮvykis, kąDarytiNutikusĮvykiui.
+      </p>
+    </section>
+    <section id="DOM">
+      <h1>Document Object Model</h1>
+      <p>
+        Dokumentas - puslapis, kuriame yra visa vartotojui atvaizduojama informacija (tekstas, paveiksliukas, forma, lentelė...).<br>
+        Objektas - kažkoks puslapio elementas (nuo html tag'o, iki ikonos ar span tag'o).<br>
+        Modelis - objektų struktūra kažkuriame elemente (tekstas, paveiksliukas, forma, lentelė...).
+      </p>
+      <p>
+        Norėdami per JS selektinti kažkurią DOM dalį, turime rašyti tokį kodą: "document.querySelector" arba "document.querySelectorAll". "QuerySelector" priima 1 parametrą - selektorių (tokį kokį rašėme CSS'e).
+      </p>
+    </section>
+  </main>
+</body>
+</html>

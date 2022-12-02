@@ -1,0 +1,4 @@
+1) Pasikonspektuoti Event'us ir DOM.
+2) Iš JS'o selektinti elementus 10 naudojant skirtingų selektorių.
+3) Išbandyti 5 skirtingus event'ų listener'ius.
+4) Uždėti vienodą event'ą, 5'iems vienu metu selektintiems elementams.

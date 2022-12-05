@@ -18,19 +18,54 @@ let bandymas1 = document.querySelector('#bandymas1');
 
 let data = "Paragrafas su daug teksto...";
 
-bandymas1.innerHTML +=`
+bandymas1.innerHTML +=
+  // <button class="slepti">Slėpti</button>
+  // <button class="rodyti nonDisplay">Rodyti</button>
+  `
+  <button class="sleptiRodyti">Slėpti</button>
   <div>
     <h1>Pavadinimas</h1>
     <p>${data}</p>
   </div>
 `;
 
+//        task1
+
+let sleptiRodyti = document.querySelector('.sleptiRodyti');
+
+sleptiRodyti.addEventListener('click', function () {
+  if(sleptiRodyti.innerText === "Slėpti"){
+    sleptiRodyti.innerText = "Rodyti";
+    bandymas1.children[1].classList.toggle('nonDisplay');
+  } else if(sleptiRodyti.innerText === "Rodyti"){
+    sleptiRodyti.innerText = "Slėpti";
+    bandymas1.children[1].classList.toggle('nonDisplay');
+  }
+  // bandymas1.children[1].classList.toggle('nonDisplay');
+});
+
+
+
+// let sleptiMygtukas = document.querySelector(".slepti");
+// let rodytiMygtukas = document.querySelector(".rodyti");
+// console.log(rodytiMygtukas);
+// sleptiMygtukas.addEventListener('click', function(){
+//   sleptiMygtukas.classList.add('nonDisplay');
+//   bandymas1.children[2].classList.add('nonDisplay');
+//   rodytiMygtukas.classList.remove('nonDisplay');
+// });
+// rodytiMygtukas.addEventListener('click', function(){
+//   sleptiMygtukas.classList.remove('nonDisplay');
+//   bandymas1.children[2].classList.remove('nonDisplay');
+//   rodytiMygtukas.classList.add('nonDisplay');
+// });
+
 //            bandymas2
 let bandymas2 = document.querySelector('#bandymas2');
 
 let antraste = "Super duper JS";
 let paragrafas = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consequuntur rerum deleniti autem incidunt accusamus corrupti, enim expedita distinctio ut.";
-
+bandymas2.innerHTML += `<button class="sleptiRodyti">Slėpti</button>`;
 for(let i = 0; i < 5; i++){
   bandymas2.innerHTML += `
     <div>
@@ -54,6 +89,7 @@ let paragrafai = [
   'Lorem ipsum dolor sit amet. 7'
 ];
 
+bandymas3.innerHTML += `<button class="sleptiRodyti">Slėpti</button>`;
 for(let i = 0; i < antrastes.length; i++){
   bandymas3.innerHTML += `
     <div>
@@ -85,6 +121,7 @@ let data4 = [
   }
 ];
 
+bandymas4.innerHTML += `<button class="sleptiRodyti">Slėpti</button>`;
 for(let i = 0; i < data4.length; i++){
   bandymas4.innerHTML += `
     <div>
@@ -93,3 +130,4 @@ for(let i = 0; i < data4.length; i++){
     </div>
   `;
 }
+

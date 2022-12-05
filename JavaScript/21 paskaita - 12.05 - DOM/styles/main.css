@@ -10,3 +10,7 @@
 #bandymas4{
   background-color: rgb(255, 198, 245);
 }
+
+.nonDisplay{
+  display: none;
+}

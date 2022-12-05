@@ -29,37 +29,6 @@ bandymas1.innerHTML +=
   </div>
 `;
 
-//        task1
-
-let sleptiRodyti = document.querySelector('.sleptiRodyti');
-
-sleptiRodyti.addEventListener('click', function () {
-  if(sleptiRodyti.innerText === "Slėpti"){
-    sleptiRodyti.innerText = "Rodyti";
-    bandymas1.children[1].classList.toggle('nonDisplay');
-  } else if(sleptiRodyti.innerText === "Rodyti"){
-    sleptiRodyti.innerText = "Slėpti";
-    bandymas1.children[1].classList.toggle('nonDisplay');
-  }
-  // bandymas1.children[1].classList.toggle('nonDisplay');
-});
-
-
-
-// let sleptiMygtukas = document.querySelector(".slepti");
-// let rodytiMygtukas = document.querySelector(".rodyti");
-// console.log(rodytiMygtukas);
-// sleptiMygtukas.addEventListener('click', function(){
-//   sleptiMygtukas.classList.add('nonDisplay');
-//   bandymas1.children[2].classList.add('nonDisplay');
-//   rodytiMygtukas.classList.remove('nonDisplay');
-// });
-// rodytiMygtukas.addEventListener('click', function(){
-//   sleptiMygtukas.classList.remove('nonDisplay');
-//   bandymas1.children[2].classList.remove('nonDisplay');
-//   rodytiMygtukas.classList.add('nonDisplay');
-// });
-
 //            bandymas2
 let bandymas2 = document.querySelector('#bandymas2');
 
@@ -131,3 +100,43 @@ for(let i = 0; i < data4.length; i++){
   `;
 }
 
+
+//        task1
+let sleptiRodyti = document.querySelectorAll('.sleptiRodyti');
+
+for(let i = 0; i < sleptiRodyti.length; i++){
+  sleptiRodyti[i].addEventListener('click', function () {
+    let itemsToHideOrShow = sleptiRodyti[i].parentElement.querySelectorAll('section > div');
+    if(sleptiRodyti[i].innerText === "Slėpti"){
+      sleptiRodyti[i].innerText = "Rodyti";
+      for(let j = 0; j < itemsToHideOrShow.length; j++){
+        itemsToHideOrShow[j].classList.toggle('nonDisplay');
+      }
+      // bandymas1.children[1].classList.toggle('nonDisplay');
+    } else if(sleptiRodyti[i].innerText === "Rodyti"){
+      sleptiRodyti[i].innerText = "Slėpti";
+      for(let j = 0; j < itemsToHideOrShow.length; j++){
+        itemsToHideOrShow[j].classList.toggle('nonDisplay');
+      }
+      // bandymas1.children[1].classList.toggle('nonDisplay');
+    }
+    // for(let j = 0; j < itemsToHideOrShow; j++){
+    //   itemsToHideOrShow[j].classList.toggle('nonDisplay');
+    // }
+    // bandymas1.children[1].classList.toggle('nonDisplay');
+  });
+}
+
+// let sleptiMygtukas = document.querySelector(".slepti");
+// let rodytiMygtukas = document.querySelector(".rodyti");
+// console.log(rodytiMygtukas);
+// sleptiMygtukas.addEventListener('click', function(){
+//   sleptiMygtukas.classList.add('nonDisplay');
+//   bandymas1.children[2].classList.add('nonDisplay');
+//   rodytiMygtukas.classList.remove('nonDisplay');
+// });
+// rodytiMygtukas.addEventListener('click', function(){
+//   sleptiMygtukas.classList.remove('nonDisplay');
+//   bandymas1.children[2].classList.remove('nonDisplay');
+//   rodytiMygtukas.classList.add('nonDisplay');
+// });

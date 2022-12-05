@@ -145,19 +145,31 @@ console.log(data);
 
 // task 2
 let task2 = document.querySelector("#task2");
-
 task2.innerHTML += `
   <div class="task2">
   <h1>${data[1].title}</h1>
     <div class="task2_image_container">
-      ${
-        data[1].images.map(function(image){
-          return `<img src="${image}">`;
-        })
-      }
+      
     </div>
   </div>
 `;
+let imagesContainer = task2.querySelector('.task2_image_container');
+for(let i = 0; i < data[1].images.length; i++){
+  imagesContainer.innerHTML += `<img src="${data[1].images[i]}"></img>`;
+}
+
+// task2.innerHTML += `
+//   <div class="task2">
+//   <h1>${data[1].title}</h1>
+//     <div class="task2_image_container">
+//       ${
+//         data[1].images.map(function(image){
+//           return `<img src="${image}">`;
+//         })
+//       }
+//     </div>
+//   </div>
+// `;
 
 // for(let image of data[1].images){
 //   console.log(image);

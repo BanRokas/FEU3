@@ -16,7 +16,7 @@ let bandymas1 = document.querySelector('#bandymas1');
 // div.append(p);
 // bandymas1.append(div);
 
-let data = "Paragrafas su daug teksto...";
+let data1 = "Paragrafas su daug teksto...";
 
 bandymas1.innerHTML +=
   // <button class="slepti">Slėpti</button>
@@ -25,7 +25,7 @@ bandymas1.innerHTML +=
   <button class="sleptiRodyti">Slėpti</button>
   <div>
     <h1>Pavadinimas</h1>
-    <p>${data}</p>
+    <p>${data1}</p>
   </div>
 `;
 
@@ -140,3 +140,5 @@ for(let i = 0; i < sleptiRodyti.length; i++){
 //   bandymas1.children[2].classList.remove('nonDisplay');
 //   rodytiMygtukas.classList.add('nonDisplay');
 // });
+
+console.log(data);

@@ -1,1 +1,20 @@
-1) Sukurti funkcionalumą, kuris slėptų/rodytų sekcijose atvaizduotą informaciją. (žiūrėti paveikslėlį images/task1.PNG)
+0) Sukurti funkcionalumą, kuris slėptų/rodytų sekcijose atvaizduotą informaciją. (žiūrėti paveikslėlį images/task1.PNG)
+
+1) Naudodamiesi data[0] duomeninis atlikite šiuos veiksmus:
+	1.1) JS'u sekcijoje sukurkite antraštę.
+	1.2) JS'u sekciją papildykite paragrafu su tekstu.
+	1.3) JS'u sekciją papildykite paveikslėliu.
+	1.4) JS'u sekciją stilizuokite priskirdami klases.
+2) Naudodamiesi data[1] duomenimis atlikite šiuos veiksmus:
+	2.1) JS'u sekcijoje sukurkite antraštę su paveiksliukais.
+	2.2) JS'u sekciją stilizuokite priskirdami klases.
+3) Naudodamiesi data[2] duomenimis atlikite šiuos veiksmus:
+  3.0) Sutvarkykite data[2] viduje esančius duomenis.
+	3.1) JS'u sekcijoje sukurkite antraštę su paveiksliukais.
+	3.2) JS'u sekciją papildykite paveiksliukų pavadinimais. (paveiksliukus ir jų pavadinimus laikyti atskiruose div'uose)
+	3.3) JS'u sekciją papildykite kiekvienam pavadinimui/paveiksliukui skirtais aprašymais.(paveiksliukus ir jų pavadinimus bei aprašymus laikyti atskiruose div'uose)
+	3.4) JS'u sekciją stilizuokite priskirdami klases.
+
+4 extra) Padaryti formą, kurioje įvedus duomenis (nuo, iki) ir paspaudus mygtuką "vykdyti", žemiau būtų sukurta grupė div'ų, kuriuose yra atliktas FizzBuzz metodas nuo duotojo parametro iki duotojo parametro. Viską gražiai stilizuoti.
+
+5 extra) Padaryti formą, kurioje įvedus duomenis (iki) ir paspaudus mygtuką "vykdyti", žemiau būtų sukurta grupė div'ų, kuriuose yra rasti pirminiai skaičiai iki duotojo parametro. Viską gražiai stilizuoti.

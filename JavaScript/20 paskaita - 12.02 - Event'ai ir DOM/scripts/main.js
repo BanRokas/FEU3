@@ -59,13 +59,35 @@ paragrafas.classList.add('tekstas');
 // task 5
 let calculator = document.querySelector("#calc");
 
-console.dir(calculator);
-calculator.children[0].addEventListener('submit', function(e){
+calculator.children.skaic.addEventListener('submit', function(e){
   e.preventDefault();
-  console.dir(e);
   let skaicius1 = e.target.elements.skaicius1.valueAsNumber;
-  console.log(skaicius1);
-
-
+  let skaicius2 = e.target.elements.skaicius2.valueAsNumber;
+  let veiksmas = e.target.elements.veiksmas.value;
   
+  let atsakymas = 0;
+  switch(veiksmas){
+    case 'sudetis':
+      atsakymas = skaicius1+skaicius2;
+      break;
+    case 'atimtis':
+      atsakymas = skaicius1-skaicius2;
+      break;
+    case 'dauginimas':
+      atsakymas = skaicius1*skaicius2;
+      break;
+    case 'dalinimas':
+      atsakymas = skaicius1/skaicius2;
+      break;
+    case 'laipsnis':
+      atsakymas = skaicius1**skaicius2;
+      break;
+    case 'saknis':
+      atsakymas = skaicius1**(1/skaicius2);
+      break;
+    case 'liekana':
+      atsakymas = skaicius1%skaicius2;
+      break;
+  }
+  calculator.children.output.innerHTML = atsakymas;
 });

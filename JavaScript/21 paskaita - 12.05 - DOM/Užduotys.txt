@@ -1,0 +1,1 @@
+1) Sukurti funkcionalumą, kuris slėptų/rodytų sekcijose atvaizduotą informaciją. (žiūrėti paveikslėlį images/task1.PNG)

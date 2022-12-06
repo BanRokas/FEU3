@@ -59,3 +59,13 @@ console.log(zodis.toUpperCase());
 let phoneRegex = new RegExp('^\(\+[0-9]{3}\)\s[0-9]{3}\s[0-9]{5}$');
                          // '^\(\+\d{3}\)\s\d{3}\s\d{5}$'
         // telefono numeris (+666) 666 66666
+
+
+//          Konspektas
+/*
+  Math.E -    Euler's number          - approximately 2.718
+  Math.LN10 - natural logarithm of 10 - approximately 2.302
+
+
+
+*/

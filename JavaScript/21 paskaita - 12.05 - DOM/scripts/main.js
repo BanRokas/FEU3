@@ -220,6 +220,8 @@ function primeNumbers(upTo){
       let isPrime = true;
       for(let j = 0; j < primeNumbers.length; j++){
         // if(primeNumbers[j] * 2 < i){
+          // isPrime = false;
+          //   break;
           if(i % primeNumbers[j] === 0){
             isPrime = false;
             break;

@@ -181,3 +181,67 @@ for(let i = 0; i < data[1].images.length; i++){
 /* <img src="${data[1].images[0]}">
   <img src="${data[1].images[1]}">
   <img src="${data[1].images[2]}"></img> */
+
+//    FizzBuzz
+// x%5 x%3 - fizzBuzz; x%3 - Fizz; x%5 - Buzz; x - x
+function fizzBuzz(nuo, iki){
+  for(let i = nuo; i <= iki; i++){
+    // if(i % 5 === 0 && i % 3 === 0){
+    if(i % (5*3) === 0){
+      console.log("FizzBuzz");
+    } else if(i % 3 === 0){
+      console.log("Fizz");
+    } else if(i % 5 === 0){
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+// Prime
+function primeNumbers(upTo){
+  let primeNumbers = [];
+  if(upTo > 10){
+    // find prime numbers up to 10
+    for(let i = 2; i < 10; i++){
+      let isPrime = true;
+      for(let j = 2; j < i-1; j++){
+        if(i % j === 0){
+          isPrime = false;
+          break;
+        }
+      }
+      if(isPrime){
+        primeNumbers.push(i);
+      }
+    }
+    for(let i = 10; i < upTo; i++){
+      let isPrime = true;
+      for(let j = 0; j < primeNumbers.length; j++){
+        // if(primeNumbers[j] * 2 < i){
+          if(i % primeNumbers[j] === 0){
+            isPrime = false;
+            break;
+          }
+        // }
+      }
+      if(isPrime){
+        primeNumbers.push(i);
+      }
+    }
+  } else {
+    for(let i = 2; i <= upTo; i++){
+      let isPrime = true;
+      for(let j = 2; j < i-1; j++){
+        if(i % j === 0){
+          isPrime = false;
+        }
+      }
+      if(isPrime){
+        primeNumbers.push(i);
+      }
+    }
+  }
+  console.log(primeNumbers);
+}

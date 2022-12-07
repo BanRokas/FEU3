@@ -56,16 +56,17 @@ console.log(zodis.toUpperCase());
   .....
 */
 //  (+370) 644 44444
-let phoneRegex = new RegExp('^\(\+[0-9]{3}\)\s[0-9]{3}\s[0-9]{5}$');
+let phoneRegex = '^\(\+[0-9]{3}\)\s[0-9]{3}\s[0-9]{5}$';
                          // '^\(\+\d{3}\)\s\d{3}\s\d{5}$'
         // telefono numeris (+666) 666 66666
 
+//      string task 4
+function fullNameSplit(fullName){
+  console.log(fullName.indexOf(' '));
+  let firstSpace = fullName.indexOf(' ');
+  let name1 = fullName.slice(0, firstSpace);
+  let name2 = fullName.slice(firstSpace+1);
+  console.log(name1+'-----'+name2);
+}
 
-//          Konspektas
-/*
-  Math.E -    Euler's number          - approximately 2.718
-  Math.LN10 - natural logarithm of 10 - approximately 2.302
-
-
-
-*/
+fullNameSplit("Rokas Banaitis trečiasis");

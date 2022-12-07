@@ -29,7 +29,7 @@ function daugyba0(){
 }
 
 let uzd1 = () => "labas";
-console.log(uzd1());
+// console.log(uzd1());
 // console.log((() => "Labas!")());
 
 let uzd2 = (par1, par2) => par1+par2;
@@ -55,26 +55,9 @@ let uzduotis9 = (masyvas1, n) => {
 
 
 //            Masyvų metodai
-/*Iteraciniai masyvų metodai
-  forEach()
-  map()
-  filter()
-  reduce()
 
-  reduceRight()
-  some()
-  every()
-  find()
-  findIndex()
-  findLast()
-  findLastIndex()
-  flatMap()
-
-  sort()
-
-
-*/
 // populiarus rikiavimo metodas - bubble sort
+console.groupCollapsed('masyvų metodai');
 let skMas = [5,6,7,1,8,16,51,61,91,9,61,61,321,32,169];
 let zodzMas = ['labas','ate','ąžuolas','ąsotis', 'žodis', 'kanarėlė'];
 
@@ -86,3 +69,64 @@ skMas.sort(skaiciuSortas);
 skMas.sort((a, b) => a - b);
 
 console.log(zodzMas.sort((a,b) => a.localeCompare(b)));
+console.groupEnd();
+// Iteraciniai masyvų metodai
+/*
+  Iteraciniai masyvų metodai - iteruoja per masyvą ir leidžia atlikti kažkokį veiksmą su kiekviena iteracija.
+  Naudinga tose situacijose, kuriose neleidžiamas paprastas for'as arba for of'as.
+*/
+/*Iteraciniai masyvų metodai
+  forEach()   -   Iteruoja per masyvo elementus.
+  map()       
+  filter()    
+  reduce()    
+
+  reduceRight()
+  some()
+  every()
+  find()
+  findIndex()
+  findLast()
+  findLastIndex()
+  flatMap()
+
+  sort()
+*/
+
+/* syntax for every iteration method except reduce, reduceRight, sort
+  someArray.method(element => veiksmai)
+  someArray.method((element, iteration) => veiksmai)
+  someArray.method((element, iteration, array) => veiksmai)
+*/
+let mokinimuisiSkirtasMasyvas = [4,6,1,"zodziu",false,false,4,'naujas'];
+
+// forEach - neatlieka kažko extra
+/* minusai
+  Negali būti sustabdytas (break)
+  Negrąžina jokios reikšmės (return)
+*/
+console.groupCollapsed("forEach");
+mokinimuisiSkirtasMasyvas.forEach(elementas => console.log("Masyvo elementas: ", elementas));
+console.log('');
+mokinimuisiSkirtasMasyvas.forEach((elementas, iteracija) => console.log("Masyvo "+ iteracija +" elementas: ", elementas));
+console.log('');
+mokinimuisiSkirtasMasyvas.forEach((elementas, iteracija, masyvas) => console.log("Masyvo "+ iteracija +" elementas: ", elementas, ';  Sekantis elementas yra: ', masyvas[iteracija+1]));
+console.groupEnd();
+
+// map - grąžina naują kažkaip modifikuotą masyvą.
+let naujasMasyvas = mokinimuisiSkirtasMasyvas.map(element => element+5);
+console.log(naujasMasyvas);
+console.log(mokinimuisiSkirtasMasyvas);
+
+// filter - grąžina naują masyvą, kuris atitinka nurodytą sąlygą
+let naujasFiltruotasMasyvas = mokinimuisiSkirtasMasyvas.filter(element => typeof(element) === "string");
+console.log(naujasFiltruotasMasyvas);
+console.log(mokinimuisiSkirtasMasyvas);
+
+// reduce - grąžina reikšmę, kuri susideda iš viso masyvo modifikuotų elementų
+let reduceintasMasyvas = mokinimuisiSkirtasMasyvas.reduce((bendras, elementas) => {
+  console.log(bendras);
+  return bendras + ' ' + elementas;
+}, 'pradžia');
+console.log(reduceintasMasyvas);
+console.log(mokinimuisiSkirtasMasyvas);

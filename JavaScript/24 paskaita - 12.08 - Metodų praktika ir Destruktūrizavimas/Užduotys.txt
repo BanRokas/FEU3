@@ -18,3 +18,11 @@ ForEach, Filter, Reduce ir Map:
     4.2) Susikurti masyvą, kuriame būtų išrašyti masyvo (1'ojo) vardai ir jų kiekiai (sukurti užsakymo masyvą) ir jį atvaizduoti konsolėje (nereik iteruoti nieko (tiesiog įdėti patį masyvą į konsolę)). (galima sukurti kelis užsakymus)
     4.3) Suskaičiuoti kiek pelno suteiks 4.2 masyvo užsakymas ir tai atvaizduoti konsolėje (nereik iteruoti nieko (tiesiog įdėti patį masyvą į konsolę)). (arba užsakymai, jei 4.2 dalyje sukūrėte keletą užsakymų)
     4.4) Naudojant map - padaryti naują masyvą, kuriame būtų atvaizduotas užsakymas (kiek kokių dalykų buvo užsakyta) ir jo kaina (prie kiekvieno dalyko jo kaina(jei buvo keli, tai jų suma) ir pačiame gale bendra kaina) ir jį atvaizduoti konsolėje (nereik iteruoti nieko (tiesiog įdėti patį masyvą į konsolę)).
+
+Destruktūrizavimas:
+  1) Naudodami destructuring priskirkite 2 kintamiesiems 2 reikšmes.
+  2) Naudodami destructuring priskirkite 10 kintamųjų 10 reikšmių.
+  3) Naudodami destructuring priskirkite 3 kintamiesiems 5 reikšmes.
+  4) Naudodami destructuring priskirkite 1 kintamajam visas reikšmes išskyrus pirmas 3.
+  5) Naudodami destructuring priskirkite 3 kintamiesiems 3 reikšmes paimtas iš objekto.
+  6) Naudodami destructuring sukeiskite 2 kintamųjų reikšmes.

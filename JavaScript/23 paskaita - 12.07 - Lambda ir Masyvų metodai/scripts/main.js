@@ -76,21 +76,19 @@ console.groupEnd();
   Naudinga tose situacijose, kuriose neleidžiamas paprastas for'as arba for of'as.
 */
 /*Iteraciniai masyvų metodai
-  forEach()   -   Iteruoja per masyvo elementus.
-  map()       
-  filter()    
-  reduce()    
+  forEach()   -   Iteruoja per masyvo elementus atlikdamas kažkokius veiksmus.
+  map()       -   Grąžina naują kažkaip modifikuotą masyvą.
+  filter()    -   Grąžina naują masyvą, kuris atitinka nurodytą sąlygą.
+  reduce()    -   Grąžina reikšmę, kuri susideda iš viso masyvo modifikuotų elementų judant nuo pradžios link galo
 
-  reduceRight()
-  some()
-  every()
-  find()
-  findIndex()
-  findLast()
-  findLastIndex()
-  flatMap()
-
-  sort()
+  reduceRight()   - grąžina reikšmę, kuri susideda iš viso masyvo modifikuotų elementų judant nuo galo link pradžios
+  some()          - tikrina ar bent vienas masyvo elementas atitinka kažkokią sąlygą ir grąžina true/false
+  every()         - tikrina ar kiekvienas masyvo elementas atitinka kažkokią sąlygą ir grąžina true/false
+  find()          - ieško masyve, sąlygą atitinkančio pirmojo elemento, ir jį grąžina (jeigu neranda - grąžina "undefined")
+  findLast()      - ieško masyve, sąlygą atitinkančio paskutinio elemento, ir jį grąžina (jeigu neranda - grąžina "undefined")
+  findIndex()     - ieško masyve, sąlyga atitinkančio pirmojo elemento, ir grąžina jo indeksą (jeigu neranda - grąžina "-1")
+  findLastIndex() - ieško masyve, sąlyga atitinkančio paskutinio elemento, ir grąžina jo indeksą (jeigu neranda - grąžina "-1")
+  flatMap()       - grąžina naują masyvą, kuriame visi elementai yra vienu lygmeniu žemiau ir kažkaip galbūt papildomai modifikuoti
 */
 
 /* syntax for every iteration method except reduce, reduceRight, sort
@@ -123,7 +121,16 @@ let naujasFiltruotasMasyvas = mokinimuisiSkirtasMasyvas.filter(element => typeof
 console.log(naujasFiltruotasMasyvas);
 console.log(mokinimuisiSkirtasMasyvas);
 
-// reduce - grąžina reikšmę, kuri susideda iš viso masyvo modifikuotų elementų
+// reduce - grąžina reikšmę, kuri susideda iš viso masyvo modifikuotų elementų judant nuo pradžios link galo
+// reduceRight - grąžina reikšmę, kuri susideda iš viso masyvo modifikuotų elementų judant nuo galo link pradžios
+/*syntax
+  someArray.reduce((accumulator, element) => veiksmai)
+  someArray.reduce((accumulator, element, iteration) => veiksmai)
+  someArray.reduce((accumulator, element, iteration, array) => veiksmai)
+  someArray.reduce((accumulator, element) => veiksmai, initialValue)
+  someArray.reduce((accumulator, element, iteration) => veiksmai, initialValue)
+  someArray.reduce((accumulator, element, iteration, array) => veiksmai, initialValue)
+*/
 let reduceintasMasyvas = mokinimuisiSkirtasMasyvas.reduce((bendras, elementas) => {
   console.log(bendras);
   return bendras + ' ' + elementas;

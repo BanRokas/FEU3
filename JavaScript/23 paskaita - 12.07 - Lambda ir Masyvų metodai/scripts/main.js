@@ -137,3 +137,19 @@ let reduceintasMasyvas = mokinimuisiSkirtasMasyvas.reduce((bendras, elementas) =
 }, 'pradžia');
 console.log(reduceintasMasyvas);
 console.log(mokinimuisiSkirtasMasyvas);
+
+// Neiteraciniai 4) Parašykite funkciją, kuri iš 2 jai paduotų masyvų grąžina(išveda į konsolę) pasikartojančias reikšmes. (jeigu yra dvi vienodos reikšmės abejuose masyvuose, ta reikšmė turi būti išvesta į konsolę.
+let mas4_1 = [1,2,3,4,5,6];
+let mas4_2 = [4,9,5,8,7,6,1];
+let zodzMas41 = ['labas','ąžuolas', 'žodis', 'aha','haha','hihi'];
+let zodzMas42 = ['labas','hihi','ate','ąžuolas','ąsotis', 'žodis', 'kanarėlė'];
+let vienodi = (arr1, arr2) => {
+  // let arrToReturn = [];
+  for(let i = 0; i < arr2.length; i++){
+    arr1.includes(arr2[i]) ? console.log(arr2[i]) : null;
+  }
+  // return arrToReturn;
+}
+
+vienodi(mas4_1, mas4_2);
+vienodi(zodzMas41, zodzMas42);

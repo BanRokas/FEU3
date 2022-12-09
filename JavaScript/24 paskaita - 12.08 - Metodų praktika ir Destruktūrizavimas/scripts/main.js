@@ -128,3 +128,23 @@ let objektas = {
 
 let { amzius, vardas: pilnasVardas, pavarde = 'Pavardenis', ...kitkas} = objektas;
 console.log(pilnasVardas, amzius, pavarde, kitkas);
+
+// 2 kintamųjų reikšmių sukeitimas
+let a1 = 5;
+let b1 = 10;
+let saugykla = a1;
+a1 = b1;
+b1 = saugykla;
+console.log(a1, b1);
+
+let a2 = 5;
+let b2 = 10;
+[a2, b2] = [b2, a2];
+console.log(a2, b2);
+
+let a3 = 5;
+let b3 = 10;
+a3 = a3 + b3; // 15
+b3 = a3 - b3; // 5
+a3 = a3 - b3; // 10
+console.log(a3, b3);

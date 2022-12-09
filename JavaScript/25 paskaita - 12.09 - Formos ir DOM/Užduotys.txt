@@ -10,3 +10,9 @@
   1.4 optional) Galimybė vartotojui pasirinkti kortelės dizainą. (spalvos tema, elementų išdėstymas)
 
 2) Sukurti formą, į kurią įvedus stulpelių ir eilučių skaičių - būtų sukurta tokio dydžio lentelė.
+
+3) Naudojantis scripts/data.js viduje esančiais duomenimis:
+  3.1) Sukurkite visų filmų korteles.
+  3.2) Sukurkite mygtuką, kurį paspaudus būtų sugeneruojami visi filmai.
+  3.3+) Sukurkite formą, kurioje pasirinkus kažkurią selektoriaus opciją (TIK VIENĄ) ir įvedus duomenis, būtų sugeneruojami tik tie filmai, kurie atitinka formoje pateiktą informaciją.
+  3.4+++) Patobulinkite formą, kad vartotojas turėtų galimybę pridėti/atimti papildomus filtravimo kriterijus. Paspaudus ieškoti - būtų sugeneruojami tik tie filmai, kurie atitinka visus formoje pateiktus kriterijus.

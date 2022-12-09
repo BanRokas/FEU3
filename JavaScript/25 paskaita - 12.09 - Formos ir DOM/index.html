@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25 paskaita - Formos ir DOM</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="card">
+      <form>
+        <div>
+          <label for="photo">Nuotrauka</label>
+          <input 
+            type="file" 
+            accept=".jpg, .jpeg, .png" 
+            name="photo" 
+            id="photo" 
+            required
+          >
+        </div>
+        <div>
+          <label for="title">Pavadinimas</label>
+          <input type="text" name="title" id="title" required>
+        </div>
+        <div class="description">
+          <label for="description">Aprašymas</label>
+          <textarea name="description" id="description" required></textarea>
+        </div>
+        <div>
+          <label for="date">Data</label>
+          <input type="date" name="date" id="date">
+        </div>
+        <div>
+          <label for="location">Lokacija</label>
+          <input type="text" name="location" id="location">
+        </div>
+        <input type="submit" value="Generuoti">
+      </form>
+    </section>
+    <section id="generatedCards">
+      <div class="card">
+        <div>
+          <img src="./images/cat6.jpeg" alt="cardImage">
+          <p>2020-20-20</p>
+          <p>Lietuva, Vilnius, CatCaffe</p>
+        </div>
+        <div>
+          <h1>Pavadinimas</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis cumque deleniti consequuntur libero dignissimos sint, blanditiis possimus quaerat, dicta vitae fuga fugit impedit esse voluptatum cupiditate excepturi rerum. Ex, ducimus?
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

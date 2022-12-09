@@ -1,0 +1,98 @@
+#card form{
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  padding: 20px;
+}
+
+#card form > div{
+  margin: 10px 0 10px 50px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.description > textarea{
+  height: 70px;
+  width: 80%;
+}
+
+#card form > input[type="submit"]{
+  display: block;
+  margin: 25px auto 0;
+  width: 200px;
+  height: 40px;
+}
+
+#generatedCards{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  width: 600px;
+  height: 300px;
+  border: 3px solid black;
+  background-color: azure;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card > div:nth-child(1){
+  width: 60%;
+  background-color: red;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.card > div:nth-child(1) > img{
+  position: absolute;
+  height: 100%;
+  width: auto;
+  /* top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto; */
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.card > div:nth-child(1) > p{
+  position: absolute;
+  z-index: 5;
+  background-color: #faebd790;
+  bottom: 0;
+  margin: 0;
+  padding: 3px;
+}
+.card > div:nth-child(1) > p:nth-of-type(1){
+  right: 0;
+}
+.card > div:nth-child(1) > p:nth-of-type(2){
+  left: 0;
+}
+
+.card > div:nth-child(2){
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card > div:nth-child(2) > h1{
+  text-align: center;
+}
+.card > div:nth-child(2) > p{
+  text-align: justify;
+}

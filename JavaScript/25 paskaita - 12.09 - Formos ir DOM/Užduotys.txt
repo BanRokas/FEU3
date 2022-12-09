@@ -8,3 +8,5 @@
   1.2) Stilizuoti formą
   1.3) Paspaudus "submit" - žemiau formos, turi būti sukurta kortelė su formoje įvestais duomenimis. (kortelė PRIVALO būti stilizuota)
   1.4 optional) Galimybė vartotojui pasirinkti kortelės dizainą. (spalvos tema, elementų išdėstymas)
+
+2) Sukurti formą, į kurią įvedus stulpelių ir eilučių skaičių - būtų sukurta tokio dydžio lentelė.

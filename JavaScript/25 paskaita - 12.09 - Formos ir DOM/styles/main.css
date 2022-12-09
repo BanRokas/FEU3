@@ -37,6 +37,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .card{
@@ -52,7 +53,6 @@
 
 .card > div:nth-child(1){
   width: 60%;
-  background-color: red;
   height: 100%;
   position: relative;
   overflow: hidden;

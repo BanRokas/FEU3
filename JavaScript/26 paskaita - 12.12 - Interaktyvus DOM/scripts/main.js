@@ -51,7 +51,7 @@ let submitMygtukoSukurimas = () => {
   form.append(div);
 }
 
-let saskaitosSukurimas = (preke) => {
+let saskaitosSukurimas = (prekes) => {
   let mainDiv = document.createElement('div');
 
   let p1 = document.createElement('p');
@@ -70,37 +70,39 @@ let saskaitosSukurimas = (preke) => {
   const hr = document.createElement('hr');
 
   const ul = document.createElement('ul');
-  // daug
-  let li = document.createElement('li');
-  let div = document.createElement('div');
+  let bendraKaina = 0;
+  prekes.forEach(preke => {
+    bendraKaina += preke.kaina * preke.kiekis;
+    let li = document.createElement('li');
+    let div = document.createElement('div');
 
-  let span = document.createElement('span');
-  text = document.createTextNode(preke.pavadinimas);
-  span.append(text);
-  div.append(span);
+    let span = document.createElement('span');
+    text = document.createTextNode(preke.pavadinimas);
+    span.append(text);
+    div.append(span);
 
-  let div2 = document.createElement('div');
+    let div2 = document.createElement('div');
 
-  span = document.createElement('span');
-  text = document.createTextNode(`kieks: ${preke.kiekis}`);
-  span.append(text);
-  div2.append(span)
+    span = document.createElement('span');
+    text = document.createTextNode(`kiekis: ${preke.kiekis}`);
+    span.append(text);
+    div2.append(span)
 
-  span = document.createElement('span');
-  text = document.createTextNode(`| ${(preke.kaina * preke.kiekis).toFixed(2)}€`);
-  span.append(text);
-  div2.append(span);
+    span = document.createElement('span');
+    text = document.createTextNode(`| ${(preke.kaina * preke.kiekis).toFixed(2)}€`);
+    span.append(text);
+    div2.append(span);
 
-  div.append(div2);
-  li.append(div);
-  ul.append(li);
-  // daug
+    div.append(div2);
+    li.append(div);
+    ul.append(li);
+  });
 
   const hr1 = document.createElement('hr');
 
   let p2 = document.createElement('p');
   p2.classList.add('bendraKaina');
-  text = document.createTextNode(`Bendra kaina: ${(preke.kaina * preke.kiekis).toFixed(2)}€`); // keist
+  text = document.createTextNode(`Bendra kaina: ${bendraKaina.toFixed(2)}€`);
   p2.append(text);
 
   const hr2 = document.createElement('hr');
@@ -141,23 +143,24 @@ document
   .addEventListener('submit', e => {
     e.preventDefault();
 
-    console.dir(e.target.elements);
+    let uzsakymuMasyvas = [];
+    for(let i = 0; i < e.target.elements.length - 2; i+=2){
+      let [patiekaloId, patiekaloKiekis] = [
+        e.target.elements[i].value,
+        e.target.elements[i+1].valueAsNumber
+      ];
+      let pateikiamaPreke = meniu.find(element => element.id === patiekaloId);
+      pateikiamaPreke.kiekis = patiekaloKiekis;
+      // pateikiamaPreke.kaina = pateikiamaPreke.kiekis*pateikiamaPreke.kaina;
+      uzsakymuMasyvas.push(pateikiamaPreke);
+    }
 
-    let [patiekaloId, patiekaloKiekis] = [
-      e.target.elements.patiekalas.value,
-      e.target.elements.kiekis.valueAsNumber
-    ];
-    let pateikiamaPreke = meniu.find(element => element.id === patiekaloId);
-    pateikiamaPreke.kiekis = patiekaloKiekis;
-    // pateikiamaPreke.kaina = pateikiamaPreke.kiekis*pateikiamaPreke.kaina;
-
-    console.log(pateikiamaPreke);
-
-    saskaitosSukurimas(pateikiamaPreke);
+    saskaitosSukurimas(uzsakymuMasyvas);
   });
 
 document
   .querySelector('.addMoreSelect > button')
-  .addEventListener('click', e => {
-    console.dir(e);
+  .addEventListener('click', () => {
+    let kiek = document.querySelectorAll('.patiekaloSelektas').length;
+    patiekaloSelektoSukurimas(kiek);
   });

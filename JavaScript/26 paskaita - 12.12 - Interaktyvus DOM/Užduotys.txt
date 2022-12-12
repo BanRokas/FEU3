@@ -5,6 +5,6 @@
 3) Pateikus formą, apačioje atvaizduojama sąskaita.
 4+) Patobulinti formą, kad galima būtų pasirinkti patiekalo kiekį. Pakoreguoti sąskaitą, kad tvarkingai veiktų su įvairiais kiekiais patiekalų.
 5++) Patobulinti formą, kad galima būtų pasirinkti daugiau nei 1 patiekalą. Pakoreguoti sąskaitą, kad tvarkingai veiktų su įvairiais daugiau nei 1 patiekalu.
-6+) Patobulinti formą, kad būtų galimybė atmesti nenorimą pasirinkimo variantą (netyčia pridėjai, nebenori).
+6+) Patobulinti formą, kad būtų galimybė atmesti nenorimą pasirinkimo variantą (netyčia pridėjai, nebenori). (reikia keisti papildomo selekto kūrimo name'us ir id's)
 7) Viską gražiai stilizuoti.
 8) Sukurti vizualų meniu (kažką panašaus į images/meniu.PNG).

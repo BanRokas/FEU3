@@ -1,12 +1,14 @@
 const formSec = document.querySelector('#forma');
 const form = document.createElement('form');
+const saskaita = document.querySelector('#saskaita');
+formSec.append(form);
 
-let patiekaloSelektoSukurimas = () => {
+let patiekaloSelektoSukurimas = (kelintas) => {
   let div = document.createElement('div');
   div.classList.add('patiekaloSelektas');
   let select = document.createElement('select');
-  select.setAttribute('name', 'patiekalas');
-  select.setAttribute('id', 'patiekalas');
+  select.setAttribute('name', 'patiekalas' + kelintas);
+  select.setAttribute('id', 'patiekalas' + kelintas);
 
   meniu.forEach(item => {
     let option = document.createElement('option');
@@ -19,12 +21,23 @@ let patiekaloSelektoSukurimas = () => {
 
   let input = document.createElement('input');
   input.setAttribute('type', 'number');
-  input.setAttribute('name', 'kiekis');
-  input.setAttribute('id', 'kiekis');
+  input.setAttribute('name', 'kiekis' + kelintas);
+  input.setAttribute('id', 'kiekis' + kelintas);
   input.setAttribute('min', 1);
   input.setAttribute('value', 1);
 
   div.append(select, input);
+  form.insertBefore(div, addMoreDiv);
+}
+
+let addMoreMygtukoSukurimas = () => {
+  let div = document.createElement('div');
+  div.classList.add('addMoreSelect');
+  let button = document.createElement('button');
+  button.setAttribute('type', 'button');
+  let text = document.createTextNode('+');
+  button.append(text);
+  div.append(button);
   form.append(div);
 }
 
@@ -38,12 +51,6 @@ let submitMygtukoSukurimas = () => {
   form.append(div);
 }
 
-patiekaloSelektoSukurimas();
-submitMygtukoSukurimas();
-
-formSec.append(form);
-
-const saskaita = document.querySelector('#saskaita');
 let saskaitosSukurimas = (preke) => {
   let mainDiv = document.createElement('div');
 
@@ -80,7 +87,7 @@ let saskaitosSukurimas = (preke) => {
   div2.append(span)
 
   span = document.createElement('span');
-  text = document.createTextNode(`| ${(preke.kaina*preke.kiekis).toFixed(2)}€`);
+  text = document.createTextNode(`| ${(preke.kaina * preke.kiekis).toFixed(2)}€`);
   span.append(text);
   div2.append(span);
 
@@ -88,12 +95,12 @@ let saskaitosSukurimas = (preke) => {
   li.append(div);
   ul.append(li);
   // daug
-  
+
   const hr1 = document.createElement('hr');
 
   let p2 = document.createElement('p');
   p2.classList.add('bendraKaina');
-  text = document.createTextNode(`Bendra kaina: ${(preke.kaina*preke.kiekis).toFixed(2)}€`); // keist
+  text = document.createTextNode(`Bendra kaina: ${(preke.kaina * preke.kiekis).toFixed(2)}€`); // keist
   p2.append(text);
 
   const hr2 = document.createElement('hr');
@@ -103,7 +110,7 @@ let saskaitosSukurimas = (preke) => {
   h2.append(text);
 
   mainDiv.append(p1, h4, h1, hr, ul, hr1, p2, hr2, h2);
-  
+
   saskaita.innerHTML = '';
   saskaita.append(mainDiv);
 }
@@ -118,6 +125,16 @@ let gautiDabartiniLaika = () => {
   let dateString = date.toLocaleString('lt-LT');
   return dateString;
 }
+
+addMoreMygtukoSukurimas();
+submitMygtukoSukurimas();
+let addMoreDiv;
+setTimeout(
+  () => {
+    addMoreDiv = document.querySelector('.addMoreSelect');
+    patiekaloSelektoSukurimas(0);
+  }, 100
+);
 
 document
   .querySelector('#forma > form')
@@ -137,4 +154,10 @@ document
     console.log(pateikiamaPreke);
 
     saskaitosSukurimas(pateikiamaPreke);
+  });
+
+document
+  .querySelector('.addMoreSelect > button')
+  .addEventListener('click', e => {
+    console.dir(e);
   });

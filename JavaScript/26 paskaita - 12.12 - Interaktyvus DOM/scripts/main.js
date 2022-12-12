@@ -16,7 +16,15 @@ let patiekaloSelektoSukurimas = () => {
     // option.textContent = item.pavadinimas;
     select.append(option);
   });
-  div.append(select);
+
+  let input = document.createElement('input');
+  input.setAttribute('type', 'number');
+  input.setAttribute('name', 'kiekis');
+  input.setAttribute('id', 'kiekis');
+  input.setAttribute('min', 1);
+  input.setAttribute('value', 1);
+
+  div.append(select, input);
   form.append(div);
 }
 
@@ -53,22 +61,50 @@ let saskaitosSukurimas = (preke) => {
   h1.append(text);
 
   const hr = document.createElement('hr');
-  const hr1 = document.createElement('hr');
-  const hr2 = document.createElement('hr');
 
   const ul = document.createElement('ul');
-  // ul
+  // daug
+  let li = document.createElement('li');
+  let div = document.createElement('div');
+
+  let span = document.createElement('span');
+  text = document.createTextNode(preke.pavadinimas);
+  span.append(text);
+  div.append(span);
+
+  let div2 = document.createElement('div');
+
+  span = document.createElement('span');
+  text = document.createTextNode(`kieks: ${preke.kiekis}`);
+  span.append(text);
+  div2.append(span)
+
+  span = document.createElement('span');
+  text = document.createTextNode(`| ${(preke.kaina*preke.kiekis).toFixed(2)}€`);
+  span.append(text);
+  div2.append(span);
+
+  div.append(div2);
+  li.append(div);
+  ul.append(li);
+  // daug
+  
+  const hr1 = document.createElement('hr');
 
   let p2 = document.createElement('p');
   p2.classList.add('bendraKaina');
-  text = document.createTextNode('bendraKaina');
+  text = document.createTextNode(`Bendra kaina: ${(preke.kaina*preke.kiekis).toFixed(2)}€`); // keist
   p2.append(text);
+
+  const hr2 = document.createElement('hr');
 
   let h2 = document.createElement('h2');
   text = document.createTextNode('Padėkojimas');
   h2.append(text);
 
   mainDiv.append(p1, h4, h1, hr, ul, hr1, p2, hr2, h2);
+  
+  saskaita.innerHTML = '';
   saskaita.append(mainDiv);
 }
 
@@ -83,4 +119,22 @@ let gautiDabartiniLaika = () => {
   return dateString;
 }
 
-saskaitosSukurimas();
+document
+  .querySelector('#forma > form')
+  .addEventListener('submit', e => {
+    e.preventDefault();
+
+    console.dir(e.target.elements);
+
+    let [patiekaloId, patiekaloKiekis] = [
+      e.target.elements.patiekalas.value,
+      e.target.elements.kiekis.valueAsNumber
+    ];
+    let pateikiamaPreke = meniu.find(element => element.id === patiekaloId);
+    pateikiamaPreke.kiekis = patiekaloKiekis;
+    // pateikiamaPreke.kaina = pateikiamaPreke.kiekis*pateikiamaPreke.kaina;
+
+    console.log(pateikiamaPreke);
+
+    saskaitosSukurimas(pateikiamaPreke);
+  });

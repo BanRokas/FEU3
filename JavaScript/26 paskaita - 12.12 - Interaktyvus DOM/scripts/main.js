@@ -2,9 +2,10 @@ const formSec = document.querySelector('#forma'); // sukuriamas formSec kintamas
 const form = document.createElement('form'); // sukuriamas form elementas
 const saskaita = document.querySelector('#saskaita'); // sukuriamas saskaita kintamasis, kuris priskiriamas HTML'e esančiam elementui, kuris turi ID 'saskaita'
 formSec.append(form); // form įkeliamas į formSec elementą
+let kelintas = 0;
 
 // funkcija, kuri sukuria naują užsakomo maisto laukelį
-let patiekaloSelektoSukurimas = (kelintas) => { // patiekaloSelektoSukurimas funkcijos prilyginimas ir parametras, kuris naudojamas priskirti kuriamiems elementams kitokius name ir ir atributus
+let patiekaloSelektoSukurimas = () => { // patiekaloSelektoSukurimas funkcijos prilyginimas ir parametras, kuris naudojamas priskirti kuriamiems elementams kitokius name ir ir atributus
   let div = document.createElement('div'); // sukuriams div elementas
   div.classList.add('patiekaloSelektas'); // div elementui suteikiama 'patiekaloSelektas' klasė
   let select = document.createElement('select'); // sukuriamas select elementas
@@ -27,7 +28,21 @@ let patiekaloSelektoSukurimas = (kelintas) => { // patiekaloSelektoSukurimas fun
   input.setAttribute('min', 1); // nustatoma minimali galima vertė į 1
   input.setAttribute('value', 1); // nustatoma pradinė vertė į 1
 
+  let arEgzistuojaSelektas = document.querySelector('.patiekaloSelektas');
+  
+  let button;
+  if(arEgzistuojaSelektas){
+    button = document.createElement('button');
+    button.classList.add('trintiPasirinkima');
+    button.setAttribute('type', 'button');
+    let text = document.createTextNode('-');
+    button.append(text);
+  }
+
+  kelintas++;
+
   div.append(select, input); // select ir input įkeliami į div elementą
+  arEgzistuojaSelektas ? div.append(button) : null;
   form.insertBefore(div, addMoreDiv); // div įkeliamas į form elementą prieš addMoreDiv elementą
 }
 
@@ -135,7 +150,7 @@ let addMoreDiv; // sukuriamas addMoreDiv kintamasis, kuriam bus prilyginimas add
 setTimeout( // uždelsiame šiose ribose esantį kodą, nes bus kreipiamasį į elementą, kuris dar galimai yra kuriamas
   () => { // bevardės funkcijos kvietimas / callback
     addMoreDiv = document.querySelector('.addMoreSelect'); // addMoreDiv kintamąjam prilyginimas addMoreDiv klasę turintis elementas
-    patiekaloSelektoSukurimas(0); // iškviečiama 'patiekaloSelektoSukurimas' funkcija, su parametru 0, kad būtų sukuriamas pirmasis selektas su vardais ir ID, kurie bus papildomi skaičiumi '0'
+    patiekaloSelektoSukurimas(); // iškviečiama 'patiekaloSelektoSukurimas' funkcija, su parametru 0, kad būtų sukuriamas pirmasis selektas su vardais ir ID, kurie bus papildomi skaičiumi '0'
   }, 100 // nurodome kiek laiko (milisekundėmis) uždelsime viduje esantį kodą
 ); // uždelsimo pabaiga
 
@@ -146,6 +161,7 @@ document // kreipiamasi į dokumentą
 
     let uzsakymuMasyvas = []; // sukuriamas masyvas, į kurį kelsime užsakymų objektus
     for(let i = 0; i < e.target.elements.length - 2; i+=2){ // sukamas ciklas per formos viduje esančių elementų ( (selektų+input)*kiekJųBuvo (-2, nes nesuksime ciklo per mygtukus, kurie irgi yra formos viduje) ) kiekį judant per 2 elementus per ciklą
+      
       let [patiekaloId, patiekaloKiekis] = [ // sukuriami kintamieji patiekaloId ir patiekaloKiekis
         e.target.elements[i].value, // destruktūrizavimo būdų priskiriamas patiekalo ID
         e.target.elements[i+1].valueAsNumber // estruktūrizavimo būdų priskiriamas patiekalo kiekis kaip skaičius
@@ -154,14 +170,24 @@ document // kreipiamasi į dokumentą
       pateikiamaPreke.kiekis = patiekaloKiekis; // papildome naują kintamojo objektą patiekalo kiekiu
       // pateikiamaPreke.kaina = pateikiamaPreke.kiekis*pateikiamaPreke.kaina;
       uzsakymuMasyvas.push(pateikiamaPreke); // į užsakymų masyvą įkeliame naują objekto kintamąjį
+      if(e.target.elements[i+2].tagName == 'BUTTON'){
+        i++;
+      }
     } // ciklo pabaiga
 
     saskaitosSukurimas(uzsakymuMasyvas); // kviečiame sąskaitos kūrimo funkciją, kuriai paduodame visus užsakymus kaip masyvą
   }); // įvykio pabaiga
 
+let visiTrintiBtn;
 document // kreipiamasi į dokumentą
   .querySelector('.addMoreSelect > button') // parenkamas button elementas, kuris yra vaikinis elementas elemento turinčio klasę 'addMoreSelect'
   .addEventListener('click', () => { // laukiama kada šis elementas bus "paspaustas" ir vykdysime toliau einančią funkciją
-    let kiek = document.querySelectorAll('.patiekaloSelektas').length; // sukuriame kintamąjį, kuriam prilyginame, dokumente rastų elementų turinčių 'patiekaloSelektas' klasę, kiekį
-    patiekaloSelektoSukurimas(kiek); // iškviečiame funkciją, kuri sukurs naują selektą, su parametru, kuris pakeis joje kuriamų elementų name ir ID atributus, taip kad nebūtų kuriami vienodi
+    // let kiek = document.querySelectorAll('.patiekaloSelektas').length; // sukuriame kintamąjį, kuriam prilyginame, dokumente rastų elementų turinčių 'patiekaloSelektas' klasę, kiekį
+    patiekaloSelektoSukurimas(); // iškviečiame funkciją, kuri sukurs naują selektą, su parametru, kuris pakeis joje kuriamų elementų name ir ID atributus, taip kad nebūtų kuriami vienodi
+    setTimeout(() => {
+      visiTrintiBtn = document.querySelectorAll('.trintiPasirinkima');
+      visiTrintiBtn.forEach(btn => btn.addEventListener('click', () => {
+        btn.parentElement.remove();
+      }));
+    }, 100);
   }); // įvykio pabaiga

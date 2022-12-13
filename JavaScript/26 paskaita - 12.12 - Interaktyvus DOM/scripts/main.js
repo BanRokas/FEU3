@@ -160,8 +160,7 @@ document // kreipiamasi į dokumentą
     e.preventDefault(); // sustabdome default'ini formos veiksmą (duomenų siuntimą į serverį)
 
     let uzsakymuMasyvas = []; // sukuriamas masyvas, į kurį kelsime užsakymų objektus
-    for(let i = 0; i < e.target.elements.length - 2; i+=2){ // sukamas ciklas per formos viduje esančių elementų ( (selektų+input)*kiekJųBuvo (-2, nes nesuksime ciklo per mygtukus, kurie irgi yra formos viduje) ) kiekį judant per 2 elementus per ciklą
-      
+    for(let i = 0; i < e.target.elements.length - 2; i!=0 ? i+=3 : i+=2){ // sukamas ciklas per formos viduje esančių elementų ( (selektų+input)*kiekJųBuvo (-2, nes nesuksime ciklo per mygtukus, kurie irgi yra formos viduje) ) kiekį judant per 2 elementus per ciklą
       let [patiekaloId, patiekaloKiekis] = [ // sukuriami kintamieji patiekaloId ir patiekaloKiekis
         e.target.elements[i].value, // destruktūrizavimo būdų priskiriamas patiekalo ID
         e.target.elements[i+1].valueAsNumber // estruktūrizavimo būdų priskiriamas patiekalo kiekis kaip skaičius
@@ -170,9 +169,9 @@ document // kreipiamasi į dokumentą
       pateikiamaPreke.kiekis = patiekaloKiekis; // papildome naują kintamojo objektą patiekalo kiekiu
       // pateikiamaPreke.kaina = pateikiamaPreke.kiekis*pateikiamaPreke.kaina;
       uzsakymuMasyvas.push(pateikiamaPreke); // į užsakymų masyvą įkeliame naują objekto kintamąjį
-      if(e.target.elements[i+2].tagName == 'BUTTON'){
-        i++;
-      }
+      // if(e.target.elements[i+2].tagName == 'BUTTON'){
+      //   i++;
+      // }
     } // ciklo pabaiga
 
     saskaitosSukurimas(uzsakymuMasyvas); // kviečiame sąskaitos kūrimo funkciją, kuriai paduodame visus užsakymus kaip masyvą

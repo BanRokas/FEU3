@@ -1,0 +1,19 @@
+1) Sukurkite klasę vardu "Car" ir duokite jai "name" ir "year" parametrus.
+  1.1) Sukurkite papildomą parametrą "helloCar" ir priskirkite jam tekstą, pristatantį mašiną. (gali būti betkas, tarkim "Labas, čia mano mašina Volvo ir ji buvo pagaminta 1990 metais").
+  1.2) Skukurkite metodą "age", kuris apskaičiuotų ir grąžintų tekstą, pasakantį kiek mašinai metų. (dabartinę datą gauti galima su 'date = new Date()' ir paversti tik į metus su 'date.getFullYear()').
+
+2) Sukurkite klasę vardu "Rectangle" ir duokite jai "width" ir "height" parametrus.
+  2.1) Sukurkite papildomą parametrą "color" ir priskirkite jam randomly parinktą spalvą.
+  2.2) Sukurkite metodą "area", kuris grąžina stačiakampio plotą.
+  2.3) Sukurkite metodą "perimeter", kuris grąžina stačiakampio perimetrą.
+
+3) Sukurkite klasę vardu "Point" ir duokite jai "x" ir "y" parametrus.
+  3.1) Sukurkite metodą "coordinates", kuris grąžina "x" ir "y" reikšmes.(x;y)
+  3.2) Sukurkite metodą "distance", kuris grąžina atstumą tarp dviejų taškų (Point'ų). (siūlau naudoti Math.hypot() metodą).
+
+4) Sukurkite klasę vardu "Rectangle_3D" ir duokite jai "width", "height" ir "depth" parametrus.
+  4.1) Sukurkite metodą "volume", kuris grąžina 3D stačiakampio tūrį.
+  4.2) Sukurkite metodą "surfaceArea", kuris grąžina 3D stačiakampio paviršiaus plotą.
+  4.3) Sukurkite metodą "perimeter", kuris grąžina 3D stačiakampio perimetrą.
+
+5+) Pabandyti sukurti UI (User Interface (Vartotojo Sąsaja)) 1-4 užduotims ir spausdinti informaciją į ekraną. (Kas nori pasižiūrėkite JS Canvas ir su juo pabandykite atvaizduoti figūras puslapyje(bent jau 2D))

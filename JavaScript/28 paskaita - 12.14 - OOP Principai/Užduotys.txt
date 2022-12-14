@@ -8,3 +8,6 @@
 2) Sukurkite HTML formą, kurioje vartotojas galės įrašyti (į input laukelius): car brand, model, mileage, price ir image (url laukelis).
   2.1) Per Klasę, sukuriamas objektas ir jis atvaizduojamas po forma (CSS'ą rašykite CSS'e) kaip atvaizduota nuotraukoje (./images/cars.PNG).
   3.1) Paspaudus ant automobilio bloko - turi alert išmesti kainą ir mileage. (gal su CSS'u gražiai padaryti, kad užėjus ant elemento su pele, atsiranda laukelis nuotraukoje...)
+
+3+) (PVP battle) https://edabit.com/challenge/ifDM26p25bqS8EsFu
+4+) (Shiritori) https://edabit.com/challenge/6o5tYwwbY2ys7XTm4

@@ -87,3 +87,61 @@ let gyvunas = [
   new Kate(4),
   new Voras(8)
 ];
+
+// Susikurti (h1-h6) Antraštės Klasę su tekstu, atributais
+class Heading{
+  constructor(props){
+    this.props = props;
+    return this.render();
+  }
+
+  render = () =>{
+    this.htmlElement = document.createElement(`h${this.props.dydis}`);
+    this.textElement = document.createTextNode(this.props.tekstas);   
+    this.htmlElement.append(this.textElement);
+
+    if(this.props.atributai){
+      // jeigu atributai yra objektas
+      Object.keys(this.props.atributai).forEach(raktas => {
+        this.htmlElement.setAttribute(raktas, this.props.atributai[raktas]);
+      });
+
+      // jeigu atributai yra masyvai masyve
+      // this.props.atributai.forEach(atributas => {
+      //   this.htmlElement.setAttribute(atributas[0], atributas[1]);
+      // });
+    }
+
+    return this.htmlElement;
+  }
+}
+
+let antraste1 = new Heading({
+  dydis: '1',
+  tekstas: 'Kaimietiškai',
+  atributai: {
+    class: 'klasesVardas darVienaKlase',
+    id: 'kazkoksId',
+    style: 'color:red'
+  }
+  // atributai: [ 
+  //   ['class', 'klasesVardas darVienaKlase'],
+  //   ['id', 'kazkoksId'],
+  //   ['style', 'color:red']
+  // ]
+});
+document.querySelector("body").append(antraste1);
+document.querySelector("body").append(new Heading({
+  dydis:'5',
+  tekstas:'Labas rytas',
+  // atributai: [
+  //   ['style', 'font-size: 50px']
+  // ]
+  atributai: {
+    style: 'font-size:50px'
+  }
+}));
+document.querySelector("body").append(new Heading({
+  dydis:'6',
+  tekstas:'mažiukas'
+}));

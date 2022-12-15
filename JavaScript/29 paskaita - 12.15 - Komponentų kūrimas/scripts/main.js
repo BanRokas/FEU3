@@ -62,3 +62,35 @@
 }
 
 //      SELECT
+
+
+
+//      TABLE
+class Table{
+
+
+  /* return
+        TABLE
+          THEAD
+            TR
+              TH TH TH
+          TBODY
+            TR
+              TD TD TD
+  */
+}
+
+let table = new Table({
+  tableAttributes:{
+
+  },
+  tableData : [{
+    vardas: "Rokas",
+    pavarde: "Banaitis",
+    amzius: 26
+  }, {
+    vardas: "Rokas2",
+    pavarde: "Banaitis2",
+    amzius: 27
+  }]
+});

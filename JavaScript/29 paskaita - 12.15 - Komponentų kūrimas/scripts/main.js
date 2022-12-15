@@ -1,3 +1,5 @@
+import H, { helloWorld, notMorningPerson as noMorning } from './Heading.js';
+
 //              KOMPONENTAI
 
 //      UL/OL 
@@ -60,37 +62,61 @@
 
   document.querySelector("body").append(list);
 }
-
 //      SELECT
 
-
-
 //      TABLE
-class Table{
+{
+  class Table{
 
 
-  /* return
-        TABLE
-          THEAD
-            TR
-              TH TH TH
-          TBODY
-            TR
-              TD TD TD
-  */
+    /* return
+          TABLE
+            THEAD
+              TR
+                TH TH TH
+            TBODY
+              TR
+                TD TD TD
+    */
+  }
+
+  let table = new Table({
+    tableAttributes:{
+
+    },
+    tableData : [{
+      vardas: "Rokas",
+      pavarde: "Banaitis",
+      amzius: 26
+    }, {
+      vardas: "Rokas2",
+      pavarde: "Banaitis2",
+      amzius: 27
+    }]
+  });
 }
 
-let table = new Table({
-  tableAttributes:{
+//              MODULIAI
+/*
+  Kitų JS failų importavimas ir naudojimas
 
-  },
-  tableData : [{
-    vardas: "Rokas",
-    pavarde: "Banaitis",
-    amzius: 26
-  }, {
-    vardas: "Rokas2",
-    pavarde: "Banaitis2",
-    amzius: 27
-  }]
+    import ka from 'isKur'; - faile kuriame norime naudoti importus (main.js)
+    type="module" - nusirodyti atributą "type" su nustatymu "module" JS failo prijungime HTML'e.
+    export default something(){}; 'isKur' faile reikia nurodyti ką jis eksportuoja.
+
+  Galima rašyti tiek export default, tiek export;
+    export default - numatytasis eksportas, kurį priimsi rašydamas - import anyNameIWant from 'exportFile.js'. Vardas, kurį nurodai neprivalo sutapti su export default vardu esančiu exportFile.js. Visviena bus eksportuojamas vienas vienintelis elementas, kuris turi default prierašą.
+    export - paprastas eksporas, kurį'iuos priimsi rašydamas - import { exportedName, exportedName2 } from 'exportFile.js'. Priimsi būtent tuos elementus, kurių vardus parašei ir kurie yra paprasti export'ai. Priimti paprastus eksportus galima kokiais tik nori pavadinimais naudojant "as" prierašą: import { exportedName as pirmas, exportedName2 as antras } from 'exportFile.js'.
+*/
+let antraste = new H({
+  dydis:'5',
+  tekstas:'Labas rytas',
+  atributai: {
+    style: 'font-size: 50px'
+  }
 });
+console.log(antraste);
+
+helloWorld();
+noMorning();
+

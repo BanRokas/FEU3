@@ -120,3 +120,25 @@ console.log(antraste);
 helloWorld();
 noMorning();
 
+//              Duomenų saugojimas vartotojo dalyje
+//  cookie
+document.cookie = `vardas=kazkoks; expires=${new Date('2022 12 17')}`;
+document.cookie = `kitas=kazkoks; expires=${new Date('2022 12 17')}`;
+document.cookie = `vardas=kitoks; expires=${new Date('2022 12 17')}`;
+
+// session storage
+document.querySelector('body').addEventListener('click', () => {
+  sessionStorage.setItem('vardas', 'Rokas');
+  sessionStorage.setItem('pavarde', 'Banaitis');
+  sessionStorage.setItem('lvlOfTired', '30');
+});
+// local storage
+document.querySelector('body').addEventListener('click', () => {
+  localStorage.setItem('vardas', 'Rokas');
+  localStorage.setItem('pavarde', 'Banaitis');
+
+  // localStorage.clear(); // išvalo visą storage
+  console.log(localStorage.key(0));
+  console.log(localStorage.getItem(localStorage.key(0)));
+  localStorage.removeItem(localStorage.key(0));
+});

@@ -129,9 +129,23 @@ document.querySelector('body').addEventListener('click', () => {
 document.querySelector('body').addEventListener('click', () => {
   localStorage.setItem('vardas', 'Rokas');
   localStorage.setItem('pavarde', 'Banaitis');
+  localStorage.setItem('pomegiai', ['game','sport','tv']);
+  let data = {
+    planeta: "Žemė",
+    zemynas: "Europa",
+    salis: "Lietuva"
+  }
+  console.log(data);
+  console.log(JSON.stringify(data));
+
+  localStorage.setItem('gyvenamojiVieta', JSON.stringify(data));
+
 
   // localStorage.clear(); // išvalo visą storage
-  console.log(localStorage.key(0));
-  console.log(localStorage.getItem(localStorage.key(0)));
-  localStorage.removeItem(localStorage.key(0));
+  // console.log(localStorage.key(0));
+  // console.log(localStorage.getItem(localStorage.key(0)));
+  // localStorage.removeItem(localStorage.key(0));
 });
+
+// JSON.stringify(object) -> paverčia objektą į string'ą
+// JSON.parse(stringifiedObject) -> paverčia string'ą į objektą

@@ -1,4 +1,5 @@
 import H, { helloWorld, notMorningPerson as noMorning } from './Heading.js';
+import T from './Table.js';
 
 //              KOMPONENTAI
 
@@ -66,23 +67,9 @@ import H, { helloWorld, notMorningPerson as noMorning } from './Heading.js';
 
 //      TABLE
 {
-  class Table{
-
-
-    /* return
-          TABLE
-            THEAD
-              TR
-                TH TH TH
-            TBODY
-              TR
-                TD TD TD
-    */
-  }
-
-  let table = new Table({
+  let table = new T({
     tableAttributes:{
-
+      class: "kaledos sventes"
     },
     tableData : [{
       vardas: "Rokas",
@@ -92,8 +79,14 @@ import H, { helloWorld, notMorningPerson as noMorning } from './Heading.js';
       vardas: "Rokas2",
       pavarde: "Banaitis2",
       amzius: 27
+    }, {
+      vardas: "Petras",
+      pavarde: "Petrauskas",
+      amzius: 50
     }]
   });
+
+  document.querySelector('body').append(table);
 }
 
 //              MODULIAI
@@ -115,7 +108,7 @@ let antraste = new H({
     style: 'font-size: 50px'
   }
 });
-console.log(antraste);
+// console.log(antraste);
 
 helloWorld();
 noMorning();

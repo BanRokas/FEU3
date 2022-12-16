@@ -1,0 +1,10 @@
+            Sukurti ToDo aplikaciją
+
+Task'ai turi būti generuojami iš jiem sukurtos klasės.
+Informacija saugoma localStorage.
+Galimybė sukurti, redaguoti, trinti ir pažymėti/atžymėti task'ą kaip atliktą/neatliktą.
+  Sukuriant naują task'ą jis pridedamas į localStorage.
+  Trinant task'ą jis ištrinamas iš localStorage.
+  Redaguojant task'ą jis ARBA ištrinamas ir sukuriamas ARBA perrašomas jau esantis.
+  Task'ai atvaizduojami nuskaičius localStorage ir iš jo pasiėmus informaciją apie task'us.
+Stilizuoti!!! (idėja kaip gali atrodyti (./images/toDoApp.PNG))

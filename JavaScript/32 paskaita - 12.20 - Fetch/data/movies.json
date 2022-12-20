@@ -1,0 +1,18 @@
+[
+  {
+    "name": "How the Grinch Stole Christmas",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "length": 104,
+    "actors": ["Jim Carrey", "Taylor Momsen", "Kelley"]
+  },{
+    "name": "A Boy Called Christmas",
+    "poster": "https://www.tvguide.com/a/img/catalog/provider/1/2/1-10748584237.jpg",
+    "length": 106,
+    "actors": ["Maggie Smith", "Joel Fry", "Henry Lawfull"]
+  },{
+    "name": "Die Hard",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+    "length": 132,
+    "actors": ["Bruce Willis", "Bonnie Bedelia", "Paul Gleason"]
+  }
+]

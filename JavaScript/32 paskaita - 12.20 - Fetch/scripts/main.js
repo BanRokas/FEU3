@@ -31,9 +31,9 @@ const objectAsJSON = JSON.stringify(object);
 fetch("./data/data.txt")
   .then(response => response.text())
   .then(data => {
-    console.log(data);
+    // console.log(data);
     let dataAsArray = data.split('\n');
-    console.log(dataAsArray);
+    // console.log(dataAsArray);
     // dataAsArray = dataAsArray.map(item => item.split(' '));
     // console.log(dataAsArray);
     dataAsArray.forEach(line => {
@@ -45,8 +45,32 @@ fetch("./data/data.txt")
 fetch('./data/data.json')
   .then(response => response.json())
   .then(data => {
-    console.log(data);
+    // console.log(data);
     Object.keys(data).forEach(key => {
       document.querySelector('#jsonSimple').innerHTML += `<p>${data[key]}</p>`;
+    });
+  });
+
+// movies.json
+fetch('./data/movies.json')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data[0].actors.map(actor => `<li>${actor}</li>`).toString().replaceAll(',',''));
+    data.forEach(movie => {
+      document.querySelector('#filmai').innerHTML += `
+        <div class="movie">
+          <h1>${movie.name}</h1>
+          <img src="${movie.poster}" alt="${movie.name} movie poster">
+          <span>Movie length: ${Math.floor(movie.length/60)} hours ${movie.length%60} minutes</span>
+          <ul>
+            ${
+              movie.actors
+                .map(actor => `<li>${actor}</li>`)
+                .toString()
+                .replaceAll(',', '')
+            }
+          <ul>
+        </div>
+      `
     });
   });

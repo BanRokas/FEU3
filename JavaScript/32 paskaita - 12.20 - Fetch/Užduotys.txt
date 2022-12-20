@@ -10,3 +10,9 @@
     1.2.3) Ilgis valandomis ir minutėmis
     1.2.4) Bent 2 aktoriai (suktas ciklas per masyvą)
   1.3) Jeigu yra laiko ir noro - stilizuoti.
+
+2) Pasiimkite duomenis iš https://randomuser.me/api/ ir juos atvaizduokite puslapyje.
+  Duomenys galėtų būti atvaizduoti kortelėje.
+  Atvaizduoti nuotrauką, vardą, amžių, adresą ir el. paštą.
+  Galima padaryti mygtuką, kurį paspaudus užkraunamas naujas random asmuo.
+  Kas be ko - pastilizuoti.

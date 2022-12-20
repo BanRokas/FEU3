@@ -55,7 +55,7 @@ fetch('./data/data.json')
 fetch('./data/movies.json')
   .then(res => res.json())
   .then(data => {
-    console.log(data[0].actors.map(actor => `<li>${actor}</li>`).toString().replaceAll(',',''));
+    // console.log(data[0].actors.map(actor => `<li>${actor}</li>`).toString().replaceAll(',',''));
     data.forEach(movie => {
       document.querySelector('#filmai').innerHTML += `
         <div class="movie">
@@ -73,4 +73,12 @@ fetch('./data/movies.json')
         </div>
       `
     });
+  });
+
+// random user
+fetch('https://randomuser.me/api')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data.results[0]);
+    
   });

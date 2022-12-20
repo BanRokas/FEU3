@@ -16,3 +16,11 @@
   Atvaizduoti nuotrauką, vardą, amžių, adresą ir el. paštą.
   Galima padaryti mygtuką, kurį paspaudus užkraunamas naujas random asmuo.
   Kas be ko - pastilizuoti.
+
+3) Meals API (https://www.themealdb.com/api.php)
+  Sukurti puslapį, kuriame yra įvesties laukelis (forma), į kurį įvedus ingredientą ir paspaudus "search" mygtuką, būtų kreipiamasi į https://www.themealdb.com/api.php su užklausa, kuri grąžintų visus patiekalus, kurie turi nurodytą ingredientą kaip pagrindinį ingredientą.
+  Patiekalai turi savo korteles (su basic info). Ant jų paspaudus - pateikiama platesnė info.
+    Basic info: Paveiksliukas, pavadinimas.
+    More info: Paveiksliukas, pavadinimas, ingredientai, receptas, video.
+  Kas be ko - stilizuoti.
+  Galima tobulinti programą, kad galima būtų pateikti: patiekalo pavadinimą, kategoriją, gauti random patiekalą it pns.

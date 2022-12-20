@@ -1,0 +1,12 @@
+1) movies.json
+  1.1) Susikurti movies.json failą, jame sukurti 3 filmus. Kiekvienas filmas turi:
+    1.1.1) Pavadinimą
+    1.1.2) Poster (nuotraukos url)
+    1.1.3) Ilgis minutėmis
+    1.1.4) Bent 2 aktoriai
+  1.2) Nuskaityti movies.json failą JS'e. ir į ekraną išvesti informaciją apie filmus:
+    1.2.1) Pavadinimas
+    1.2.2) Poster'is (nuotrauka)
+    1.2.3) Ilgis valandomis ir minutėmis
+    1.2.4) Bent 2 aktoriai (suktas ciklas per masyvą)
+  1.3) Jeigu yra laiko ir noro - stilizuoti.

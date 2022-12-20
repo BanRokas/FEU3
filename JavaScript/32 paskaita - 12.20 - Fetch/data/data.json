@@ -1,0 +1,9 @@
+{
+  "string": "zodis",
+  "number": 54,
+  "boolean": false,
+  "array": ["betkas", 54, true],
+  "object": {
+    "betkas":"betkassssssss"
+  }
+}

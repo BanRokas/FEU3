@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #03d3b2;
+  color: white;
+}
+
+header div {
+  padding: 4rem 0;
+}
+
+header h1,
+header h2 {
+  margin: 0;
+}
+
+header h2 {
+  padding-top: 0.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+button {
+  display: flex;
+  color: black;
+  background-color: white;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+button:hover {
+  color: #03d3b2;
+  border: 1px solid #03d3b2;
+}
+
+#filters-container {
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+  margin-bottom: 2.4rem;
+  gap: 0.3rem;
+}
+
+#add-property-button-container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2.4rem;
+}
+
+.add-property-button {
+  color: white;
+  background-color: #03d3b2;
+  border: 1px solid white;
+  border-radius: 6px;
+  align-items: center;
+  padding: 0.5rem 1.4rem;
+  text-decoration: none;
+}
+
+.add-property-button:hover {
+  background-color: white;
+  color: #03d3b2;
+  border: 1px solid #03d3b2;
+}
+
+.selected {
+  background-color: #03d3b2;
+  color: white;
+  border: 1px solid white;
+}
+
+.selected:hover {
+  background-color: white;
+  color: #03d3b2;
+  border: 1px solid #03d3b2;
+}
+
+#properties-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.property-card {
+  width: 16rem;
+  flex-wrap: wrap;
+  border: 1px solid whitesmoke;
+  box-shadow: 6px 6px 4px whitesmoke;
+  height: 25rem;
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+}
+
+.property-card h1 {
+  margin: 2rem 1rem 0.4rem 1rem;
+}
+
+.property-card p {
+  margin: 0 1rem 2rem 1rem;
+}
+
+#add-property-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+#add-property-form {
+  width: 10rem;
+}
+
+#add-property-form label {
+  font-weight: bold;
+}
+
+#add-property-form input {
+  padding: 0.6rem;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+#add-property-form select {
+  padding: 0.6rem;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: white;
+}
+
+#add-property-form button {
+  width: 10rem;
+}

@@ -15,11 +15,17 @@
     body: JSON.stringify(data)
   })
 */
+let isvedameIEkrana = (data) => {
+  document.querySelector('body').innerHTML = data.title + `<br>`;
+  document.querySelector('body').innerHTML += data.body;
+}
 
 let getiname = () => {
   fetch('https://jsonplaceholder.typicode.com/posts/1')
     .then(res => res.json())
-    .then(data => console.log(data));
+    .then(data => {
+      isvedameIEkrana(data);
+    });
 }
 
 let postinam = () => {

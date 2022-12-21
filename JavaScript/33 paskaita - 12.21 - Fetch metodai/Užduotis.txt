@@ -1,0 +1,6 @@
+Naudojant https://robust-safe-crafter.glitch.me/ API
+Sukurti puslapį, kuriame būtų atvaizduojami visi butai.
+  fetch(nuoroda).then()
+Taip pat, turi būti galimybė pridėti naują butą.
+  fetch(nuoroda, {method:"POST", headers:{}, body:naujasButasJSONpavdialu}).then()
+  Naujo buto info paimama iš pateiktos formos.

@@ -1,0 +1,24 @@
+{
+  "knygos": [
+    {
+      "title": "Harry Potter",
+      "author": "J.K. Rowling",
+      "id": 3
+    },
+    {
+      "title": "Lord of the Rings",
+      "author": "Something something Golum",
+      "id": 4
+    },
+    {
+      "title": "Labas rytas",
+      "author": "Saulė",
+      "id": 2
+    },
+    {
+      "title": "pavadinimas",
+      "author": "hi hi haha",
+      "id": 5
+    }
+  ]
+}

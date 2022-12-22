@@ -1,0 +1,16 @@
+Sukurti CRUD aplikaciją laisva tema naudojant JSON-server.
+
+  Susikurti JSON failą su pradiniais duomenimis apie pasirinktą temą (filmus, aktorius, knygas, autorius, žaidimus, sportus, .........) ir su juo pasileisti JSON serverį.
+  
+  Į ekraną išvesti visus duomenis.
+  Galimybė pridėti naują duomenį.
+  Galimybė redaguoti pasirinktą duomenį.
+  Galimybė trinti pasirinktą duomenį.
+
+  Viską stilizuoti.
+
+  Galima tobulinti taip, kad pradžioje ekrane rodoma tik maža informacija apie duomenį. Kai ant jo paspaudžiauma nukeliama į naują puslapį arba atidaromas modalas, kur rodoma platesnė informacija apie elementą.
+  Galima tobulinti taip, kad būtų galimybė filtruoti duomenis pagal tam tikrą kriterijų.
+  Galima tobulinti taip, kad būtų galimybė kažkaip pažymėti duomenis, kad jie būtų atvaizduojami kitaip (peržiūrėtas filmas / perskaityta knyga / mėgstamas autorius/aktorius...).
+  Galima tobulinti taip, kad ID generuojamas pagal jūsų nurodytą komandą.
+  ++) Galima tobulinti, kad JSON faile būtų keletas susietų laukų. (pvz.: Knygos ir Autoriai)

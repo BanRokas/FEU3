@@ -1,3 +1,5 @@
+import Knyga from './components/Knyga.js';
+
 let get = (id) => {
   // if(typeof(id) !== "number"){
   //   id = '';
@@ -34,3 +36,54 @@ let update = (id, data) => {
     body: JSON.stringify(data)
   })
 }
+
+fetch('http://localhost:3000/knygos')
+  .then(res => res.json())
+  .then(knygos => {
+    knygos.forEach(knyga =>{
+      const naujaKnyga = new Knyga(knyga);
+      document.querySelector('#visosKnygos').append(naujaKnyga);
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.querySelector('form').addEventListener('submit', e => {
+//   e.preventDefault();
+//   console.log(e.target.elements.labas.value);
+//   let data = {
+//     title: e.target.elements.labas.value,
+//     author: e.target.elements.labas.value
+//   }
+  
+// });
+
+// let img = new Image();
+// img.src = 'https://a.rgbimg.com/users/l/lu/lusi/600/mCb9hYu.jpg';
+// setTimeout(() => {
+//   console.log(img.src, img.width, img.height);
+//   if(img.height > img.width){
+//     console.log('portretas')
+//     img.classList.add('portetinisImg')
+//   } else {
+//     console.log('landscape')
+//   }
+// }, 100)

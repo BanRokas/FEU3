@@ -1,0 +1,7 @@
+1) Susikurti JSON failą su pradiniai duomenimis.
+2) Pasileisti JSON serverį.
+3) Nuskaityti JSON serverio duomenis.
+4) Sukurti ir išvesti duomenų korteles į ekraną.
+5) Pridėti naujų duomenų sukūrimo formą.
+6) Pridėti duomenų kortelėms delete'inimo galimybę.
+7) Pridėti duomenų kortelėms update'inimo galimybę.

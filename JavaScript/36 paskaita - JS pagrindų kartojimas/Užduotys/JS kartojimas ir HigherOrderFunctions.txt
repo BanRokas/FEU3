@@ -1,0 +1,28 @@
+1.1) Parašykite funkciją (nenaudojant nei lambda, nei metodų), kuri iš jai paduoto skaičių masyvo grąžintų tik tuos skaičius, kurie yra didesni nei A.
+1.2) Parašykite funkciją (nenaudojant nei lambda, nei metodų), kuri iš jai paduoto skaičių masyvo grąžintų tik tuos skaičius, kurie yra didesni nei A, bet mažesni nei B.
+1.3) Parašykite funkciją (nenaudojant nei lambda, nei metodų), kuri iš jai paduoto skaičių masyvo grąžintų tik tuos skaičius, kurie yra didesni nei A, bet mažesni nei B ir yra lyginiai arba nelyginiai (true/false).
+1.4) Naudodami ką norite (lambda, metodus, kitų funkcijų kvietimus jūsų funkcijose ir pns.) perrašykite 1.1, 1.2 ir 1.3 užduotis.
+
+2.1) Parašykite funkciją (nenaudojant nei lambda, nei metodų), kuri iš jai paduoto string masyvo grąžintų tik tuos žodžius, kurie yra ilgesni negu A.
+2.2) Parašykite funkciją (nenaudojant nei lambda, nei metodų), kuri iš jai paduoto string masyvo grąžintų tik tuos žodžius, kurie yra ilgesni negu A, trumpesni negu B.
+2.3) Parašykite funkciją (nenaudojant nei lambda, nei metodų), kuri iš jai paduoto string masyvo grąžintų tik tuos žodžius, kurie yra ilgesni negu A, trumpesni negu B ir prasideda didžiąja arba mažąja raidėmis (true/false).
+2.4) Naudodami ką norite (lambda, metodus, kitų funkcijų kvietimus jūsų funkcijose ir pns.) perrašykite 2.1, 2.2 ir 2.3 užduotis.
+
+3) Parašykite funkciją, kuri iš mišraus masyvo atrinktų tik number arba tik string kintamuosiuos (true/false).
+3.1.1) Jeigu atrinkinėja skaičius, tai juos surikiuoti didėjimo arba mažėjimo tvarka (true/false) ir grąžintų sutvarkytą masyvą.
+3.1.2) Prie 3.1.1 pridėti ir dydžio tikrinimą (ne mažesni negu A ir ne didesni negu B skaičiai (A<skaičius<B)).
+3.2.1) Jeigu atrinkinėja žodžius, tai juos surikiuoti pagal abėcėlę A->Z arba Z->A (true/false) ir grąžintų sutvarkytą masyvą.
+3.2.2) Prie 3.2.1 pridėti ir ilgio tikrinimą (ne trumpesni negu A ir ne ilgesni negu B žodžiai (A<=žodis.length<=B)).
+3 užduoties galutinės versijos funkcijos ir jos kvietimo pvz.: 
+	funkcija vardas(masyvas, numberArString, didejimoArMazejimo, minimum, maximum);
+	let rikiuotas = vardas(masyvas3, true, false, 3, 6) -> kintamajam "rikiuotas" grąžina masyvą, kuris susideda iš masyvas3 buvusių elementų, kurie yra: true - number, false - mažėjimo tvarka, 3 - didesni negu 3, 6 - mažesni negu 6.
+
+
+extra1) Nenaudodami lambda sukurkite funkciją, kuri su callback galėtų grąžinti papildomą informaciją (kokią informaciją nesvarbu. Gali būti string + string iš callback jei jis yra).
+extra2) Nenaudodami lambda sukurkite funkciją kuriai padavus skaičių (1 parametras pirmai funkcijai), jinai grąžintų funkciją, kuri padaugintų pirmąjį skaičių, jai paduotuoju skaičiumi (1 parametras antrajai funkcijai).
+extra3) extra1 ir extra2 užduotis atlikite naudodami lambda.
+extra4) Sukurkite funkciją, kuri sort'ina jai paduotą masyvo informaciją pagal jūsų sumąstytą logiką. (sort metodo viduje kviesti kitą funkciją, kurioje aprašyta rikiavimo logika (grąžina -1 || 1 || 0). (Rikiavimo logika gali būti kokia tik sugalvosite. pvz: pradžioj lyginiai, po to nelyginiai; pradžioj sveikieji po to skaičiai su kalbeliais, pradžioj žodžiai prasidedantys didžiosiomis, po to mažosiomis raidėmis ir t.t.)
+
+EXTRA (viską baigus):
+	Codewars
+	Edabit

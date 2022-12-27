@@ -1,0 +1,1 @@
+Buvo tęsiama 34 paskaitą pradėta CRUD aplikacija.

@@ -1,0 +1,3 @@
+Atliekant žemiau pateiktą užduotį, tvarkingai ir teisingai versijuojant kodą. (kas kažkokį gabaliuką kodo - daryti naują commit'ą su prasminga žinute (commit žinutės turėtų būti iki 50 simbolių)).
+
+Atkurti https://www.youtube.com puslapio menu, sidebarMenu ir korteles. (jokių kitų papildomų puslapių nereikia (menu niekur nenukreipia)).

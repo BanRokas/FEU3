@@ -1,0 +1,15 @@
+Atliekant žemiau pateiktą užduotį, tvarkingai ir teisingai versijuojant kodą. Atskiros atkuriamos svetainės dalys turi būti atskirose šakose.
+
+Atkurti https://www.youtube.com puslapio menu, sidebarMenu ir korteles. (jokių kitų papildomų puslapių nereikia (menu niekur nenukreipia)).
+
+Korteles kurti nuskaitant jų duomenis iš data.json failo.
+Šoniniame menu esančių subscriptions sąrašą generuoti iš data.json faile esančių duomenų.
+
+data.json - {
+  korteles:[
+    {},{}
+  ],
+  subscriptions:[
+    {},{}
+  ]
+}

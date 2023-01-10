@@ -1,0 +1,7 @@
+Peržiūrėti: https://www.youtube.com/watch?v=Tn6-PIqc4UM
+Perskaityti: https://reactjs.org/docs/getting-started.html
+  Visą INSTALLATION dalį.
+  1-4 MAIN CONCEPTS dalį.
+
+Pastebėjimas:
+  Nedarykite kolkas jokių tutorials su react.

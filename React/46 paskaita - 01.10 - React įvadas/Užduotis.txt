@@ -6,4 +6,4 @@ Perskaityti: https://reactjs.org/docs/getting-started.html
 Pastebėjimas:
   Nedarykite kolkas jokių tutorials su react.
 
-Atkurkite xxx.PNG pateiktą puslapio vaizdą.
+Atkurkite reactTask1.PNG pateiktą puslapio vaizdą.

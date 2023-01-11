@@ -1,0 +1,6 @@
+Perskaityti: https://reactjs.org/docs/components-and-props.html
+  4 - Components and Props
+  8 - Lists and Keys
+  (optional) 7 - Conditional Rendering
+
+Atkurkite reactTask2.PNG pateiktą puslapio vaizdą naudojant komponentus.

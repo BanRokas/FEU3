@@ -16,7 +16,11 @@ const App = () => {
       </div>
       <div className="prekiuSarasas">
         <h2>Prekių sąrašas</h2>
-        
+        <List
+          data = {
+            ['Bulka', 'Pienas', 'Alus', 'Sviestas']
+          }
+        />
       </div>
     </>
   );
